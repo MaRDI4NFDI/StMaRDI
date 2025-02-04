@@ -14,7 +14,7 @@
     "href": "intro.html",
     "title": "1  Zenodo Search",
     "section": "",
-    "text": "Searching in Zenodo is a logical ‘OR’ and not a logical ‘AND’. We have thus implemented a search option generating URL for an appropriate Zenodo search with javascript. Select the desired attributes and click the button to open an external Zenodo page.",
+    "text": "Searching in Zenodo is a logical ‘OR’ and not a logical ‘AND’. We have thus implemented a search option generating URL for an appropriate Zenodo search with javascript. Select the desired attributes and click the button to open an external Zenodo page.\n\n    \n    \n    City Selector\n    \n\n\n    \n        \n            Task\n            \n                 Causal Discovery\n                 Causal Inference\n            \n        \n        \n            Data Type\n            \n                 Continuous Data\n                 Discrete Data\n                 Mixed Data\n                 Binary Data\n            \n        \n        \n            Dataset Scope\n            \n                 Collection\n                 Standalone\n            \n        \n        \n            Ground Truth\n            \n                 Available\n                 Partial\n                 Unknown\n            \n        \n        \n            License\n            \n                 Research Only\n                 Open\n            \n        \n        \n            Missing Values\n            \n                 Complete Data\n                 Missing Values\n            \n        \n        \n            Time Component\n            \n                 Static\n                 Time Series\n            \n        \n    \n    Generate URL",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Zenodo Search</span>"
     ]
@@ -27,16 +27,6 @@
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
-    ]
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
-    "crumbs": [
-      "References"
     ]
   }
 ]
