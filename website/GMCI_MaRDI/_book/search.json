@@ -1,0 +1,42 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "GMCI_MaRDI",
+    "section": "",
+    "text": "Graphical Modelling and Causal Inference\nWithin MaRDI, we aim to create a platform and public service to support and foster mathematical research. This comprises the development of good research practices, providing tools for establishing interconnections of research via unique digital tokens, and creating databases for immediate access to key resources of the mathematical research community.\nWe host the Zenodo community Graphical Modelling and Causal Inference. On this platform, we curate and present topical datasets and metadata. Exemplary statistical notebooks showcase advances in methodology and present new applications. The community supports content-moderation by our TA, and we will encourage and solicit submissions of datasets and notebooks by researchers from the broader academic community.",
+    "crumbs": [
+      "Graphical Modelling and Causal Inference"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Zenodo Search",
+    "section": "",
+    "text": "Searching in Zenodo is a logical ‘OR’ and not a logical ‘AND’. We have thus implemented a search option generating URL for an appropriate Zenodo search with javascript. Select the desired attributes and click the button to open an external Zenodo page.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Zenodo Search</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]

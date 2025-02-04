@@ -1,0 +1,3 @@
+# Zenodo Search
+
+Searching in Zenodo is a logical ‘OR’ and not a logical ‘AND’. We have thus implemented a search option generating URL for an appropriate Zenodo search with **javascript**. Select the desired attributes and click the button to open an external Zenodo page.
