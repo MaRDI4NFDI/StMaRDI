@@ -121,9 +121,26 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Custom Online Data Extraction</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./gallery.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Accompanying Statistical Notebooks</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./gallery/notebook1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">notebook1.html</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
@@ -195,10 +212,10 @@ ul.task-list li input[type="checkbox"] {
         <div class="filter-group type-group">
             <h3 class="anchored">Data Type</h3>
             <ul class="city-list">
-                <li><input type="checkbox" id="b1" value="Continuous Data"> Continuous Data</li>
-                <li><input type="checkbox" id="b2" value="Discrete Data"> Discrete Data</li>
-                <li><input type="checkbox" id="b3" value="Mixed Data"> Mixed Data</li>
-                <li><input type="checkbox" id="b4" value="Binary Data"> Binary Data</li>
+                <li><input type="checkbox" id="b1" value="Continuous"> Continuous</li>
+                <li><input type="checkbox" id="b2" value="Discrete"> Discrete</li>
+                <li><input type="checkbox" id="b3" value="Mixed"> Mixed</li>
+                <li><input type="checkbox" id="b4" value="Binary"> Binary</li>
             </ul>
         </div>
         <div class="filter-group scope-group">
@@ -211,7 +228,7 @@ ul.task-list li input[type="checkbox"] {
         <div class="filter-group truth-group">
             <h3 class="anchored">Ground Truth</h3>
             <ul class="city-list">
-                <li><input type="checkbox" id="d1" value="Available"> Available</li>
+                <li><input type="checkbox" id="d1" value="Known"> Known</li>
                 <li><input type="checkbox" id="d2" value="Partial"> Partial</li>
                 <li><input type="checkbox" id="d3" value="Unknown"> Unknown</li>
             </ul>
@@ -226,12 +243,12 @@ ul.task-list li input[type="checkbox"] {
         <div class="filter-group missing-group">
             <h3 class="anchored">Missing Values</h3>
             <ul class="city-list">
-                <li><input type="checkbox" id="f1" value="Complete Data"> Complete Data</li>
-                <li><input type="checkbox" id="f2" value="Missing Values"> Missing Values</li>
+                <li><input type="checkbox" id="f1" value="Yes"> Yes</li>
+                <li><input type="checkbox" id="f2" value="No"> No</li>
             </ul>
         </div>
         <div class="filter-group temporal-group">
-            <h3 class="anchored">Time Component</h3>
+            <h3 class="anchored">Temporal Structure</h3>
             <ul class="city-list">
                 <li><input type="checkbox" id="g1" value="Static"> Static</li>
                 <li><input type="checkbox" id="g2" value="Time Series"> Time Series</li>
@@ -241,6 +258,7 @@ ul.task-list li input[type="checkbox"] {
     <button class="generate-btn">Generate URL</button>
     <script src="assets/js/generateURL.js"></script>
 
+<p>The search function is currently not working as planned. E.g. “Missing = Yes” does not return the correct</p>
 
 
 
@@ -672,8 +690,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./summary.html" class="pagination-link" aria-label="Summary">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./summary.html" class="pagination-link" aria-label="Custom Online Data Extraction">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Custom Online Data Extraction</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

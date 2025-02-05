@@ -1,0 +1,555 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
+
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={GMCI\_MaRDI},
+  pdfauthor={MaRDI@TUM},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{GMCI\_MaRDI}
+\author{MaRDI@TUM}
+\date{2025-02-04}
+
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+\bookmarksetup{startatroot}
+
+\chapter*{Graphical Modelling and Causal
+Inference}\label{graphical-modelling-and-causal-inference}
+\addcontentsline{toc}{chapter}{Graphical Modelling and Causal Inference}
+
+\markboth{Graphical Modelling and Causal Inference}{Graphical Modelling
+and Causal Inference}
+
+Within MaRDI, we aim to create a platform and public service to support
+and foster mathematical research. This comprises the development of good
+research practices, providing tools for establishing interconnections of
+research via unique digital tokens, and creating databases for immediate
+access to key resources of the mathematical research community.
+
+We host the \textbf{Zenodo} community
+\href{https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10}{Graphical
+Modelling and Causal Inference}. On this platform, we curate and present
+topical datasets and metadata. Exemplary statistical notebooks showcase
+advances in methodology and present new applications. The community
+supports content-moderation by our TA, and we will encourage and solicit
+submissions of datasets and notebooks by researchers from the broader
+academic community.
+
+\bookmarksetup{startatroot}
+
+\chapter{Zenodo Search}\label{zenodo-search}
+
+Searching in Zenodo is a logical `OR' and not a logical `AND'. We have
+thus implemented a search option generating URL for an appropriate
+Zenodo search with \textbf{javascript}. Select the desired attributes
+and click the button to open an external Zenodo page.
+
+The search function is currently not working as planned. E.g. ``Missing
+= Yes'' does not return the correct
+
+\bookmarksetup{startatroot}
+
+\chapter{Custom Online Data
+Extraction}\label{custom-online-data-extraction}
+
+There are a lot of important areas for \textbf{Graphical Modelling and
+Causal Inference} on tabular data. Below is a list of
+\textbf{categories} and useful websites for custom data extraction:
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{\texorpdfstring{\textbf{Economic \& Financial
+Data}}{Economic \& Financial Data}}\label{economic-financial-data}
+
+Economic and financial data often involve causal relationships, such as
+how inflation affects employment or how policies impact market behavior.
+
+\textbf{Possible datasets:}
+
+\begin{itemize}
+\item
+  GDP, inflation, and trade data
+\item
+  Stock market and financial transactions
+\item
+  Household income and economic indicators
+\end{itemize}
+
+\textbf{Example sources:}
+
+\begin{itemize}
+\item
+  \href{https://data.worldbank.org/}{World Bank Open Data}
+\item
+  \href{https://www.oecd.org/en/data.html}{OECD Data}
+\item
+  \href{https://fred.stlouisfed.org/}{Federal Reserve Economic Data
+  (FRED)}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{\texorpdfstring{\textbf{Social \& Behavioral
+Data}}{Social \& Behavioral Data}}\label{social-behavioral-data}
+
+Understanding human behavior, social interactions, and cultural
+influences can be crucial in causal inference.
+
+\textbf{Possible datasets:}
+
+\begin{itemize}
+\item
+  Social network analysis (Facebook, Twitter datasets)
+\item
+  Behavioral economics studies
+\item
+  Social mobility and inequality data
+\end{itemize}
+
+\textbf{Example sources:}
+
+\begin{itemize}
+\item
+  \href{https://gss.norc.org/}{General Social Survey (GSS)}
+\item
+  \href{https://www.pewresearch.org/}{Pew Research Data}
+\item
+  \href{https://www.europeansocialsurvey.org/}{European Social Survey
+  (ESS)}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{\texorpdfstring{\textbf{Environmental \& Ecological
+Data}}{Environmental \& Ecological Data}}\label{environmental-ecological-data}
+
+Climate change, pollution, and biodiversity studies require causal
+modeling for impact assessment.
+
+\textbf{Possible datasets:}
+
+\begin{itemize}
+\item
+  Climate change and greenhouse gas emissions
+\item
+  Biodiversity and species distribution
+\item
+  Air and water quality
+\end{itemize}
+
+\textbf{Example sources:}
+
+\begin{itemize}
+\item
+  \href{https://earthdata.nasa.gov/}{NASA Earth Data}
+\item
+  \href{https://cds.climate.copernicus.eu/}{Copernicus Climate Data}
+\item
+  \href{https://www.gbif.org/}{Global Biodiversity Information Facility
+  (GBIF)}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{\texorpdfstring{\textbf{Engineering \& Sensor
+Data}}{Engineering \& Sensor Data}}\label{engineering-sensor-data}
+
+Sensor-based datasets (IoT, industrial processes, robotics) can provide
+time-series data for causal discovery.
+
+\textbf{Possible datasets:}
+
+\begin{itemize}
+\item
+  Smart cities and traffic monitoring
+\item
+  Industrial machine failure predictions
+\item
+  Energy consumption and grid stability
+\end{itemize}
+
+\textbf{Example sources:}
+
+\begin{itemize}
+\item
+  \href{https://www.openml.org/}{OpenML}
+\item
+  \href{https://archive.ics.uci.edu/ml/index.php}{UCI Machine Learning
+  Repository}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{\texorpdfstring{\textbf{Political \& Legal
+Data}}{Political \& Legal Data}}\label{political-legal-data}
+
+Causal models can analyze policy effects, election predictions, and
+legal case outcomes.
+
+\textbf{Possible datasets:}
+
+\begin{itemize}
+\item
+  Election results and voter behavior
+\item
+  Government spending and policy impact
+\item
+  Legal case rulings and sentencing patterns
+\end{itemize}
+
+\textbf{Example sources:}
+
+\begin{itemize}
+\item
+  \href{https://www.govtrack.us/}{Congressional Voting Records}
+\item
+  \href{https://www.cpds-data.org/}{Comparative Political Data Set
+  (CPDS)}
+\item
+  \href{https://worldjusticeproject.org/}{World Justice Project Rule of
+  Law Index}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{\texorpdfstring{\textbf{Transportation \& Mobility
+Data}}{Transportation \& Mobility Data}}\label{transportation-mobility-data}
+
+Causal analysis in urban planning, traffic patterns, and logistics is
+crucial for optimizing transport systems.
+
+\textbf{Possible datasets:}
+
+\begin{itemize}
+\item
+  Public transportation ridership data
+\item
+  Road traffic and accident reports
+\item
+  Flight delays and logistics performance
+\end{itemize}
+
+\textbf{Example sources:}
+
+\begin{itemize}
+\item
+  \href{https://data.transportation.gov/}{U.S. Department of
+  Transportation Open Data}
+\item
+  \href{https://data.cityofnewyork.us/Transportation/Taxi/mch6-rqy4}{NYC
+  Open Data (Taxi \& Traffic Data)}
+\item
+  \href{https://www.openstreetmap.org/}{OpenStreetMap Traffic Data}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{\texorpdfstring{\textbf{Education
+Data}}{Education Data}}\label{education-data}
+
+Educational outcomes are often influenced by multiple factors
+(socioeconomic status, school policies, etc.), making them ideal for
+causal modeling.
+
+\textbf{Possible datasets:}
+
+\begin{itemize}
+\item
+  Student performance and test scores
+\item
+  School funding and academic achievement
+\item
+  Higher education statistics
+\end{itemize}
+
+\textbf{Example sources:}
+
+\begin{itemize}
+\item
+  \href{https://nces.ed.gov/}{National Center for Education Statistics
+  (NCES)}
+\item
+  \href{https://www.oecd.org/en/publications/education-at-a-glance-2024_c00cad36-en.html}{OECD
+  Education at a Glance}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{\texorpdfstring{\textbf{Crime \& Justice
+Data}}{Crime \& Justice Data}}\label{crime-justice-data}
+
+Understanding the causal effects of policies, policing, and social
+factors on crime rates is crucial.
+
+\textbf{Possible datasets:}
+
+\begin{itemize}
+\item
+  Crime rates and law enforcement reports
+\item
+  Prison population statistics
+\item
+  Impact of social programs on crime reduction
+\end{itemize}
+
+\textbf{Example sources:}
+
+\begin{itemize}
+\item
+  \href{https://cde.ucr.cjis.gov/}{FBI Crime Data Explorer}
+\item
+  \href{https://bjs.ojp.gov/}{Bureau of Justice Statistics (BJS)}
+\item
+  \href{https://data.police.uk/}{UK Crime Data}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{\texorpdfstring{\textbf{Energy \& Sustainability
+Data}}{Energy \& Sustainability Data}}\label{energy-sustainability-data}
+
+Causal relationships between energy consumption, economic growth, and
+environmental policies are important.
+
+\textbf{Possible datasets:}
+
+\begin{itemize}
+\item
+  Renewable energy production
+\item
+  Electricity grid performance
+\item
+  Carbon footprint analysis
+\end{itemize}
+
+\textbf{Example sources:}
+
+\begin{itemize}
+\item
+  \href{https://www.iea.org/data-and-statistics}{International Energy
+  Agency (IEA)}
+\item
+  \href{https://ourworldindata.org/energy}{Our World in Data -- Energy}
+\item
+  \href{https://www.eia.gov/}{U.S. Energy Information Administration
+  (EIA)}
+\end{itemize}
+
+\section{Further Categories}\label{further-categories}
+
+We will add sources for the categories
+
+*Gene expression data * health data * meterological data * psychological
+data * population data * biological data * pharmaceutical data
+
+\bookmarksetup{startatroot}
+
+\chapter{Gallery}\label{gallery}
+
+\bookmarksetup{startatroot}
+
+\chapter*{References}\label{references}
+\addcontentsline{toc}{chapter}{References}
+
+\markboth{References}{References}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{0}{1}
+\end{CSLReferences}
+
+
+
+
+\end{document}

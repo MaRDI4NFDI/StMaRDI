@@ -14,7 +14,7 @@
     "href": "intro.html",
     "title": "1  Zenodo Search",
     "section": "",
-    "text": "Searching in Zenodo is a logical ‘OR’ and not a logical ‘AND’. We have thus implemented a search option generating URL for an appropriate Zenodo search with javascript. Select the desired attributes and click the button to open an external Zenodo page.\n\n    \n    \n    City Selector\n    \n\n\n    \n        \n            Task\n            \n                 Causal Discovery\n                 Causal Inference\n            \n        \n        \n            Data Type\n            \n                 Continuous Data\n                 Discrete Data\n                 Mixed Data\n                 Binary Data\n            \n        \n        \n            Dataset Scope\n            \n                 Collection\n                 Standalone\n            \n        \n        \n            Ground Truth\n            \n                 Available\n                 Partial\n                 Unknown\n            \n        \n        \n            License\n            \n                 Research Only\n                 Open\n            \n        \n        \n            Missing Values\n            \n                 Complete Data\n                 Missing Values\n            \n        \n        \n            Time Component\n            \n                 Static\n                 Time Series\n            \n        \n    \n    Generate URL",
+    "text": "Searching in Zenodo is a logical ‘OR’ and not a logical ‘AND’. We have thus implemented a search option generating URL for an appropriate Zenodo search with javascript. Select the desired attributes and click the button to open an external Zenodo page.\n\n    \n    \n    City Selector\n    \n\n\n    \n        \n            Task\n            \n                 Causal Discovery\n                 Causal Inference\n            \n        \n        \n            Data Type\n            \n                 Continuous\n                 Discrete\n                 Mixed\n                 Binary\n            \n        \n        \n            Dataset Scope\n            \n                 Collection\n                 Standalone\n            \n        \n        \n            Ground Truth\n            \n                 Known\n                 Partial\n                 Unknown\n            \n        \n        \n            License\n            \n                 Research Only\n                 Open\n            \n        \n        \n            Missing Values\n            \n                 Yes\n                 No\n            \n        \n        \n            Temporal Structure\n            \n                 Static\n                 Time Series\n            \n        \n    \n    Generate URL\n    \n\nThe search function is currently not working as planned. E.g. “Missing = Yes” does not return the correct",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Zenodo Search</span>"
     ]
@@ -22,11 +22,132 @@
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "2  Custom Online Data Extraction",
     "section": "",
-    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
+    "text": "2.1 Economic & Financial Data\nEconomic and financial data often involve causal relationships, such as how inflation affects employment or how policies impact market behavior.\nPossible datasets:\nExample sources:",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Custom Online Data Extraction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#economic-financial-data",
+    "href": "summary.html#economic-financial-data",
+    "title": "2  Custom Online Data Extraction",
+    "section": "",
+    "text": "GDP, inflation, and trade data\nStock market and financial transactions\nHousehold income and economic indicators\n\n\n\nWorld Bank Open Data\nOECD Data\nFederal Reserve Economic Data (FRED)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Custom Online Data Extraction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#social-behavioral-data",
+    "href": "summary.html#social-behavioral-data",
+    "title": "2  Custom Online Data Extraction",
+    "section": "2.2 Social & Behavioral Data",
+    "text": "2.2 Social & Behavioral Data\nUnderstanding human behavior, social interactions, and cultural influences can be crucial in causal inference.\nPossible datasets:\n\nSocial network analysis (Facebook, Twitter datasets)\nBehavioral economics studies\nSocial mobility and inequality data\n\nExample sources:\n\nGeneral Social Survey (GSS)\nPew Research Data\nEuropean Social Survey (ESS)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Custom Online Data Extraction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#environmental-ecological-data",
+    "href": "summary.html#environmental-ecological-data",
+    "title": "2  Custom Online Data Extraction",
+    "section": "2.3 Environmental & Ecological Data",
+    "text": "2.3 Environmental & Ecological Data\nClimate change, pollution, and biodiversity studies require causal modeling for impact assessment.\nPossible datasets:\n\nClimate change and greenhouse gas emissions\nBiodiversity and species distribution\nAir and water quality\n\nExample sources:\n\nNASA Earth Data\nCopernicus Climate Data\nGlobal Biodiversity Information Facility (GBIF)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Custom Online Data Extraction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#engineering-sensor-data",
+    "href": "summary.html#engineering-sensor-data",
+    "title": "2  Custom Online Data Extraction",
+    "section": "2.4 Engineering & Sensor Data",
+    "text": "2.4 Engineering & Sensor Data\nSensor-based datasets (IoT, industrial processes, robotics) can provide time-series data for causal discovery.\nPossible datasets:\n\nSmart cities and traffic monitoring\nIndustrial machine failure predictions\nEnergy consumption and grid stability\n\nExample sources:\n\nOpenML\nUCI Machine Learning Repository",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Custom Online Data Extraction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#political-legal-data",
+    "href": "summary.html#political-legal-data",
+    "title": "2  Custom Online Data Extraction",
+    "section": "2.5 Political & Legal Data",
+    "text": "2.5 Political & Legal Data\nCausal models can analyze policy effects, election predictions, and legal case outcomes.\nPossible datasets:\n\nElection results and voter behavior\nGovernment spending and policy impact\nLegal case rulings and sentencing patterns\n\nExample sources:\n\nCongressional Voting Records\nComparative Political Data Set (CPDS)\nWorld Justice Project Rule of Law Index",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Custom Online Data Extraction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#transportation-mobility-data",
+    "href": "summary.html#transportation-mobility-data",
+    "title": "2  Custom Online Data Extraction",
+    "section": "2.6 Transportation & Mobility Data",
+    "text": "2.6 Transportation & Mobility Data\nCausal analysis in urban planning, traffic patterns, and logistics is crucial for optimizing transport systems.\nPossible datasets:\n\nPublic transportation ridership data\nRoad traffic and accident reports\nFlight delays and logistics performance\n\nExample sources:\n\nU.S. Department of Transportation Open Data\nNYC Open Data (Taxi & Traffic Data)\nOpenStreetMap Traffic Data",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Custom Online Data Extraction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#education-data",
+    "href": "summary.html#education-data",
+    "title": "2  Custom Online Data Extraction",
+    "section": "2.7 Education Data",
+    "text": "2.7 Education Data\nEducational outcomes are often influenced by multiple factors (socioeconomic status, school policies, etc.), making them ideal for causal modeling.\nPossible datasets:\n\nStudent performance and test scores\nSchool funding and academic achievement\nHigher education statistics\n\nExample sources:\n\nNational Center for Education Statistics (NCES)\nOECD Education at a Glance",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Custom Online Data Extraction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#crime-justice-data",
+    "href": "summary.html#crime-justice-data",
+    "title": "2  Custom Online Data Extraction",
+    "section": "2.8 Crime & Justice Data",
+    "text": "2.8 Crime & Justice Data\nUnderstanding the causal effects of policies, policing, and social factors on crime rates is crucial.\nPossible datasets:\n\nCrime rates and law enforcement reports\nPrison population statistics\nImpact of social programs on crime reduction\n\nExample sources:\n\nFBI Crime Data Explorer\nBureau of Justice Statistics (BJS)\nUK Crime Data",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Custom Online Data Extraction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#energy-sustainability-data",
+    "href": "summary.html#energy-sustainability-data",
+    "title": "2  Custom Online Data Extraction",
+    "section": "2.9 Energy & Sustainability Data",
+    "text": "2.9 Energy & Sustainability Data\nCausal relationships between energy consumption, economic growth, and environmental policies are important.\nPossible datasets:\n\nRenewable energy production\nElectricity grid performance\nCarbon footprint analysis\n\nExample sources:\n\nInternational Energy Agency (IEA)\nOur World in Data – Energy\nU.S. Energy Information Administration (EIA)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Custom Online Data Extraction</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html#further-categories",
+    "href": "summary.html#further-categories",
+    "title": "2  Custom Online Data Extraction",
+    "section": "2.10 Further Categories",
+    "text": "2.10 Further Categories\nWe will add sources for the categories\n*Gene expression data * health data * meterological data * psychological data * population data * biological data * pharmaceutical data",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Custom Online Data Extraction</span>"
+    ]
+  },
+  {
+    "objectID": "gallery/notebook1.html",
+    "href": "gallery/notebook1.html",
+    "title": "GMCI_MaRDI",
+    "section": "",
+    "text": "Random plotting of a linear Gaussian model\n\nset.seed(1234)\nn &lt;- 1000\nx &lt;- rnorm(n)\ny &lt;- x * 3 + rnorm(n, 0, 0.75)\nplot(x, y)",
+    "crumbs": [
+      "Accompanying Statistical Notebooks",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>notebook1.html</span>"
+    ]
+  },
+  {
+    "objectID": "gallery.html",
+    "href": "gallery.html",
+    "title": "Accompanying Statistical Notebooks",
+    "section": "",
+    "text": "Gallery with Links\n    \n\n\n    For more information and content of the projects, click on respective window.\n    \n        \n        \n            Gaussian Linear Model\n            \n                \n            \n            \n                Git\n                Zenodo\n            \n        \n        \n        \n            Notebook 2\n            \n                \n            \n            \n                Git\n                Zenodo\n            \n        \n        \n        \n            Notebook 3\n            \n                \n            \n            \n                Git\n                Zenodo\n            \n        \n        \n        \n            Notebook 4\n            \n                \n            \n            \n                Git\n                Zenodo",
+    "crumbs": [
+      "Accompanying Statistical Notebooks"
     ]
   }
 ]

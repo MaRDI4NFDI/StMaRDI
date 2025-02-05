@@ -1,0 +1,9 @@
+Random plotting of a linear Gaussian model
+
+```{r}
+set.seed(1234)
+n <- 1000
+x <- rnorm(n)
+y <- x * 3 + rnorm(n, 0, 0.75)
+plot(x, y)
+```

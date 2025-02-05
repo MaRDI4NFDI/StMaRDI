@@ -1,7 +1,209 @@
-# Summary
+# Custom Online Data Extraction
 
-In summary, this book has no content whatsoever.
+There are a lot of important areas for **Graphical Modelling and Causal Inference** on tabular data. Below is a list of **categories** and useful websites for custom data extraction:
 
-```{r}
-1 + 1
-```
+------------------------------------------------------------------------
+
+## **Economic & Financial Data**
+
+Economic and financial data often involve causal relationships, such as how inflation affects employment or how policies impact market behavior.
+
+**Possible datasets:**
+
+-   GDP, inflation, and trade data
+
+-   Stock market and financial transactions
+
+-   Household income and economic indicators
+
+**Example sources:**
+
+-   [World Bank Open Data](https://data.worldbank.org/)
+
+-   [OECD Data](https://www.oecd.org/en/data.html)
+
+-   [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/)
+
+------------------------------------------------------------------------
+
+## **Social & Behavioral Data**
+
+Understanding human behavior, social interactions, and cultural influences can be crucial in causal inference.
+
+**Possible datasets:**
+
+-   Social network analysis (Facebook, Twitter datasets)
+
+-   Behavioral economics studies
+
+-   Social mobility and inequality data
+
+**Example sources:**
+
+-   [General Social Survey (GSS)](https://gss.norc.org/)
+
+-   [Pew Research Data](https://www.pewresearch.org/)
+
+-   [European Social Survey (ESS)](https://www.europeansocialsurvey.org/)
+
+------------------------------------------------------------------------
+
+## **Environmental & Ecological Data**
+
+Climate change, pollution, and biodiversity studies require causal modeling for impact assessment.
+
+**Possible datasets:**
+
+-   Climate change and greenhouse gas emissions
+
+-   Biodiversity and species distribution
+
+-   Air and water quality
+
+**Example sources:**
+
+-   [NASA Earth Data](https://earthdata.nasa.gov/)
+
+-   [Copernicus Climate Data](https://cds.climate.copernicus.eu/)
+
+-   [Global Biodiversity Information Facility (GBIF)](https://www.gbif.org/)
+
+------------------------------------------------------------------------
+
+## **Engineering & Sensor Data**
+
+Sensor-based datasets (IoT, industrial processes, robotics) can provide time-series data for causal discovery.
+
+**Possible datasets:**
+
+-   Smart cities and traffic monitoring
+
+-   Industrial machine failure predictions
+
+-   Energy consumption and grid stability
+
+**Example sources:**
+
+-   [OpenML](https://www.openml.org/)
+
+-   [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php)
+
+------------------------------------------------------------------------
+
+## **Political & Legal Data**
+
+Causal models can analyze policy effects, election predictions, and legal case outcomes.
+
+**Possible datasets:**
+
+-   Election results and voter behavior
+
+-   Government spending and policy impact
+
+-   Legal case rulings and sentencing patterns
+
+**Example sources:**
+
+-   [Congressional Voting Records](https://www.govtrack.us/)
+
+-   [Comparative Political Data Set (CPDS)](https://www.cpds-data.org/)
+
+-   [World Justice Project Rule of Law Index](https://worldjusticeproject.org/)
+
+------------------------------------------------------------------------
+
+## **Transportation & Mobility Data**
+
+Causal analysis in urban planning, traffic patterns, and logistics is crucial for optimizing transport systems.
+
+**Possible datasets:**
+
+-   Public transportation ridership data
+
+-   Road traffic and accident reports
+
+-   Flight delays and logistics performance
+
+**Example sources:**
+
+-   [U.S. Department of Transportation Open Data](https://data.transportation.gov/)
+
+-   [NYC Open Data (Taxi & Traffic Data)](https://data.cityofnewyork.us/Transportation/Taxi/mch6-rqy4)
+
+-   [OpenStreetMap Traffic Data](https://www.openstreetmap.org/)
+
+------------------------------------------------------------------------
+
+## **Education Data**
+
+Educational outcomes are often influenced by multiple factors (socioeconomic status, school policies, etc.), making them ideal for causal modeling.
+
+**Possible datasets:**
+
+-   Student performance and test scores
+
+-   School funding and academic achievement
+
+-   Higher education statistics
+
+**Example sources:**
+
+-   [National Center for Education Statistics (NCES)](https://nces.ed.gov/)
+
+-   [OECD Education at a Glance](https://www.oecd.org/en/publications/education-at-a-glance-2024_c00cad36-en.html)
+
+------------------------------------------------------------------------
+
+## **Crime & Justice Data**
+
+Understanding the causal effects of policies, policing, and social factors on crime rates is crucial.
+
+**Possible datasets:**
+
+-   Crime rates and law enforcement reports
+
+-   Prison population statistics
+
+-   Impact of social programs on crime reduction
+
+**Example sources:**
+
+-   [FBI Crime Data Explorer](https://cde.ucr.cjis.gov/)
+
+-   [Bureau of Justice Statistics (BJS)](https://bjs.ojp.gov/)
+
+-   [UK Crime Data](https://data.police.uk/)
+
+------------------------------------------------------------------------
+
+## **Energy & Sustainability Data**
+
+Causal relationships between energy consumption, economic growth, and environmental policies are important.
+
+**Possible datasets:**
+
+-   Renewable energy production
+
+-   Electricity grid performance
+
+-   Carbon footprint analysis
+
+**Example sources:**
+
+-   [International Energy Agency (IEA)](https://www.iea.org/data-and-statistics)
+
+-   [Our World in Data – Energy](https://ourworldindata.org/energy)
+
+-   [U.S. Energy Information Administration (EIA)](https://www.eia.gov/)
+
+## Further Categories
+
+We will add sources for the categories
+
+\*Gene expression data
+\* health data
+\* meterological data
+\* psychological data
+\* population data
+\* biological data
+\* pharmaceutical data

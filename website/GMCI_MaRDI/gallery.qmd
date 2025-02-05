@@ -1,0 +1,112 @@
+# Accompanying Statistical Notebooks
+
+```{=html}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery with Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+        p {
+            text-align: left; /* Change text alignment to left */
+            max-width: 800px; /* Restrict paragraph width for readability */
+            margin: 0 auto; /* Center the paragraph block */
+        }
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px; /* Spacing between gallery items */
+            margin-top: 20px;
+        }
+        .gallery-item {
+            text-align: center;
+            max-width: 200px;
+        }
+        .gallery-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Space between buttons */
+            margin-top: 10px;
+        }
+        .button {
+            padding: 8px 15px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            text-decoration: none; /* Remove underline */
+        }
+        .button.git {
+            background-color: #24292e; /* GitHub button color */
+        }
+        .button.zenodo {
+            background-color: #0079d3; /* Zenodo button color */
+        }
+        .button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <p>For more information and content of the projects, click on respective window.</p>
+    <div class="gallery-container">
+        <!-- First Item -->
+        <div class="gallery-item">
+            <strong>Gaussian Linear Model</strong>
+            <a href="gallery/notebook1.qmd">
+                <img src="/images/R_GaussianLinear.png" alt="Stats Screenshot">
+            </a>
+            <div class="button-container">
+                <a href="https://github.com/example-repo" class="button git">Git</a>
+                <a href="https://zenodo.org/example-link" class="button zenodo">Zenodo</a>
+            </div>
+        </div>
+        <!-- Second Item -->
+        <div class="gallery-item">
+            <strong>Notebook 2</strong>
+            <a href="http://localhost:4000/talks/">
+                <img src="/images/mardi_screenshot.png" alt="Mardi Screenshot">
+            </a>
+            <div class="button-container">
+                <a href="https://github.com/example-repo" class="button git">Git</a>
+                <a href="https://zenodo.org/example-link" class="button zenodo">Zenodo</a>
+            </div>
+        </div>
+        <!-- Third Item -->
+        <div class="gallery-item">
+            <strong>Notebook 3</strong>
+            <a href="https://zenodo.org/">
+                <img src="/images/zenodo_screenshot.png" alt="Zenodo Screenshot">
+            </a>
+            <div class="button-container">
+                <a href="https://github.com/example-repo" class="button git">Git</a>
+                <a href="https://zenodo.org/example-link" class="button zenodo">Zenodo</a>
+            </div>
+        </div>
+        <!-- Fourth Item -->
+        <div class="gallery-item">
+            <strong>Notebook 4</strong>
+            <a href="https://github.com/OleksandrZadorozhnyiML/StMaRDI/blob/main/notebook_01_alarm_publish.Rmd">
+                <img src="/images/portal_screenshot.png" alt="Portal Screenshot">
+            </a>
+            <div class="button-container">
+                <a href="https://github.com/example-repo" class="button git">Git</a>
+                <a href="https://zenodo.org/example-link" class="button zenodo">Zenodo</a>
+            </div>
+        </div>
+    </div>
+</body>
+```
