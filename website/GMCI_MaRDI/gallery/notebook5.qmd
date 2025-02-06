@@ -1,0 +1,7 @@
+## online html
+
+This page is a direct inclusion of a .html file from git.
+
+```{r, echo = FALSE, warning=FALSE}
+htmltools::includeHTML("https://raw.githubusercontent.com/MaRDI4NFDI/StMaRDI/refs/heads/main/website/GMCI_MaRDI/gallery/remote_notebook2.html")
+```

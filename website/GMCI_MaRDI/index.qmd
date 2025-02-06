@@ -1,5 +1,11 @@
-# Graphical Modelling and Causal Inference {.unnumbered}
+# About {.unnumbered}
 
 Within MaRDI, we aim to create a platform and public service to support and foster mathematical research. This comprises the development of good research practices, providing tools for establishing interconnections of research via unique digital tokens, and creating databases for immediate access to key resources of the mathematical research community.
 
 We host the **Zenodo** community [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10). On this platform, we curate and present topical datasets and metadata. Exemplary statistical notebooks showcase advances in methodology and present new applications. The community supports content-moderation by our TA, and we will encourage and solicit submissions of datasets and notebooks by researchers from the broader academic community.
+
+```{=html}
+<center>
+  <img src="images/logo.png" alt="GMCI Logo" width="500"/>
+</center>
+```
