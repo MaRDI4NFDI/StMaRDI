@@ -70,8 +70,8 @@
                 <img src="/images/R_GaussianLinear.png" alt="Stats Screenshot">
             </a>
             <div class="button-container">
-                <a href="https://github.com/example-repo" class="button git">Git</a>
-                <a href="https://zenodo.org/example-link" class="button zenodo">Zenodo</a>
+                <a href="https://github.com/MaRDI4NFDI/StMaRDI/tree/main" class="button git">Git</a>
+                <a href="https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10" class="button zenodo">Zenodo</a>
             </div>
         </div>
         <!-- Second Item -->
@@ -98,13 +98,13 @@
         </div>
         <!-- Fourth Item -->
         <div class="gallery-item">
-            <strong>Notebook 4</strong>
-            <a href="https://github.com/OleksandrZadorozhnyiML/StMaRDI/blob/main/notebook_01_alarm_publish.Rmd">
-                <img src="/images/portal_screenshot.png" alt="Portal Screenshot">
+            <strong>Cause-Effect Pairs MPI Tuebingen</strong>
+            <a href="gallery/notebook4.qmd">
+                <img src="/images/Cause_Effect_Tuebingen.png" alt="Portal Screenshot">
             </a>
             <div class="button-container">
-                <a href="https://github.com/example-repo" class="button git">Git</a>
-                <a href="https://zenodo.org/example-link" class="button zenodo">Zenodo</a>
+                <a href="https://github.com/MaRDI4NFDI/StMaRDI/blob/main/notebook_04_causal_benchmarking_prelim.Rmd" class="button git">Git</a>
+                <a href="https://zenodo.org/records/14747291" class="button zenodo">Zenodo</a>
             </div>
         </div>
     </div>

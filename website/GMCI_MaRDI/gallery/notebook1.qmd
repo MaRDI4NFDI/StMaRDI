@@ -1,3 +1,5 @@
+## Gaussian Linear Model
+
 Random plotting of a linear Gaussian model
 
 ```{r}

@@ -14,6 +14,7 @@ book:
         - gallery/notebook1.qmd
         - gallery/notebook2.qmd
         - gallery/notebook3.qmd
+        - gallery/notebook4.qmd
     - references.qmd
 
 bibliography: references.bib

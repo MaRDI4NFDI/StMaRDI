@@ -200,10 +200,4 @@ Causal relationships between energy consumption, economic growth, and environmen
 
 We will add sources for the categories
 
-\*Gene expression data
-\* health data
-\* meterological data
-\* psychological data
-\* population data
-\* biological data
-\* pharmaceutical data
+\*Gene expression data \* health data \* meterological data \* psychological data \* population data \* biological data \* pharmaceutical data
