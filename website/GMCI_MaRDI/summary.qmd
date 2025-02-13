@@ -1,50 +1,40 @@
 # Custom Online Data Extraction
 
-There are a lot of important areas for **Graphical Modelling and Causal Inference** on tabular data. Below is a list of **categories** and useful websites for custom data extraction:
+There are a lot of important areas for **Graphical Modelling and Causal Inference** on tabular data. Find a selection of **categories** and **useful websites** for custom data extraction below. Please consider submitting the final extracted and analyzed dataset (if allowed) to our [Zenodo community](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10).
 
 ------------------------------------------------------------------------
 
 ## **Economic & Financial Data**
 
-Economic and financial data often involve causal relationships, such as how inflation affects employment or how policies impact market behavior.
+**Possible causal relationships:**
 
-**Possible datasets:**
+-   inflation affects employment
 
--   GDP, inflation, and trade data
+-   policies impact market behavior
 
--   Stock market and financial transactions
-
--   Household income and economic indicators
-
-**Example sources:**
-
--   [World Bank Open Data](https://data.worldbank.org/)
-
--   [OECD Data](https://www.oecd.org/en/data.html)
-
--   [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/)
+| Source | License | Data Provided |
+|-----------------|----------------------------------------|---------------|
+| **World Bank Open Data** | CC BY 4.0 ([License](https://datacatalog.worldbank.org/public-licenses)) | Time Series Data, Performance Indicators |
+| **OECD Data** | CC BY 4.0 ([License](https://www.oecd.org/en/about/terms-conditions.html)) | Consumer Price Indices, Institutional Investors' Indicators |
+| **Federal Reserve Economic Data (FRED)** | Non-commercial ([License](https://fred.stlouisfed.org/legal/)) | Economic data series on banking, business, consumer and producer price indices, employment, population, exchange rates, GDP, interest rates, trade, and U.S. financial data. |
 
 ------------------------------------------------------------------------
 
 ## **Social & Behavioral Data**
 
-Understanding human behavior, social interactions, and cultural influences can be crucial in causal inference.
+**Possible causal relationships:**
 
-**Possible datasets:**
+-   Work conditions influence family stability
 
--   Social network analysis (Facebook, Twitter datasets)
+-   Political climate affects public trust in media
 
--   Behavioral economics studies
+-   Immigration policies shape public attitudes
 
--   Social mobility and inequality data
-
-**Example sources:**
-
--   [General Social Survey (GSS)](https://gss.norc.org/)
-
--   [Pew Research Data](https://www.pewresearch.org/)
-
--   [European Social Survey (ESS)](https://www.europeansocialsurvey.org/)
+| Source | License | Data Provided |
+|-----------------|------------------------------------|-------------------|
+| General Social Survey (GSS) | Purchase required (<https://gss.norc.org/content/dam/gss/get-documentation/pdf/other/ObtainingGSSSensitiveDataFiles.pdf)> | Health, marriage, family, work conditions |
+| Pew Research Data | Nonexclusive, non-sublicensable, non-transferable, revocable, worldwide, royalty-free (<https://www.pewresearch.org/about/terms-and-conditions/)> | Politics, immigration, religion, technology |
+| European Social Survey (ESS) | Open access | Politics, international affairs, immigration, religion |
 
 ------------------------------------------------------------------------
 

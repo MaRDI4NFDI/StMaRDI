@@ -37,10 +37,10 @@ Searching in Zenodo is a logical ‘OR’ and not a logical ‘AND’. We have t
         <div class="filter-group type-group">
             <h3>Data Type</h3>
             <ul class="city-list">
-                <li><input type="checkbox" id="b1" value="Continuous"> Continuous</li>
-                <li><input type="checkbox" id="b2" value="Discrete"> Discrete</li>
-                <li><input type="checkbox" id="b3" value="Mixed"> Mixed</li>
-                <li><input type="checkbox" id="b4" value="Binary"> Binary</li>
+                <li><input type="checkbox" id="b1" value="Data Type: Continuous"> Continuous</li>
+                <li><input type="checkbox" id="b2" value="Data Type: Discrete"> Discrete</li>
+                <li><input type="checkbox" id="b3" value="Data Type: Mixed"> Mixed</li>
+                <li><input type="checkbox" id="b4" value="Data Type: Binary"> Binary</li>
             </ul>
         </div>
         <div class="filter-group scope-group">
