@@ -1,4 +1,4 @@
-# Zenodo Search
+# Advanced Dataset Search on Zenodo
 
 Searching in Zenodo is a logical *OR* and not a logical *AND*. To search through the datasets in our Zenodo community [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10) with a logical *AND*, select the desired attributes and click the button. This will generate and open an external Zenodo search page.
 
@@ -31,53 +31,54 @@ Searching in Zenodo is a logical *OR* and not a logical *AND*. To search through
         <div class="filter-group task-group">
             <h3>Task</h3>
             <ul class="city-list">
-                <li><input type="checkbox" id="a1" value="Causal Discovery"> Causal Discovery</li>
-                <li><input type="checkbox" id="a2" value="Causal Inference"> Causal Inference</li>
+                <li><input type="checkbox" id="a1" value="Causal Discovery"> Causal Discovery Problem</li>
+                <li><input type="checkbox" id="a2" value="Causal Inference"> Causal Inference Problem</li>
             </ul>
         </div>
         <div class="filter-group type-group">
             <h3>Data Type</h3>
             <ul class="city-list">
-                <li><input type="checkbox" id="b1" value="Data Type: Continuous"> Continuous</li>
-                <li><input type="checkbox" id="b2" value="Data Type: Discrete"> Discrete</li>
-                <li><input type="checkbox" id="b3" value="Data Type: Mixed"> Mixed</li>
-                <li><input type="checkbox" id="b4" value="Data Type: Binary"> Binary</li>
+                <li><input type="checkbox" id="b1" value="Continuous"> Continuous Data</li>                         <li><input type="checkbox" id="b3" value="Mixed"> Mixed Data</li>
+                <li><input type="checkbox" id="b2" value="Discrete"> Discrete Data</li>
+                <li><input type="checkbox" id="b4" value="Binary"> Binary Data</li>
+                <li><input type="checkbox" id="b5" value="Categorical"> Categorical Data</li>
             </ul>
         </div>
         <div class="filter-group scope-group">
             <h3>Dataset Scope</h3>
             <ul class="city-list">
-                <li><input type="checkbox" id="c1" value="Collection"> Collection</li>
-                <li><input type="checkbox" id="c2" value="Standalone"> Standalone</li>
+                <li><input type="checkbox" id="c1" value="Collection of"> Collection of Datasets</li>
+                <li><input type="checkbox" id="c2" value="Standalone"> Standalone Dataset</li>
             </ul>
         </div>
         <div class="filter-group truth-group">
             <h3>Ground Truth</h3>
             <ul class="city-list">
-                <li><input type="checkbox" id="d1" value="Known"> Known</li>
-                <li><input type="checkbox" id="d2" value="Partial"> Partial</li>
-                <li><input type="checkbox" id="d3" value="Unknown"> Unknown</li>
+                <li><input type="checkbox" id="d1" value="Known"> Known Graph</li>
+                <li><input type="checkbox" id="d2" value="Partial"> Partial Graph</li>
+                <li><input type="checkbox" id="d3" value="Unknown"> Unknown Graph</li>
             </ul>
         </div>
         <div class="filter-group license-group">
             <h3>License</h3>
             <ul class="city-list">
-                <li><input type="checkbox" id="e1" value="Research Only"> Research Only</li>
-                <li><input type="checkbox" id="e2" value="Open"> Open</li>
+                <li><input type="checkbox" id="e1" value="CC0"> CC0</li>
+                <li><input type="checkbox" id="e2" value="CC BY"> CC BY</li>
+                <li><input type="checkbox" id="e3" value="CC BY-NC"> CC BY-NC</li>
             </ul>
         </div>
         <div class="filter-group missing-group">
             <h3>Missing Values</h3>
             <ul class="city-list">
-                <li><input type="checkbox" id="f1" value="Yes"> Yes</li>
-                <li><input type="checkbox" id="f2" value="No"> No</li>
+                <li><input type="checkbox" id="f1" value="Existing Missing"> Existing Missing Values</li>
+                <li><input type="checkbox" id="f2" value="No Missing"> No Missing Values</li>
             </ul>
         </div>
         <div class="filter-group temporal-group">
             <h3>Temporal Structure</h3>
             <ul class="city-list">
-                <li><input type="checkbox" id="g1" value="Static"> Static</li>
-                <li><input type="checkbox" id="g2" value="Time Series"> Time Series</li>
+                <li><input type="checkbox" id="g1" value="Static"> Static Data</li>
+                <li><input type="checkbox" id="g2" value="Time Series"> Time Series Data</li>
             </ul>
         </div>
     </div>
@@ -85,5 +86,3 @@ Searching in Zenodo is a logical *OR* and not a logical *AND*. To search through
     <script src="assets/js/generateURL.js"></script>
 </body>
 ```
-
-The search function is currently not working as planned. E.g. "Missing = Yes" does not return the correct
