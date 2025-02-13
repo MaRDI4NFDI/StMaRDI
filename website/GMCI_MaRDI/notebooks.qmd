@@ -1,5 +1,7 @@
 # Accompanying Statistical Notebooks
 
+Each project in the **gallery** is represented by a clickable notebook that provides insights into methodologies applied to datasets from our Zenodo community on [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10). These notebooks showcase baseline information about the underlying data, the analysis process, and the derived results. In addition to the notebooks, links to the Zenodo datasets, and the underlying GitHub repositories are provided for code transparency and reproducibility.
+
 ```{=html}
 <head>
     <meta charset="UTF-8">
@@ -69,7 +71,6 @@
     </style>
 </head>
 <body>
-    <p>For more information and content of the projects, click on respective window.</p>
     <div class="gallery-container">
         <!-- First Item -->
         <div class="gallery-item">

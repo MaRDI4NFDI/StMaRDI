@@ -7,9 +7,9 @@ book:
   date: "2/4/2025"
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - part: gallery.qmd
+    - zenodo_search.qmd
+    - custom_online_data_search.qmd
+    - part: notebooks.qmd
       chapters: 
         - gallery/notebook1.qmd
         - gallery/notebook2.qmd

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1&nbsp; Zenodo Search – Graphical Modelling and Causal Inference</title>
+<title>Accompanying Statistical Notebooks – Graphical Modelling and Causal Inference</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./summary.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./gallery/notebook1.html" rel="next">
+<link href="./custom_online_data_search.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Zenodo Search</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./notebooks.html">Accompanying Statistical Notebooks</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -114,19 +114,19 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
+  <a href="./zenodo_search.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Zenodo Search</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+  <a href="./custom_online_data_search.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Custom Online Data Extraction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./gallery.html" class="sidebar-item-text sidebar-link">
+            <a href="./notebooks.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Accompanying Statistical Notebooks</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -184,7 +184,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Zenodo Search</span></h1>
+<h1 class="title">Accompanying Statistical Notebooks</h1>
 </div>
 
 
@@ -201,88 +201,133 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Searching in Zenodo is a logical ‘OR’ and not a logical ‘AND’. We have thus implemented a search option generating URL for an appropriate Zenodo search with <strong>javascript</strong>. Select the desired attributes and click the button to open an external Zenodo page.</p>
+<p>Each project in the <strong>gallery</strong> is represented by a clickable notebook that provides insights into methodologies applied to datasets from our <strong>Zenodo</strong> community on <a href="https://zenodo.org/communities/mardigmci/records?q=&amp;l=list&amp;p=1&amp;s=10">Graphical Modelling and Causal Inference</a>. These notebooks showcase baseline information about the underlying data, the analysis process, and the derived results. In addition to the notebooks, links to the Zenodo datasets, and the underlying GitHub repositories are provided for code transparency and reproducibility.</p>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>City Selector</title>
+    <title>Gallery with Links</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        .filter-container { display: flex; flex-wrap: wrap; gap: 20px; }
-        .filter-group { flex: 1 1 calc(50% - 20px); padding: 15px; border-radius: 8px; }
-        .city-list { list-style: none; padding: 0; }
-        .city-list li { margin: 10px 0; }
-        .task-group { background-color: #CCE8DB; }
-        .type-group { background-color: #C1D4E3; }
-        .scope-group { background-color: #BEB4D6; }
-        .truth-group { background-color: #FADAE2; }
-        .license-group { background-color: #F8B3CA; }
-        .missing-group { background-color: #CC97C1; }
-        .temporal-group { background-color: #CCE8DB; }
-        .filter-group h3 { margin-top: 5px; margin-bottom: 5px; font-size: 20px; }
-        .generate-btn { margin-top: 20px; padding: 10px 15px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; }
-        .generate-btn:hover { background-color: #45a049; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+        }
+        p {
+            text-align: left; /* Change text alignment to left */
+            max-width: 800px; /* Restrict paragraph width for readability */
+            margin: 0 auto; /* Center the paragraph block */
+        }
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px; /* Spacing between gallery items */
+            margin-top: 20px;
+        }
+        .gallery-item {
+            text-align: center;
+            max-width: 250px;
+            border: 2px solid black; /* Black border around each item */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Small shadow to give a 3D effect */
+            padding: 10px; /* Padding inside the item */
+            transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow when hovered */
+        }
+        .gallery-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .gallery-item:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow when hovered */
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Space between buttons */
+            margin-top: 10px;
+        }
+        .button {
+            padding: 8px 15px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            text-decoration: none; /* Remove underline */
+        }
+        .button.git {
+            background-color: #24292e; /* GitHub button color */
+        }
+        .button.zenodo {
+            background-color: #2f6fa7; /* Zenodo button color */
+        }
+        .button:hover {
+            opacity: 0.9;
+        }
     </style>
 
 
-    <div class="filter-container">
-        <div class="filter-group task-group">
-            <h3 class="anchored">Task</h3>
-            <ul class="city-list">
-                <li><input type="checkbox" id="a1" value="Causal Discovery"> Causal Discovery</li>
-                <li><input type="checkbox" id="a2" value="Causal Inference"> Causal Inference</li>
-            </ul>
+    <div class="gallery-container">
+        <!-- First Item -->
+        <div class="gallery-item">
+            <strong> Gaussian <br> Linear Model</strong>
+            <a href="./gallery/notebook1.html">
+                <img src="./images/R_GaussianLinear.png" alt="Stats Screenshot">
+            </a>
+            <div class="button-container">
+                <a href="https://github.com/MaRDI4NFDI/StMaRDI/tree/main" class="button git">Git</a>
+                <a href="https://zenodo.org/communities/mardigmci/records?q=&amp;l=list&amp;p=1&amp;s=10" class="button zenodo">Zenodo</a>
+            </div>
         </div>
-        <div class="filter-group type-group">
-            <h3 class="anchored">Data Type</h3>
-            <ul class="city-list">
-                <li><input type="checkbox" id="b1" value="Data Type: Continuous"> Continuous</li>
-                <li><input type="checkbox" id="b2" value="Data Type: Discrete"> Discrete</li>
-                <li><input type="checkbox" id="b3" value="Data Type: Mixed"> Mixed</li>
-                <li><input type="checkbox" id="b4" value="Data Type: Binary"> Binary</li>
-            </ul>
+        <!-- Second Item -->
+        <div class="gallery-item">
+            <strong>ALARM <br> Notebook</strong>
+            <a href="./gallery/notebook2.html">
+                <img src="./images/ALARM_Notebook.png" alt="Mardi Screenshot">
+            </a>
+            <div class="button-container">
+                <a href="https://github.com/MaRDI4NFDI/StMaRDI/blob/main/notebook_01_alarm_publish.Rmd" class="button git">Git</a>
+                <a href="https://zenodo.org/records/14793281" class="button zenodo">Zenodo</a>
+            </div>
         </div>
-        <div class="filter-group scope-group">
-            <h3 class="anchored">Dataset Scope</h3>
-            <ul class="city-list">
-                <li><input type="checkbox" id="c1" value="Collection"> Collection</li>
-                <li><input type="checkbox" id="c2" value="Standalone"> Standalone</li>
-            </ul>
+        <!-- Third Item -->
+        <div class="gallery-item">
+            <strong>ALARM Subgraph Notebook</strong>
+            <a href="./gallery/notebook3.html">
+                <img src="./images/ALARM_Subgraph_Notebook.png" alt="Zenodo Screenshot">
+            </a>
+            <div class="button-container">
+                <a href="https://github.com/MaRDI4NFDI/StMaRDI/blob/main/notebook_02_subgraph_selection_evaluation_publish.Rmd" class="button git">Git</a>
+                <a href="https://zenodo.org/records/14793281" class="button zenodo">Zenodo</a>
+            </div>
         </div>
-        <div class="filter-group truth-group">
-            <h3 class="anchored">Ground Truth</h3>
-            <ul class="city-list">
-                <li><input type="checkbox" id="d1" value="Known"> Known</li>
-                <li><input type="checkbox" id="d2" value="Partial"> Partial</li>
-                <li><input type="checkbox" id="d3" value="Unknown"> Unknown</li>
-            </ul>
+        <!-- Fourth Item -->
+        <div class="gallery-item">
+            <strong>Cause-Effect Pairs MPI Tuebingen</strong>
+            <a href="./gallery/notebook4.html">
+                <img src="./images/Cause_Effect_Tuebingen.png" alt="Portal Screenshot">
+            </a>
+            <div class="button-container">
+                <a href="https://github.com/MaRDI4NFDI/StMaRDI/blob/main/notebook_04_causal_benchmarking_prelim.Rmd" class="button git">Git</a>
+                <a href="https://zenodo.org/records/14747291" class="button zenodo">Zenodo</a>
+            </div>
         </div>
-        <div class="filter-group license-group">
-            <h3 class="anchored">License</h3>
-            <ul class="city-list">
-                <li><input type="checkbox" id="e1" value="Research Only"> Research Only</li>
-                <li><input type="checkbox" id="e2" value="Open"> Open</li>
-            </ul>
-        </div>
-        <div class="filter-group missing-group">
-            <h3 class="anchored">Missing Values</h3>
-            <ul class="city-list">
-                <li><input type="checkbox" id="f1" value="Yes"> Yes</li>
-                <li><input type="checkbox" id="f2" value="No"> No</li>
-            </ul>
-        </div>
-        <div class="filter-group temporal-group">
-            <h3 class="anchored">Temporal Structure</h3>
-            <ul class="city-list">
-                <li><input type="checkbox" id="g1" value="Static"> Static</li>
-                <li><input type="checkbox" id="g2" value="Time Series"> Time Series</li>
-            </ul>
+        <!-- Fifth Item -->
+        <div class="gallery-item">
+            <strong><br>online html</strong>
+            <a href="./gallery/notebook5.html">
+                <img src="./images/online_html.png" alt="Portal Screenshot">
+            </a>
+            <div class="button-container">
+                <a href="https://github.com/MaRDI4NFDI/StMaRDI/blob/main/website/GMCI_MaRDI/gallery/remote_notebook2.html" class="button git">Git</a>
+                <a href="https://zenodo.org/records/14793281" class="button zenodo">Zenodo</a>
+            </div>
         </div>
     </div>
-    <button class="generate-btn">Generate URL</button>
-    <script src="assets/js/generateURL.js"></script>
 
-<p>The search function is currently not working as planned. E.g. “Missing = Yes” does not return the correct</p>
 
 
 
@@ -709,13 +754,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="About">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">About</span>
+      <a href="./custom_online_data_search.html" class="pagination-link" aria-label="Custom Online Data Extraction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Custom Online Data Extraction</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./summary.html" class="pagination-link" aria-label="Custom Online Data Extraction">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Custom Online Data Extraction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./gallery/notebook1.html" class="pagination-link" aria-label="Gaussian Linear Model">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Gaussian Linear Model</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

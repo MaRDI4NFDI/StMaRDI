@@ -1,6 +1,6 @@
 # Zenodo Search
 
-Searching in Zenodo is a logical ‘OR’ and not a logical ‘AND’. We have thus implemented a search option generating URL for an appropriate Zenodo search with **javascript**. Select the desired attributes and click the button to open an external Zenodo page.
+Searching in Zenodo is a logical *OR* and not a logical *AND*. To search through the datasets in our Zenodo community [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10) with a logical *AND*, select the desired attributes and click the button. This will generate and open an external Zenodo search page.
 
 ```{=html}
 <head>
@@ -10,19 +10,20 @@ Searching in Zenodo is a logical ‘OR’ and not a logical ‘AND’. We have t
     <style>
         body { font-family: Arial, sans-serif; }
         .filter-container { display: flex; flex-wrap: wrap; gap: 20px; }
-        .filter-group { flex: 1 1 calc(50% - 20px); padding: 15px; border-radius: 8px; }
+        .filter-group { flex: 1 1 calc(50% - 20px); padding: 15px; border-radius: 8px; box-sizing: border-box;}
         .city-list { list-style: none; padding: 0; }
         .city-list li { margin: 10px 0; }
-        .task-group { background-color: #CCE8DB; }
-        .type-group { background-color: #C1D4E3; }
-        .scope-group { background-color: #BEB4D6; }
-        .truth-group { background-color: #FADAE2; }
-        .license-group { background-color: #F8B3CA; }
-        .missing-group { background-color: #CC97C1; }
-        .temporal-group { background-color: #CCE8DB; }
+        .task-group { background-color: #ECF4FD; }
+        .type-group { background-color: #EFFAEB; }
+        .scope-group { background-color: #EFFAEB; }
+        .truth-group { background-color: #ECF4FD; }
+        .license-group { background-color: #ECF4FD; }
+        .missing-group { background-color: #EFFAEB; }
+        .temporal-group { background-color: #EFFAEB; }
         .filter-group h3 { margin-top: 5px; margin-bottom: 5px; font-size: 20px; }
         .generate-btn { margin-top: 20px; padding: 10px 15px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer; }
         .generate-btn:hover { background-color: #45a049; }
+        .filter-container > .filter-group:nth-child(odd) {flex: 1 1 calc(50% - 10px); }
     </style>
 </head>
 <body>
