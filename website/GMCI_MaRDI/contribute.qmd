@@ -1,0 +1,17 @@
+# Contributing to the Community
+
+There are currently two options to contribute to the community G*raphical Modelling and Causal Inference*. For both options, a dataset (respectively dataset collection) or a notebook, an item on Zenodo has to be created and submitted to the community. The submissions are required to be topically related to the community. The community moderators @TUM process each submission, create the necessary embedding links, potentially request revisions, and assist with any questions. There are no associated costs.
+
+## Advantages of the Community
+
+Central instruments of [FAIR](https://fairsharing.org/) research are providing open data access to researchers and transparently communicating design decisions in a findable and well-structured place. The [Zenodo](https://zenodo.org/) platform hosted by CERN provides a long-term storage solution with unique digital object identifiers (DOIs).
+
+## Submitting on Zenodo
+
+## Guidelines and Format
+
+Guidelines:
+
+-   How to contribute.
+
+-   Fixed structure.

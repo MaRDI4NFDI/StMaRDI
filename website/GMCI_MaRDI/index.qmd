@@ -1,8 +1,12 @@
 # About {.unnumbered}
 
-Within MaRDI, we aim to create a platform and public service to support and foster mathematical research. This comprises the development of good research practices, providing tools for establishing interconnections of research via unique digital tokens, and creating databases for immediate access to key resources of the mathematical research community.
+-   **MaRDI**, the [Mathematical Research Data Initiative](https://www.mardi4nfdi.de/about/mission), is a group of German scientists funded by NFDI working on creating and establishing data culture standards and public services to foster mathematical research. This comprises the development of good research practices, providing tools for establishing interconnections of research via unique digital tokens, and creating databases for immediate access to key resources of the mathematical research community. Mathematical objects range from theorems over algorithms to data analyses affected by uncertainty. Our experts have a background in computer algebra, scientific computing, statistics, and machine learning. Specifically, the [MaRDI Portal](https://portal.mardi4nfdi.de/wiki/Portal) combines and structures the information of the mathematical landscape in a relational data base. Multiple subprojects organized via task areas assist with interfaces and extend relevant subdomains. More information can be found on the [NFDI Website](https://www.nfdi.de/mardi/?lang=en).
 
-We host the **Zenodo** community [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10). On this platform, we curate and present topical datasets and metadata. Exemplary statistical notebooks showcase advances in methodology and present new applications. The community supports content-moderation by our TA, and we will encourage and solicit submissions of datasets and notebooks by researchers from the broader academic community.
+-   **MaRDI TA3** is a group of statisticians from [LMU](https://www.slds.stat.uni-muenchen.de/people/bischl/), [TUM](https://www.math.cit.tum.de/math/personen/professuren/drton-mathias/), and [WIAS](https://www.wias-berlin.de/research/rgs/fg6/). With their background in algebraic statistics and graphical modeling, the research group at TUM is managing the Zenodo community (see below) and established this website as a supporting tool.
+
+-   **Graphical Modelling and Causal Inference** is a [Zenodo community](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10) where curated topical datasets and metadata are presented. Exemplary statistical notebooks showcase advances in methodology and present new applications. The community supports content moderation from TA3. We (TA3) encourage and solicit submissions of datasets and notebooks by researchers from the broader academic community.
+
+-   **Contact**: <https://portal.mardi4nfdi.de/wiki/Portal/TA3>
 
 ```{=html}
 <center>

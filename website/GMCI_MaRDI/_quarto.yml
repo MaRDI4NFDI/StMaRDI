@@ -4,7 +4,7 @@ project:
 book:
   title: "Graphical Modelling and Causal Inference"
   author: "MaRDI@TUM"
-  date: "2/4/2025"
+  date: "2/13/2025"
   chapters:
     - index.qmd
     - zenodo_search.qmd
@@ -16,6 +16,7 @@ book:
         - gallery/notebook3.qmd
         - gallery/notebook4.qmd
         - gallery/notebook5.qmd
+    - contribute.qmd
     - references.qmd
 
 bibliography: references.bib
