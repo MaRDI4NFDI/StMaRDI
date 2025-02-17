@@ -4,67 +4,107 @@ Each project in the **gallery** is represented by a clickable notebook that prov
 
 ```{=html}
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery with Links</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: left;
-        }
-        p {
-            text-align: left; /* Change text alignment to left */
-            max-width: 800px; /* Restrict paragraph width for readability */
-            margin: 0 auto; /* Center the paragraph block */
-        }
-        .gallery-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 40px; /* Spacing between gallery items */
-            margin-top: 20px;
-        }
-        .gallery-item {
-            text-align: center;
-            max-width: 250px;
-            border: 2px solid black; /* Black border around each item */
-            border-radius: 8px; /* Rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Small shadow to give a 3D effect */
-            padding: 10px; /* Padding inside the item */
-            transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow when hovered */
-        }
-        .gallery-item img {
-            width: 200px;
-            height: 200px;
-            object-fit: contain;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-        }
-        .gallery-item:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow when hovered */
-        }
-        .button-container {
-            display: flex;
-            justify-content: center;
-            gap: 10px; /* Space between buttons */
-            margin-top: 10px;
-        }
-        .button {
-            padding: 8px 15px;
-            text-align: center;
-            font-size: 14px;
-            font-weight: bold;
-            border-radius: 5px;
-            cursor: pointer;
-            color: white;
-            text-decoration: none; /* Remove underline */
-        }
-        .button.git {
-            background-color: #24292e; /* GitHub button color */
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery with Links</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+p {
+  text-align: left; /* Change text alignment to left */
+  max-width: 800px; /* Restrict paragraph width for readability */
+  margin: 0 auto; /* Center the paragraph block */
+}
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Spacing between gallery items */
+  max-width: 100%;
+  padding: 20px;
+}
+.gallery-item {
+  text-align: center;
+  max-width: 250px;
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+  border: 2px solid black; /* Black border around each item */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Small shadow to give a 3D effect */
+  padding: 10px; /* Padding inside the item */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow when hovered */
+}
+.gallery-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.gallery-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow when hovered */
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between buttons */
+  margin-top: 10px;
+}
+.button {
+  padding: 8px 15px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none; /* Remove underline */
+}
+.button.git {
+  background-color: #24292e; /* GitHub button color */
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+}
         .button.zenodo {
             background-color: #2f6fa7; /* Zenodo button color */
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-decoration: none;
         }
+        .doi-badge {
+        display: inline-flex;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 4px;
+        overflow: hidden;
+        max-width: 100%; /* Prevents it from overflowing */
+        white-space: nowrap; /* Ensures it stays in one line */
+    }
+    .doi-label {
+        background-color: #5b5b5b;
+        color: white;
+        padding: 4px 6px;
+    }
+    .doi-link {
+        background-color: #1F81C2;
+        color: white;
+        padding: 4px 8px;
+    }
+
         .button:hover {
             opacity: 0.9;
         }
@@ -79,9 +119,12 @@ Each project in the **gallery** is represented by a clickable notebook that prov
                 <img src="/images/R_GaussianLinear.png" alt="Stats Screenshot">
             </a>
             <div class="button-container">
-                <a href="https://github.com/MaRDI4NFDI/StMaRDI/tree/main" class="button git">Git</a>
-                <a href="https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10" class="button zenodo">Zenodo</a>
+                <a href="https://github.com/MaRDI4NFDI/StMaRDI/tree/main" class="button git">Git                 </a>
             </div>
+            <a href="https://doi.org/10.5281/zenodo.10625451" class="doi-badge">
+              <span class="doi-label">DOI</span>
+              <span class="doi-link">10.5281/zenodo.10625451</span>
+            </a>
         </div>
         <!-- Second Item -->
         <div class="gallery-item">
@@ -91,8 +134,11 @@ Each project in the **gallery** is represented by a clickable notebook that prov
             </a>
             <div class="button-container">
                 <a href="https://github.com/MaRDI4NFDI/StMaRDI/blob/main/notebook_01_alarm_publish.Rmd" class="button git">Git</a>
-                <a href="https://zenodo.org/records/14793281" class="button zenodo">Zenodo</a>
             </div>
+            <a href="https://doi.org/10.5281/zenodo.10625451" class="doi-badge">
+              <span class="doi-label">DOI</span>
+              <span class="doi-link">10.5281/zenodo.10625451</span>
+            </a>
         </div>
         <!-- Third Item -->
         <div class="gallery-item">
@@ -102,8 +148,11 @@ Each project in the **gallery** is represented by a clickable notebook that prov
             </a>
             <div class="button-container">
                 <a href="https://github.com/MaRDI4NFDI/StMaRDI/blob/main/notebook_02_subgraph_selection_evaluation_publish.Rmd" class="button git">Git</a>
-                <a href="https://zenodo.org/records/14793281" class="button zenodo">Zenodo</a>
             </div>
+            <a href="https://doi.org/10.5281/zenodo.10625451" class="doi-badge">
+              <span class="doi-label">DOI</span>
+              <span class="doi-link">10.5281/zenodo.10625451</span>
+            </a>
         </div>
         <!-- Fourth Item -->
         <div class="gallery-item">
@@ -113,8 +162,11 @@ Each project in the **gallery** is represented by a clickable notebook that prov
             </a>
             <div class="button-container">
                 <a href="https://github.com/MaRDI4NFDI/StMaRDI/blob/main/notebook_04_causal_benchmarking_prelim.Rmd" class="button git">Git</a>
-                <a href="https://zenodo.org/records/14747291" class="button zenodo">Zenodo</a>
             </div>
+            <a href="https://doi.org/10.5281/zenodo.10625451" class="doi-badge">
+              <span class="doi-label">DOI</span>
+              <span class="doi-link">10.5281/zenodo.10625451</span>
+            </a>
         </div>
         <!-- Fifth Item -->
         <div class="gallery-item">
@@ -124,8 +176,11 @@ Each project in the **gallery** is represented by a clickable notebook that prov
             </a>
             <div class="button-container">
                 <a href="https://github.com/MaRDI4NFDI/StMaRDI/blob/main/website/GMCI_MaRDI/gallery/remote_notebook2.html" class="button git">Git</a>
-                <a href="https://zenodo.org/records/14793281" class="button zenodo">Zenodo</a>
             </div>
+            <a href="https://doi.org/10.5281/zenodo.10625451" class="doi-badge">
+              <span class="doi-label">DOI</span>
+              <span class="doi-link">10.5281/zenodo.10625451</span>
+            </a>
         </div>
     </div>
 </body>
