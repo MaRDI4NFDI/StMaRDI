@@ -12,7 +12,7 @@ There are a lot of important areas for **Graphical Modelling and Causal Inferenc
 -   policies impact market behavior
 
 | Source | License | Data Provided |
-|-----------------|---------------------------------------|-----------------|
+|----|----|----|
 | [World Bank Open Data](https://data.worldbank.org/) | CC BY 4.0 ([License](https://datacatalog.worldbank.org/public-licenses)) | Time Series Data, Performance Indicators |
 | [OECD Data](https://www.oecd.org/en/data.html) | CC BY 4.0 ([License](https://www.oecd.org/en/about/terms-conditions.html)) | Consumer Price Indices, Institutional Investors' Indicators |
 | [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/) | Non-commercial ([License](https://fred.stlouisfed.org/legal/)) | Economic data series on banking, business, consumer and producer price indices, employment, population, exchange rates, GDP, interest rates, trade, and U.S. financial data. |
@@ -28,7 +28,7 @@ There are a lot of important areas for **Graphical Modelling and Causal Inferenc
 -   Immigration policies shape public attitudes
 
 | Source | License | Data Provided |
-|------------------|------------------------------------|-------------------|
+|----|----|----|
 | [General Social Survey (GSS)](https://gss.norc.org/) | Purchase required ([License](https://gss.norc.org/content/dam/gss/get-documentation/pdf/other/ObtainingGSSSensitiveDataFiles.pdf)) | Health, marriage, family, work conditions |
 | [Pew Research Data](https://www.pewresearch.org/tools-and-resources/) | Nonexclusive, non-sublicensable, non-transferable, revocable, worldwide, royalty-free ([License](https://www.pewresearch.org/about/terms-and-conditions/)) | Politics, immigration, religion, technology |
 | [European Social Survey (ESS)](https://www.europeansocialsurvey.org/data-portal) | CC BY-NC-SA 4.0 ([License](https://www.europeansocialsurvey.org/contact/disclaimer)) | Public attitudes, beliefs and behavior |

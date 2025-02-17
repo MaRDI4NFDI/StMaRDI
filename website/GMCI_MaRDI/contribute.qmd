@@ -8,20 +8,26 @@ Central instruments of [FAIR](https://fairsharing.org/) research are providing o
 
 ## Submitting on Zenodo
 
-After logging into Zenodo via GitHub, ORCID, OpenAIRE, or a new account, \[Step 1\] click on the '+' to create a new record and \[Step 2\] select the [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci) community. \[Step 3\] Upload the desired files and give as much additional information as possible in the cells below. For the community-specific requirements, see below. After publishing, the moderators are informed and will check the submission. Note that the created record and data cannot be deleted except under special circumstances.
+After logging into Zenodo via GitHub, ORCID, OpenAIRE, or a new account, you can create and submit a
+
+-   dataset or dataset collection, or a
+
+-   code base with a showcasing notebook
+
+to the community. We provide instructions below, but we also require a certain format. After submitting, the moderators are informed and will check the submission. Please give as much additional information as possible to the Zenodo object. Note that the created record and data cannot be deleted except under special circumstances.
 
 ```{r, include=FALSE}
 #make a statement about who can alter the record after publishing - is it still the owner or is it the community?
 ```
 
-![Three steps to create a record on Zenodo.](images/zenodo_upload.png){alt="GMCI Logo"}
-
-## Guidelines and Format
-
 For both notebooks and datasets, respectively dataset collections, we require a specific structure of the Zenodo record.
 
-:::: {.callout-tip collapse="TRUE" title="Datasets" icon="false"}
-For datasets and dataset collections, we require the 'description' of the Zenodo to have the following format:
+:::: {.callout-tip collapse="true" title="Datasets" icon="false"}
+To upload a dataset or dataset collection, \[Step 1\] click on the '+' to create a new record and \[Step 2\] select the [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci) community. \[Step 3\] Upload the desired files and give as much additional information as possible in the cells below.
+
+![Three steps to create a record on Zenodo.](images/zenodo_upload.png){alt="GMCI Logo"}
+
+Please upload a dataset as a .csv file and a collection of datset as a .zip file. If applicable, auxiliary files (graph, ground truth, license, extended description) should be up uploaded as separate files. We require the 'description' of the Zenodo to have the following format:
 
 ::: {style="color: gray; margin-left: 1cm;"}
 *A description of the dataset/dataset collection.*
@@ -80,20 +86,16 @@ For datasets and dataset collections, we require the 'description' of the Zenodo
 
 -   ***File2:** License2*
 :::
-
-*A description of the dataset/dataset collection.*
 ::::
 
-::: {.callout-note collapse="TRUE" title="Notebooks" icon="false"}
-For notebooks, create a git repository and [connected it with Zenodo](https://zenodo.org/account/settings/github/) as shown in the picture below.
+::: {.callout-note collapse="true" title="Notebooks" icon="false"}
+For notebooks, create a git repository with (1) the code, and (2) the notebook's rendered .html file. Then, [connected the repository with Zenodo](https://zenodo.org/account/settings/github/) as shown in the picture below.
 
-![See <https://zenodo.org/account/settings/github/>.](images/zenodo_git_integration-01.png)
+![Source: <https://zenodo.org/account/settings/github/>](images/zenodo_git_integration-01.png)
 
-We showcase the notebooks on this website's gallery of [Accompanying Statistical Notebooks](notebooks.qmd). For this,
+This will automatically create a record along with a unique DOI. This DOI will forward you to the Zenodo record, which you can submit it to the [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10) community by editing the record's page. Although the record's description is taken from the git release, the records meta-information can be edited manually afterwards, e.g., referencing a publication, linking the associated Zenodo dataset or specifying an R package.
 
--   either have a rendered .html of the notebook on the git and provide the path when submitting the entry to our community, or
+We showcase the rendered notebooks on this website's gallery of [Accompanying Statistical Notebooks](notebooks.qmd). For this, please specify the path toward the .html in the submission text.
 
--   have the notebook in the git as an .rmd file which can render on its own. Provide the path when submitting.
-
-Please contact us when publishing a new release of the git repository. This will automatically trigger a new Zenodo version of the record. This website, however, will not be rendered automatically but manually by the MaRDI TA3 team. Note that the record on Zenodo, as a copy of the git, is permanent.
+Please contact us when publishing a new release of the git repository. This will automatically trigger a new Zenodo version of the record. This website, however, will not be rendered automatically but manually by the MaRDI TA3 team. Note that the record on Zenodo, as a copy of the git, is permanent and previous record versions, respectively git releases, can still be accessed.
 :::
