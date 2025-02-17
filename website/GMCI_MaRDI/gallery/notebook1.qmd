@@ -1,4 +1,4 @@
-## Gaussian Linear Model
+## Gaussian Model
 
 Random plotting of a linear Gaussian model
 

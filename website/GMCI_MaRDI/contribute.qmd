@@ -1,17 +1,99 @@
 # Contributing to the Community
 
-There are currently two options to contribute to the community G*raphical Modelling and Causal Inference*. For both options, a dataset (respectively dataset collection) or a notebook, an item on Zenodo has to be created and submitted to the community. The submissions are required to be topically related to the community. The community moderators @TUM process each submission, create the necessary embedding links, potentially request revisions, and assist with any questions. There are no associated costs.
+There are currently two options to contribute to the Zenodo community [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10). For both options, a dataset (respectively dataset collection) or a notebook, a record on Zenodo has to be created and submitted to the community. The submissions are required to be topically related to the community. The [community moderators](index.qmd) process each submission, create the necessary embedding links, potentially request revisions, and assist with any questions. All submissions must align with the community's scope. There are no associated costs.
 
 ## Advantages of the Community
 
-Central instruments of [FAIR](https://fairsharing.org/) research are providing open data access to researchers and transparently communicating design decisions in a findable and well-structured place. The [Zenodo](https://zenodo.org/) platform hosted by CERN provides a long-term storage solution with unique digital object identifiers (DOIs).
+Central instruments of [FAIR](https://fairsharing.org/) research are providing open data access to researchers and transparently communicating design decisions via metadata in a findable and well-structured place. The [Zenodo](https://zenodo.org/) platform hosted by CERN provides a long-term storage solution with unique digital object identifiers (DOIs), which can be referred to in publications. Uploading datasets and notebooks after publication is possible, and metadata (e.g., descriptions, licenses, references, etc.) can also be changed after the initial record creation. Other topical researchers have the advantage of freely accessing the portal, discovering and [searching curated datasets](custom_online_data_search.qmd), [browsing through methodological notebooks](notebooks.qmd) to reproduce existing literature, and extend their own work.
 
 ## Submitting on Zenodo
 
+After logging into Zenodo via GitHub, ORCID, OpenAIRE, or a new account, \[Step 1\] click on the '+' to create a new record and \[Step 2\] select the [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci) community. \[Step 3\] Upload the desired files and give as much additional information as possible in the cells below. For the community-specific requirements, see below. After publishing, the moderators are informed and will check the submission. Note that the created record and data cannot be deleted except under special circumstances.
+
+```{r, include=FALSE}
+#make a statement about who can alter the record after publishing - is it still the owner or is it the community?
+```
+
+![Three steps to create a record on Zenodo.](images/zenodo_upload.png){alt="GMCI Logo"}
+
 ## Guidelines and Format
 
-Guidelines:
+For both notebooks and datasets, respectively dataset collections, we require a specific structure of the Zenodo record.
 
--   How to contribute.
+:::: {.callout-tip collapse="TRUE" title="Datasets" icon="false"}
+For datasets and dataset collections, we require the 'description' of the Zenodo to have the following format:
 
--   Fixed structure.
+::: {style="color: gray; margin-left: 1cm;"}
+*A description of the dataset/dataset collection.*
+
+*\# always two blank rows between information blocks*
+
+**Task:** *A description of the Task.*
+
+**Summary:**
+
+-   **Size of dataset:** *Nr. of samples* x *Nr. of dimensions*
+
+-   **Task:** Causal *Discovery Problem / Causal Inference Problem*
+
+-   **Data Type:** *Continuous Data / Mixed Data / Discrete Data / Binary Data / Categorical Data*
+
+-   **Dataset Scope:** *Collection of Datasets / Standalone Dataset*
+
+-   **Ground Truth:** *Known Graph / Partial Graph / Unknown Graph*
+
+-   **Temporal Structure:** Static Data / Time Series Data
+
+-   **License:** CC0 / CC BY / CC BY-NC / ...
+
+-   **Missing Values:** Existing Missing Values / No Missing Values
+
+**Missingness Statement:** *Missingness Statement, if applicable.*
+
+**Collection:** *\# If applicable.*
+
+-   **Dataset1:** Description Dataset1
+
+-   **Dataset2:** Description Dataset2
+
+-   ...
+
+**Features:**
+
+-   ***Feature1:** Description Feature1*
+
+-   ***Feature2:** Description Feature2*
+
+-   ...
+
+**Files:**
+
+-   ***File1**: Description File1*
+
+-   ***File2:** Description File2*
+
+-   ...
+
+**License:** *\# If applicable. Please indicate the main license (dataset, not of supporting material) above*
+
+-   ***File1:** License1*
+
+-   ***File2:** License2*
+:::
+
+*A description of the dataset/dataset collection.*
+::::
+
+::: {.callout-note collapse="TRUE" title="Notebooks" icon="false"}
+For notebooks, create a git repository and [connected it with Zenodo](https://zenodo.org/account/settings/github/) as shown in the picture below.
+
+![See <https://zenodo.org/account/settings/github/>.](images/zenodo_git_integration-01.png)
+
+We showcase the notebooks on this website's gallery of [Accompanying Statistical Notebooks](notebooks.qmd). For this,
+
+-   either have a rendered .html of the notebook on the git and provide the path when submitting the entry to our community, or
+
+-   have the notebook in the git as an .rmd file which can render on its own. Provide the path when submitting.
+
+Please contact us when publishing a new release of the git repository. This will automatically trigger a new Zenodo version of the record. This website, however, will not be rendered automatically but manually by the MaRDI TA3 team. Note that the record on Zenodo, as a copy of the git, is permanent.
+:::

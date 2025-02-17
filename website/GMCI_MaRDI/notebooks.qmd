@@ -74,7 +74,7 @@ Each project in the **gallery** is represented by a clickable notebook that prov
     <div class="gallery-container">
         <!-- First Item -->
         <div class="gallery-item">
-            <strong> Gaussian <br> Linear Model</strong>
+            <strong> Gaussian <br> Model</strong>
             <a href="gallery/notebook1.qmd">
                 <img src="/images/R_GaussianLinear.png" alt="Stats Screenshot">
             </a>

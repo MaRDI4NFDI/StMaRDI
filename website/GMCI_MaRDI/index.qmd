@@ -4,7 +4,7 @@
 
 -   **MaRDI TA3** is a group of statisticians from [LMU](https://www.slds.stat.uni-muenchen.de/people/bischl/), [TUM](https://www.math.cit.tum.de/math/personen/professuren/drton-mathias/), and [WIAS](https://www.wias-berlin.de/research/rgs/fg6/). With their background in algebraic statistics and graphical modeling, the research group at TUM is managing the Zenodo community (see below) and established this website as a supporting tool.
 
--   **Graphical Modelling and Causal Inference** is a [Zenodo community](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10) where curated topical datasets and metadata are presented. Exemplary statistical notebooks showcase advances in methodology and present new applications. The community supports content moderation from TA3. We (TA3) encourage and solicit submissions of datasets and notebooks by researchers from the broader academic community.
+-   **Graphical Modelling and Causal Inference** is a [Zenodo community](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10) where curated topical datasets and metadata are presented. Exemplary statistical notebooks showcase advances in methodology and present new applications. The community supports content moderation from TA3. We (TA3) encourage and solicit submissions of datasets and notebooks by researchers from the broader academic community. For information about contributing, see [Chapter 8](contribute.qmd).
 
 -   **Contact**: <https://portal.mardi4nfdi.de/wiki/Portal/TA3>
 
