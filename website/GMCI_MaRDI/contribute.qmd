@@ -8,7 +8,7 @@ Central instruments of [FAIR](https://fairsharing.org/) research are providing o
 
 ## Submitting on Zenodo
 
-After logging into Zenodo via GitHub, ORCID, OpenAIRE, or a new account, you can create and submit a
+After logging into [Zenodo](https://zenodo.org/) via GitHub, ORCID, OpenAIRE, or a new account, you can create and submit a
 
 -   dataset or dataset collection, or a
 
