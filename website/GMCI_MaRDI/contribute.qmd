@@ -102,6 +102,10 @@ Please contact us when publishing a new release of the git repository. This will
 
 ## Suitable Publications for Contribution
 
+```{=html}
+<span style="color: green;"><i>Before publishing this website, we will share the git folder StMaRDI/website/GMCI_MaRDI/_book/ with potential collaborators to distribution the necessary information. Opening .../index.html will allow them to run the website locally.</i></span>
+```
+
 ::: {.callout-tip collapse="true" title="Publications and Author Details" icon="false"}
 Personal Connections:
 
@@ -110,7 +114,7 @@ Personal Connections:
 +-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
 | Contact                                                               | Paper                                                                                                                                                                                                                                                                                  | Status                                         |
 +=======================================================================+========================================================================================================================================================================================================================================================================================+================================================+
-| K. Goebler ([Mail]( KONSTANTIN.GOEBLER@TUM.DE))                       | [CausalAssembly](https://proceedings.mlr.press/v236/gobler24a.html)                                                                                                                                                                                                                    | ```{=html}                                     |
+| [K. Goebler](KONSTANTIN.GOEBLER@TUM.DE)                               | [CausalAssembly](https://proceedings.mlr.press/v236/gobler24a.html)                                                                                                                                                                                                                    | ```{=html}                                     |
 |                                                                       |                                                                                                                                                                                                                                                                                        | <span style="color: orange;">to contact</span> |
 |                                                                       |                                                                                                                                                                                                                                                                                        | ```                                            |
 +-----------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
