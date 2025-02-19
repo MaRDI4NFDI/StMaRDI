@@ -4,7 +4,26 @@ There are a lot of important areas for **Graphical Modelling and Causal Inferenc
 
 ------------------------------------------------------------------------
 
-::: {.callout-tip collapse="false" title="Economic & Financial Data" icon="false"}
+::: {.callout-note collapse="false" title="Health Data" icon="false"}
+**Examples for causal relationships:**
+
+-   Sugar consumption on diabetes risk
+
+-   Genetic predisposition to obesity on cardiovascular disease
+
+-   Early administration of vasopressors might improve survival rates in ICU patients with septic shock
+
+| Source | License | Data Provided |
+|----|----|----|
+| [MIMIC-IV](https://physionet.org/content/mimiciv/2.2/) (see also [PhysionNet](https://physionet.org/)) | Credential Health Data License 1.5.0 (training required; [License](https://physionet.org/content/mimiciv/view-license/2.2/)) | Critical care data for over 40,000 patients admitted to intensive care units at the Beth Israel Deaconess Medical Center. |
+| [National Health and Nutrition Examination Survey](https://wwwn.cdc.gov/nchs/nhanes/default.aspx) | Statistical reporting and analysis only ([License](https://www.cdc.gov/nchs/policy/data-user-agreement.html)) | Health of 5,000 adults and children in the US: food, drinks, supplements, nutrients, blood tests. |
+| [UK Biobank](https://www.ukbiobank.ac.uk/) | Need application and ethics approval ([License](https://www.ukbiobank.ac.uk/media/hbonv55a/code-of-conduct-ukbb-nov-2020.pdf)) | [Genetic and health information from half a million UK participants](https://www.ukbiobank.ac.uk/enable-your-research/about-our-data): Imaging, Genetics, Health linkages, Biomarkers, Activity monitor, Questionnaires, Blood samples |
+| Cardiology: [MIT-BIH Arrhythmia Database](https://www.physionet.org/content/mitdb/1.0.0/) (see also [PhysionNet](https://physionet.org/)) | ODC-By ([License](https://www.physionet.org/content/mitdb/view-license/1.0.0/)) | 48 half-hour excerpts of two-channel ambulatory ECG recordings, obtained from 47 subjects. |
+| Neurology: [OpenNEURO](https://openneuro.org/) | CCO ([License](https://docs.openneuro.org/faq)) | MRI, PET, EEG, iEEG, MEG [datasets](https://openneuro.org/search) |
+| Epidemiology: JH [Coronavirus Resource Center](https://coronavirus.jhu.edu/) | CC BY 4.0 ([License](https://github.com/CSSEGISandData/COVID-19)) | Global COVID-19 case counts, deaths, and recoveries at the country and state/province level, updated throughout the pandemic |
+:::
+
+::: {.callout-tip collapse="true" title="Economic & Financial Data" icon="false"}
 **Examples for causal relationships:**
 
 -   inflation affects employment
@@ -96,65 +115,7 @@ There are a lot of important areas for **Graphical Modelling and Causal Inferenc
 | [U.S. Energy Information Administration (EIA)](https://www.eia.gov/) | CC0, CC BY, custom ([Individual licenses](https://atlas.eia.gov/search?tags=energy)) | Power plants, biofuels, natural gas storage, HGL pipelines, geothermal potential |
 :::
 
-::: {.callout-note collapse="true" title="Transportation & Mobility Data" icon="false"}
-Causal analysis in urban planning, traffic patterns, and logistics is crucial for optimizing transport systems.
-
-**Possible datasets:**
-
--   Public transportation ridership data
-
--   Road traffic and accident reports
-
--   Flight delays and logistics performance
-
-**Example sources:**
-
--   [U.S. Department of Transportation Open Data](https://data.transportation.gov/)
-
--   [NYC Open Data (Taxi & Traffic Data)](https://data.cityofnewyork.us/Transportation/Taxi/mch6-rqy4)
-
--   [OpenStreetMap Traffic Data](https://www.openstreetmap.org/)
-:::
-
-::: {.callout-tip collapse="true" title="Education Data" icon="false"}
-Educational outcomes are often influenced by multiple factors (socioeconomic status, school policies, etc.), making them ideal for causal modeling.
-
-**Possible datasets:**
-
--   Student performance and test scores
-
--   School funding and academic achievement
-
--   Higher education statistics
-
-**Example sources:**
-
--   [National Center for Education Statistics (NCES)](https://nces.ed.gov/)
-
--   [OECD Education at a Glance](https://www.oecd.org/en/publications/education-at-a-glance-2024_c00cad36-en.html)
-:::
-
-::: {.callout-note collapse="true" title="Crime Data" icon="false"}
-Understanding the causal effects of policies, policing, and social factors on crime rates is crucial.
-
-**Possible datasets:**
-
--   Crime rates and law enforcement reports
-
--   Prison population statistics
-
--   Impact of social programs on crime reduction
-
-**Example sources:**
-
--   [FBI Crime Data Explorer](https://cde.ucr.cjis.gov/)
-
--   [Bureau of Justice Statistics (BJS)](https://bjs.ojp.gov/)
-
--   [UK Crime Data](https://data.police.uk/)
-:::
-
-::: {.callout-tip collapse="true" title="Further Categories" icon="false"}
+::: {.callout-note collapse="true" title="Further Categories" icon="false"}
 Also consider the following categories:
 
 -   Gene expression data
@@ -173,5 +134,9 @@ Also consider the following categories:
 
 -   Sensor-based datasets
 
--   Transportation and mobility
+-   Transportation and mobility: ([U.S. Department of Transportation Open Data](https://data.transportation.gov/), [NYC Open Data (Taxi & Traffic Data)](https://data.cityofnewyork.us/Transportation/Taxi/mch6-rqy4), [OpenStreetMap Traffic Data](https://www.openstreetmap.org/))
+
+-   Education data: ([National Center for Education Statistics (NCES)](https://nces.ed.gov/), [OECD Education at a Glance](https://www.oecd.org/en/publications/education-at-a-glance-2024_c00cad36-en.html))
+
+-   Crime data: ([FBI Crime Data Explorer](https://cde.ucr.cjis.gov/), [Bureau of Justice Statistics (BJS)](https://bjs.ojp.gov/), [UK Crime Data](https://data.police.uk/))
 :::
