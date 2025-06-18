@@ -1,0 +1,27 @@
+project:
+  type: book
+
+book:
+  title: "Graphical Modelling and Causal Inference"
+  author: "MaRDI@TUM"
+  date: "2/13/2025"
+  chapters:
+    - index.qmd
+    - part: notebooks.qmd
+      chapters: 
+        - gallery/notebook2.qmd
+        - gallery/notebook3.qmd
+        - gallery/notebook4.qmd
+    - contribute.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    documentclass: scrreprt
+    cover-image: cover.png
+    grid: 
+      margin-width: 0px
+      gutter-width: 2rem
