@@ -6,6 +6,7 @@ StMaRDI.Rproj
 
 *.tex
 *.pdf
+.DS_Store
 
 _book
 
