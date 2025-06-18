@@ -9,17 +9,28 @@ the data represented here is a growing database with different data for testing 
 
 Note that not always the first column is the cause and the second the effect. This is indicated in a meta-data file. There is also a weighting factor suggested for some pairs which are very similar if you want to calculate the overall performance.
 
-***Setup of the problem*** We have 89 datasets with variables $Var1, Var2$. The goal is to establish
+
+
+::: {.callout-tip  icon=false}
+
+## Task
+
+We have 89 datasets with variables $Var1, Var2$. The goal is to establish
+
+
+:::
+
+We begin by loading the necessary packages required to complete the task at hand.
 
 ```{r}
-### loading packages
-library("liver")
+
+#library("liver")
 library("qgraph")
 library("igraph")
 library("bnlearn")
 library("dplyr")
 
-list_of_datasets <- readr::read_csv("whitelist.csv")
+list_of_datasets <- readr::read_csv("data/whitelist.csv")
 
 ```
 
@@ -149,8 +160,7 @@ for (i in setdiff(whitelist$whitelist,drop_f)) {
 
 [1] Pfister, N, and Peter, J,. Independence Testing via Hilbert Schmidt Independence Criterion. <https://doi.org/10.1111/rssb.12235>
 
-[2] <https://vulstats.ucsd.edu/chi-squared.html>
 
-[3] A. Gretton, K. Fukumizu, C. H. Teo, L. Song, B. Sch''olkopf, and A. Smola. A kernel statistical test of independence. In Advances in Neural Information Processing Systems 20 (NIPS), 2008. SBN: 978-1-60560-949-2
+[2] A. Gretton, K. Fukumizu, C. H. Teo, L. Song, B. Sch''olkopf, and A. Smola. A kernel statistical test of independence. In Advances in Neural Information Processing Systems 20 (NIPS), 2008. SBN: 978-1-60560-949-2
 
-[4] Peters, J., Mooij, J.M., Janzing, D. and Sch"olkopf, B., 2014. Causal discovery with continuous additive noise models. JMLR 15(58):2009−2053, 2014.
+[3] Peters, J., Mooij, J.M., Janzing, D. and Sch"olkopf, B., 2014. Causal discovery with continuous additive noise models. JMLR 15(58):2009−2053, 2014.
