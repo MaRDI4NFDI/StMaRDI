@@ -9,9 +9,9 @@ book:
     - index.qmd
     - part: notebooks.qmd
       chapters: 
+        - gallery/notebook1.qmd
         - gallery/notebook2.qmd
         - gallery/notebook3.qmd
-        - gallery/notebook4.qmd
     - contribute.qmd
     - references.qmd
 
