@@ -1,0 +1,24 @@
+## ALARM Notebook
+
+```{r, include = FALSE}
+library(rmarkdown)
+library(htmltools)
+
+# ALARM Notebook
+url <- "https://raw.githubusercontent.com/MaRDI4NFDI/StMaRDI/main/notebook_01_alarm_publish.Rmd"
+
+# Download the file to a temporary location
+temp_file <- tempfile(fileext = ".Rmd")
+download.file(url, temp_file, mode = "wb")
+
+# Render the Rmd file
+output_file <- rmarkdown::render(temp_file, output_format = "html_document", quiet = TRUE)
+
+final_location <- "remote_notebook2.html"
+file.copy(output_file, final_location, overwrite = TRUE)
+```
+
+```{r, echo = FALSE, warning=FALSE}
+#tags$iframe(src = final_location, width = "100%", height = "800px")
+includeHTML(final_location)
+```

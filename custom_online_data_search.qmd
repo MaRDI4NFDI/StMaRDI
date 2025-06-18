@@ -1,0 +1,142 @@
+# Custom Online Data Extraction
+
+There are a lot of important areas for **Graphical Modelling and Causal Inference** on tabular data. Find a selection of **categories** and **useful websites** for custom data extraction below. Please consider submitting the final extracted and analyzed dataset (if allowed) to our [Zenodo community](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10).
+
+------------------------------------------------------------------------
+
+::: {.callout-note collapse="false" title="Health Data" icon="false"}
+**Examples for causal relationships:**
+
+-   Sugar consumption on diabetes risk
+
+-   Genetic predisposition to obesity on cardiovascular disease
+
+-   Early administration of vasopressors might improve survival rates in ICU patients with septic shock
+
+| Source | License | Data Provided |
+|----|----|----|
+| [MIMIC-IV](https://physionet.org/content/mimiciv/2.2/) (see also [PhysionNet](https://physionet.org/)) | Credential Health Data License 1.5.0 (training required; [License](https://physionet.org/content/mimiciv/view-license/2.2/)) | Critical care data for over 40,000 patients admitted to intensive care units at the Beth Israel Deaconess Medical Center. |
+| [National Health and Nutrition Examination Survey](https://wwwn.cdc.gov/nchs/nhanes/default.aspx) | Statistical reporting and analysis only ([License](https://www.cdc.gov/nchs/policy/data-user-agreement.html)) | Health of 5,000 adults and children in the US: food, drinks, supplements, nutrients, blood tests. |
+| [UK Biobank](https://www.ukbiobank.ac.uk/) | Need application and ethics approval ([License](https://www.ukbiobank.ac.uk/media/hbonv55a/code-of-conduct-ukbb-nov-2020.pdf)) | [Genetic and health information from half a million UK participants](https://www.ukbiobank.ac.uk/enable-your-research/about-our-data): Imaging, Genetics, Health linkages, Biomarkers, Activity monitor, Questionnaires, Blood samples |
+| Cardiology: [MIT-BIH Arrhythmia Database](https://www.physionet.org/content/mitdb/1.0.0/) (see also [PhysionNet](https://physionet.org/)) | ODC-By ([License](https://www.physionet.org/content/mitdb/view-license/1.0.0/)) | 48 half-hour excerpts of two-channel ambulatory ECG recordings, obtained from 47 subjects. |
+| Neurology: [OpenNEURO](https://openneuro.org/) | CCO ([License](https://docs.openneuro.org/faq)) | MRI, PET, EEG, iEEG, MEG [datasets](https://openneuro.org/search) |
+| Epidemiology: JH [Coronavirus Resource Center](https://coronavirus.jhu.edu/) | CC BY 4.0 ([License](https://github.com/CSSEGISandData/COVID-19)) | Global COVID-19 case counts, deaths, and recoveries at the country and state/province level, updated throughout the pandemic |
+:::
+
+::: {.callout-tip collapse="true" title="Economic & Financial Data" icon="false"}
+**Examples for causal relationships:**
+
+-   inflation affects employment
+
+-   policies impact market behavior
+
++----------------------------------------------------------------------+----------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Source                                                               | License                                                                    | Data Provided                                                                                                                                                                |
++======================================================================+============================================================================+==============================================================================================================================================================================+
+| [World Bank Open Data](https://data.worldbank.org/)                  | CC BY 4.0 ([License](https://datacatalog.worldbank.org/public-licenses))   | Time Series Data, Performance Indicators                                                                                                                                     |
++----------------------------------------------------------------------+----------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [OECD Data](https://www.oecd.org/en/data.html)                       | CC BY 4.0 ([License](https://www.oecd.org/en/about/terms-conditions.html)) | Consumer Price Indices, Institutional Investors' Indicators                                                                                                                  |
++----------------------------------------------------------------------+----------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/) | Non-commercial ([License](https://fred.stlouisfed.org/legal/))             | Economic data series on banking, business, consumer and producer price indices, employment, population, exchange rates, GDP, interest rates, trade, and U.S. financial data. |
++----------------------------------------------------------------------+----------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+:::
+
+::: {.callout-note collapse="true" title="Social & Behavioral Data" icon="false"}
+**Examples for causal relationships:**
+
+-   Work conditions influence family stability
+
+-   Political climate affects public trust in media
+
+-   Immigration policies shape public attitudes
+
++----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
+| Source                                                                           | License                                                                                                                                                    | Data Provided                               |
++==================================================================================+============================================================================================================================================================+=============================================+
+| [General Social Survey (GSS)](https://gss.norc.org/)                             | Purchase required ([License](https://gss.norc.org/content/dam/gss/get-documentation/pdf/other/ObtainingGSSSensitiveDataFiles.pdf))                         | Health, marriage, family, work conditions   |
++----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
+| [Pew Research Data](https://www.pewresearch.org/tools-and-resources/)            | Nonexclusive, non-sublicensable, non-transferable, revocable, worldwide, royalty-free ([License](https://www.pewresearch.org/about/terms-and-conditions/)) | Politics, immigration, religion, technology |
++----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
+| [European Social Survey (ESS)](https://www.europeansocialsurvey.org/data-portal) | CC BY-NC-SA 4.0 ([License](https://www.europeansocialsurvey.org/contact/disclaimer))                                                                       | Public attitudes, beliefs and behavior      |
++----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
+:::
+
+::: {.callout-tip collapse="true" title="Environmental & Ecological Data" icon="false"}
+**Examples for causal relationships:**
+
+-   Atmospheric composition affects temperature
+
+-   Deforestation changes regional climate
+
+-   Extreme weather events result in biodiversity loss
+
+| Source | License | Data Provided |
+|----|----|----|
+| [NASA Earth Data](https://earthdata.nasa.gov/) | CC0 ([License](https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance)) | Climate indicators, human dimensions, atmosphere, biosphere |
+| [Copernicus Climate Data](https://cds.climate.copernicus.eu/) | Public Domain ([License](https://www.copernicus.eu/en/terms-use/how-access-data)) | Satellite earth observation and in-situ (non-space) data |
+| [Global Biodiversity Information Facility (GBIF)](https://www.gbif.org/) | CC0, CC BY, or CC BY-NC ([License](https://www.gbif.org/terms)) | Species occurrence, taxonomic information, habitat data |
+:::
+
+::: {.callout-note collapse="true" title="Political Data" icon="false"}
+**Examples for causal relationships:**
+
+-   Government spending or government duration on policy impact
+
+-   Corruption scandals weakening trust in government
+
+-   Socioeconomic indicators affecting election results
+
++-----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Source                                                                      | License                                                                                                | Data Provided                                                                                                                                                                                                                           |
++=============================================================================+========================================================================================================+=========================================================================================================================================================================================================================================+
+| [Comparative Political Data Set (CPDS)](https://www.cpds-data.org/)         | Information is requested                                                                               | annual political and institutional data, party composition, reshuffles, duration, reason for termination and the type of government for 36 countries                                                                                    |
++-----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [World Justice Project Rule of Law Index](https://worldjusticeproject.org/) | CC BY-ND 4.0 ([License](https://catalog.data.gov/dataset/world-justice-project-wjp-rule-of-law-index)) | Perception of law in the general public in 136 countries: Constraints on Government Powers, Absence of Corruption, Open Government, Fundamental Rights, Order and Security, Regulatory Enforcement, Civil Justice, and Criminal Justice |
++-----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+**Further directory of datasets in the US:** [Congressional Voting Records](https://www.govtrack.us/)
+:::
+
+::: {.callout-tip collapse="true" title="Energy & Sustainability Data" icon="false"}
+**Examples for causal relationships:**
+
+-   Rising oil prices slowing the industrial growth
+
+-   Government subsidies for renewables increase solar and wind energy production
+
+-   Higher natural gas storage reduce the vulnerability to supply shocks
+
+-   Expansion of hydrogen production reduces the industrial carbon emissions
+
+| Source | License | Data Provided |
+|----|----|----|
+| [International Energy Agency (IEA)](https://www.iea.org/data-and-statistics) | CC BY, Non-Commercial ([Individual licenses](https://www.iea.org/data-and-statistics/data-sets)) | Electricity access and demand, energy and emissions, hydrogen production, gas statistics, oil prices |
+| [Our World in Data – Energy](https://ourworldindata.org/energy) | CC BY ([License](https://ourworldindata.org/energy)) | International energy data, fossil fuels, electricity data, energy mix, energy consumption |
+| [U.S. Energy Information Administration (EIA)](https://www.eia.gov/) | CC0, CC BY, custom ([Individual licenses](https://atlas.eia.gov/search?tags=energy)) | Power plants, biofuels, natural gas storage, HGL pipelines, geothermal potential |
+:::
+
+::: {.callout-note collapse="true" title="Further Categories" icon="false"}
+Also consider the following categories:
+
+-   Gene expression data
+
+-   Health data
+
+-   Meterological data
+
+-   Psychological data
+
+-   Population data
+
+-   Biological data
+
+-   Pharmaceutical data
+
+-   Sensor-based datasets
+
+-   Transportation and mobility: ([U.S. Department of Transportation Open Data](https://data.transportation.gov/), [NYC Open Data (Taxi & Traffic Data)](https://data.cityofnewyork.us/Transportation/Taxi/mch6-rqy4), [OpenStreetMap Traffic Data](https://www.openstreetmap.org/))
+
+-   Education data: ([National Center for Education Statistics (NCES)](https://nces.ed.gov/), [OECD Education at a Glance](https://www.oecd.org/en/publications/education-at-a-glance-2024_c00cad36-en.html))
+
+-   Crime data: ([FBI Crime Data Explorer](https://cde.ucr.cjis.gov/), [Bureau of Justice Statistics (BJS)](https://bjs.ojp.gov/), [UK Crime Data](https://data.police.uk/))
+:::
