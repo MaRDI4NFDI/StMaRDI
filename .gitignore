@@ -9,5 +9,6 @@ StMaRDI.Rproj
 .DS_Store
 
 _book
+*/*_files/
 
 /.quarto/
