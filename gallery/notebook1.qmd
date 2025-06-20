@@ -78,6 +78,7 @@ We explore the application of data-driven causal inference, which allows to infe
 ```{r}
 #library("liver")
 library(qgraph)
+library(caret)
 library(igraph)
 library(bnlearn)
 library(tidyverse)
@@ -184,7 +185,7 @@ features = c("voice.messages","intl.mins","intl.calls","intl.charge","day.mins",
 features2 = c("voice.plan","voice.messages","intl.plan","intl.mins","intl.calls","intl.charge","day.mins", "day.calls", "day.charge","eve.mins","eve.calls", "eve.charge","night.mins","night.calls","night.charge","customer.calls","churn")
 
 for (i in features2){
-  df[,i] = as.numeric(df[,i])
+  df[,i] = as.numeric(unlist(df[,i]))
 }
 ```
 

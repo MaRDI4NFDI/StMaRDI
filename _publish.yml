@@ -1,4 +1,4 @@
 - source: project
   quarto-pub:
     - id: e4aa87d4-6e86-4497-81b1-72a5f5be6149
-      url: https://st-mardi.quarto.pub/gmci
+      url: 'https://st-mardi.quarto.pub/gmci'
