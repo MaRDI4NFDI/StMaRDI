@@ -5,6 +5,10 @@ book:
   title: "Graphical Modelling and Causal Inference"
   author: "MaRDI@TUM"
   date: "6/20/2025"
+  page-footer:
+    left: |
+      All content licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) <br> &copy; [MaRDI@TUM](https://portal.mardi4nfdi.de/wiki/Portal/TA3)
+    background: "#f8f9fa"
   chapters:
     - index.qmd
     - part: notebooks.qmd
