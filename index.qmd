@@ -22,6 +22,8 @@
     }
     ```
 
+    ![](images/CoRDI_Poster_2025.pdf){width="700" height="1000"}
+
 -   **Meet us:**
 
     -   27 - 30 July 2025: [Statistical Computing 2025](https://sysbio.uni-ulm.de/ocs/index.php/statcomp/statcomp2025/schedConf/accommodation) in Günzburg, Germany.
