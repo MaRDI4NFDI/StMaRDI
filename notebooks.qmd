@@ -126,7 +126,7 @@ p {
         <div class="gallery-item">
             <strong>PC Algorithm for Causal Discovery</strong>
             <a href="gallery/notebook2.qmd">
-                <img src="/images/ALARM_Subgraph_Notebook.png" alt="Zenodo Screenshot">
+                <img src="/images/PC_Alg_Notebook.png" alt="Zenodo Screenshot">
             </a>
             <div class="button-container">
                 <a href="https://github.com/lmareis/PC-Algorithm-An-Application-on-the-Alarm-Dataset/blob/Inital_Release/PC_Alg.Rmd" class="button git">Git</a>
@@ -144,7 +144,7 @@ p {
         <div class="gallery-item">
             <strong>ALARM <br> Notebook</strong>
             <a href="gallery/notebook3.qmd">
-                <img src="/images/ALARM_Notebook.png" alt="Mardi Screenshot">
+                <img src="/images/ALARM_Subgraph_Notebook.png" alt="Mardi Screenshot">
             </a>
             <div class="button-container">
                 <a href="https://github.com/MaRDI4NFDI/StMaRDI/blob/main/notebook_01_alarm_publish.Rmd" class="button git">Git</a>

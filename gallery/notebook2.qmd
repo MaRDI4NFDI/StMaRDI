@@ -14,9 +14,9 @@ generalization of conditioning.
 
 ## Loading the Alarm Dataset and its DAG
 
-We apply the algorithm on the alarm dataset [@beinlich1989alarm] of size 37 x 20,000. 
-It can be downloaded from the Zenodo 'Graphical Modelling and Causal Inference'
-(https://zenodo.org/records/14793281) community under the CC0 License.
+We apply the algorithm on the ALARM dataset [@beinlich1989alarm] of size 37 x 20,000. 
+It can be downloaded from [Zenodo](https://zenodo.org/records/14793281) under the 
+CC0 License.
 
 ```{r, message=FALSE}
 library(zen4R) # download files from Zenodo
