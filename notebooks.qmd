@@ -1,6 +1,6 @@
 # Accompanying Statistical Notebooks
 
-Each project in the **gallery** is represented by a clickable notebook that provides insights into methodologies applied to datasets from our Zenodo community on [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10). These notebooks showcase baseline information about the underlying data, the analysis process, and the derived results. In addition to the notebooks, links to the Zenodo datasets, and the underlying GitHub repositories are provided for code transparency and reproducibility.
+Each project in the **gallery** is represented by a clickable notebook that provides insights into methodologies applied to datasets from our Zenodo community on [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10). These notebooks present the data, the analysis process, and the derived results. In addition to the notebooks, links to the Zenodo datasets and the underlying GitHub repositories are provided for code transparency and reproducibility.
 
 ```{=html}
 <head>
@@ -114,43 +114,47 @@ p {
     <div class="gallery-container">
         <!-- First Item -->
         <div class="gallery-item">
-            <strong> Gaussian <br> Model</strong>
+            <strong> Telekom Customer <br> Analysis</strong>
             <a href="gallery/notebook1.qmd">
-                <img src="/images/R_GaussianLinear.png" alt="Stats Screenshot">
+                <img src="/images/Telekom_Notebook.png" alt="Stats Screenshot">
             </a>
             <div class="button-container">
-                <a href="https://github.com/MaRDI4NFDI/StMaRDI/tree/main" class="button git">Git                 </a>
+                <a href="https://github.com" class="button git">Git                 </a>
             </div>
         </div>
         <!-- Second Item -->
         <div class="gallery-item">
-            <strong>ALARM <br> Notebook</strong>
+            <strong>PC Algorithm for Causal Discovery</strong>
             <a href="gallery/notebook2.qmd">
+                <img src="/images/ALARM_Subgraph_Notebook.png" alt="Zenodo Screenshot">
+            </a>
+            <div class="button-container">
+                <a href="https://github.com/lmareis/PC-Algorithm-An-Application-on-the-Alarm-Dataset/blob/Inital_Release/PC_Alg.Rmd" class="button git">Git</a>
+            </div>
+            <a href="https://doi.org/10.5281/zenodo.15304388" class="doi-badge">
+              <span class="doi-label">DOI</span>
+              <span class="doi-link">10.5281/zenodo.15304388</span>
+            </a>
+            <a href="https://doi.org/10.5281/zenodo.7676615" class="doi-badge">
+              <span class="doi-label">DOI</span>
+              <span class="doi-link">10.5281/zenodo.7676615</span>
+            </a>
+        </div>
+        <!-- Third Item -->
+        <div class="gallery-item">
+            <strong>ALARM <br> Notebook</strong>
+            <a href="gallery/notebook3.qmd">
                 <img src="/images/ALARM_Notebook.png" alt="Mardi Screenshot">
             </a>
             <div class="button-container">
                 <a href="https://github.com/MaRDI4NFDI/StMaRDI/blob/main/notebook_01_alarm_publish.Rmd" class="button git">Git</a>
             </div>
-            <a href="https://doi.org/10.5281/zenodo.10625451" class="doi-badge">
+            <a href="https://doi.org/10.5281/zenodo.7676615" class="doi-badge">
               <span class="doi-label">DOI</span>
-              <span class="doi-link">10.5281/zenodo.10625451</span>
+              <span class="doi-link">10.5281/zenodo.7676615</span>
             </a>
         </div>
-        <!-- Third Item -->
-        <div class="gallery-item">
-            <strong>ALARM Subgraph Notebook</strong>
-            <a href="gallery/notebook3.qmd">
-                <img src="/images/ALARM_Subgraph_Notebook.png" alt="Zenodo Screenshot">
-            </a>
-            <div class="button-container">
-                <a href="https://github.com/MaRDI4NFDI/StMaRDI/blob/main/notebook_02_subgraph_selection_evaluation_publish.Rmd" class="button git">Git</a>
-            </div>
-            <a href="https://doi.org/10.5281/zenodo.10625451" class="doi-badge">
-              <span class="doi-label">DOI</span>
-              <span class="doi-link">10.5281/zenodo.10625451</span>
-            </a>
-        </div>
-        <!-- Fourth Item -->
+        <!-- Fourth Item 
         <div class="gallery-item">
             <strong>Cause-Effect Pairs MPI Tuebingen</strong>
             <a href="gallery/notebook4.qmd">
@@ -163,8 +167,8 @@ p {
               <span class="doi-label">DOI</span>
               <span class="doi-link">10.5281/zenodo.10625451</span>
             </a>
-        </div>
-        <!-- Fifth Item -->
+        </div> -->
+        <!-- Fifth Item 
         <div class="gallery-item">
             <strong><br>online html</strong>
             <a href="gallery/notebook5.qmd">
@@ -173,7 +177,7 @@ p {
             <div class="button-container">
                 <a href="https://github.com/MaRDI4NFDI/StMaRDI/blob/main/website/GMCI_MaRDI/gallery/remote_notebook2.html" class="button git">Git</a>
             </div>
-        </div>
-    </div>
+        </div> -->
+    </div> 
 </body>
 ```
