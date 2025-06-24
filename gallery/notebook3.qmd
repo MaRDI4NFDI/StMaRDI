@@ -9,72 +9,74 @@ In the context of graphical modelling the problem of subgraph selection correspo
 Furthermore, it is important to be able to evaluate the results of the structure learning algorithms (learned on the data) taking as a ground truth the selected subgraph.
 
 ```{r}
+#| message: false
 ### loading packages
 library("bnlearn")
 library("qgraph")
 library("igraph")
 library("pcalg")
+library(tidyverse)
 ```
 
-Reading the files from Zenodo entry in the community
+
+To read files into R hosted on Zenodo, one can use the [zen4R](https://cran.r-project.org/web/packages/zen4R/vignettes/zen4R.html) package. One starts by setting up the ZenodoManager
 
 ```{r}
-# necessary libraries to use for Zenodo REST-API
 library(zen4R)
-
-zenodo <- ZenodoManager$new(
-  logger = "INFO" # use "DEBUG" to see detailed API operation logs, use NULL if you don't want logs at all
-)
-
-# downloading files using zenodo doi and reading from the file 
-rec1 <- zenodo$getRecordByDOI("10.5281/zenodo.7676616")
-files <- rec1$listFiles(pretty = TRUE)
-
-#create a folder where to download files from record
-dir.create("download_zenodo")
-
-#download files
-rec1$downloadFiles(path = "download_zenodo")
-downloaded_files <- list.files("download_zenodo")
-
-zipF = sprintf("download_zenodo/%s",downloaded_files)
-
-# unzipping in the current folder
-unzip(zipF,exdir = "./")
-
-alarm_name = list.files(tools::file_path_sans_ext(downloaded_files))[1]
-
-path_to_file = paste0(tools::file_path_sans_ext(downloaded_files),"/",alarm_name,"/",alarm_name,".csv")
-
-df = read.csv(path_to_file)
-head(df)
+zenodo <- ZenodoManager$new()
 ```
 
-We need to transform data first
+The ALARM dataset is contained in the Zenodo record [10.5281/zenodo.14793281]( https://doi.org/10.5281/zenodo.14793281). The record contains two data objects, which can be listed with the following command.
 
 ```{r}
-for (item in colnames(df)){
-  df[,item] = as.factor(df[,item])
-}
+#| message: false
+rec <- zenodo$getRecordByDOI("10.5281/zenodo.14793281")
+files <- rec$listFiles(pretty = TRUE)
+files
 ```
+
+The file `alarm.csv` contains the raw data and will be downloaded in the next step. Therefore, we will create a folder to save both files included in the record.
+
 
 ```{r}
-data("alarm")
-alarm_df <- as.data.frame(na.omit(df))
-
-p = length(names(alarm))
-n = dim(alarm)[1]
-for (i in c(1:p)) {
-  alarm_df[,i]<-as.numeric(alarm_df[,i])
-}
+#| warning: false
+#| message: false
+dir.create("data/download_zenodo")
+rec$downloadFiles(path = "data/download_zenodo")
 ```
+
+Now we are ready to read the file into R using the readr package.
+
+```{r}
+#| message: false
+alarm_df <- read_csv("data/download_zenodo/alarm.csv")
+alarm_df <- alarm_df |> 
+  mutate(across(everything(), ~ case_when(
+    .x == "FALSE" ~ 0, .x == "TRUE" ~ 1,
+    .x == "ZERO" ~ 0, .x == "LOW" ~ 1, .x == "NORMAL" ~ 2,
+    .x == "HIGH" ~ 3, .x == "ONESIDED" ~ 3, .x == "ESOPHAGEAL"~  4)))
+alarm_df
+```
+
+The second file in the Zenodo record describes the "true" graph proposed for the ALARM dataset in @ScutariDenis2021. To read in the bif file, we can use the function `read.bif()` from the bnlearn package. It creates a bn.fit object, which can be plotted using `graphviz.plot()`.
+
+
+```{r}
+true_graph <- read.bif("data/download_zenodo/alarm.bif")
+#names(true_graph)[1] <- "HIST"
+#true_graph$LVFAILURE$children[1] <- "HIST"
+
+graphviz.plot(true_graph, shape = "circle", fontsize = 20)
+```
+
+
 
 #### Applying nonparanormal transformation to standardize the data.
 
 ```{r}
 library("huge")
 alarm_df <- huge.npn(alarm_df)
-#####
+
 ```
 
 Defining "true" graph as proposed for the ALARM dataset in bnlearn
@@ -86,26 +88,28 @@ modelstring(dag_alarm) = paste0("[HIST|LVF][CVP|LVV][PCWP|LVV][HYP][LVV|HYP:LVF]
 "[ANES][APL][TPR|APL][ECO2|ACO2:VLNG][KINK][MINV|INT:VLNG][FIO2]",            "[PVS|FIO2:VALV][SAO2|PVS:SHNT][PAP|PMB][PMB][SHNT|INT:PMB][INT]",              "[PRSS|INT:KINK:VTUB][DISC][MVS][VMCH|MVS][VTUB|DISC:VMCH]",                    "[VLNG|INT:KINK:VTUB][VALV|INT:VLNG][ACO2|VALV][CCHL|ACO2:ANES:SAO2:TPR]",
 "[HR|CCHL][CO|HR:STKV][BP|CO:TPR]", sep = "")
 
-qgraph(dag_alarm, legend.cex = 0.3,
-       asize=2,edge.color="black", vsize= 4)
+qgraph::qgraph(dag_alarm, legend.cex = 0.3,
+       asize = 2, edge.color="black", vsize= 4)
 ```
 
-Selection of the set of nodes for subsetting
+Choosing the nodes to consider in the subgraph selection problem
 
 ```{r}
-### Subgraph 
-subgraph_nodes <- c("INT","VALV","LVF","LVV","PCWP","HR","CCHL","CVP","HYP","HRSA","ERCA")
+subgraph_nodes <- c("INT","VALV","LVF","LVV","PCWP","HR","CCHL",
+                    "CVP","HYP","HRSA","ERCA")
 ```
 
-**First** procedure (bnlearns subgraph function). It is implemented through a simple subsetting of the edges which are adjacent to the vertices contained in the subgraph_nodes set.
+### Subgraph selection procedures
+
+The __first procedure__ we consider is a simple subsetting of the edges adjacent to the vertices in the `subgraph_nodes` set. We can accomplish this using the `subgraph()` function from the bnlearn package.
 
 ```{r}
 procedure1 <- bnlearn::subgraph(dag_alarm, subgraph_nodes)
-qgraph(procedure1, legend.cex = 0.3,
-       asize=2,edge.color="black", vsize= 5)
+qgraph::qgraph(procedure1, legend.cex = 0.3, asize = 2,
+       edge.color = "black", vsize = 5)
 ```
 
-**Second** procedure selects the subgraph based on the following euristics. Given the ground truth DAG $G=(V,E)$ and subset of vertices $V_{s} \subset V$ the goal is to find the corresponding set of vertices $E_{s}$ such that for $(V_s,E_s)$ the structure of the distribution for \$ P\_{V_s}\$ does not contradict the structure of the distribution $P_{V}$ so that we the task of structure estimation (and then benchmarking) on $(V_s,E_s)$ can be done with a new ground truth.
+**Second** procedure selects the subgraph based on the following heuristics. Given the ground truth DAG $G=(V,E)$ and subset of vertices $V_{s} \subset V$ the goal is to find the corresponding set of vertices $E_{s}$ such that for $(V_s,E_s)$ the structure of the distribution for \$ P\_{V_s}\$ does not contradict the structure of the distribution $P_{V}$ so that we the task of structure estimation (and then benchmarking) on $(V_s,E_s)$ can be done with a new ground truth.
 
 Let $G = (V,E)$ be the original directed acyclic graph, and $P_{V}$ is the joint distribution of random variables from $V$.
 
@@ -136,7 +140,7 @@ extract_subgraph <- function(dag, nodes){
 }
 
 procedure2 <- extract_subgraph(dag_alarm, subgraph_nodes)
-qgraph(procedure2, legend.cex = 0.3,
+qgraph::qgraph(procedure2, legend.cex = 0.3,
        asize=2,edge.color="black", vsize= 5)
 ```
 
@@ -272,3 +276,7 @@ measure(Res_mmpc, procedure2)
 measure(Res_hc, procedure2)
 measure(Res_tabu, procedure2)
 ```
+
+
+# References
+

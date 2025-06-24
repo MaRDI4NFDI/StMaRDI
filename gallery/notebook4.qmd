@@ -23,7 +23,7 @@ We have 89 datasets with variables $Var1, Var2$. The goal is to establish
 We begin by loading the necessary packages required to complete the task at hand.
 
 ```{r}
-
+#| message: false
 #library("liver")
 library("qgraph")
 library("igraph")

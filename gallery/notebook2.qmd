@@ -27,6 +27,7 @@ library(MVN) # multivariate normal test
 ```
 
 ```{r, message = FALSE, warning=FALSE}
+#| cache: true
 # Load Data
 zenodo <- ZenodoManager$new(logger = NULL)
 record <- zenodo$getRecordByDOI("10.5281/zenodo.14793281")
