@@ -28,4 +28,4 @@
 
     -   27 - 30 July 2025: [Statistical Computing 2025](https://sysbio.uni-ulm.de/ocs/index.php/statcomp/statcomp2025/schedConf/accommodation) in Günzburg, Germany.
 
-    -   26 - 28 October 2025: [CoRDI](https://www.nfdi.de/cordi-2025/) conference in Aachen, Germany.
+    -   26 - 28 August 2025: [CoRDI](https://www.nfdi.de/cordi-2025/) in Aachen, Germany.
