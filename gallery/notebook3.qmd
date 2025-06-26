@@ -11,18 +11,19 @@ Furthermore, it is important to be able to evaluate the results of the structure
 ```{r}
 #| message: false
 ### loading packages
-library("bnlearn")
-library("qgraph")
-library("igraph")
-library("pcalg")
+library(bnlearn)
+library(qgraph)
+library(igraph)
+library(pcalg)
 library(tidyverse)
+library(huge)
+library(zen4R)
 ```
 
 
 To read files into R hosted on Zenodo, one can use the [zen4R](https://cran.r-project.org/web/packages/zen4R/vignettes/zen4R.html) package. One starts by setting up the ZenodoManager
 
 ```{r}
-library(zen4R)
 zenodo <- ZenodoManager$new()
 ```
 
@@ -35,21 +36,11 @@ files <- rec$listFiles(pretty = TRUE)
 files
 ```
 
-The file `alarm.csv` contains the raw data and will be downloaded in the next step. Therefore, we will create a folder to save both files included in the record.
-
-
-```{r}
-#| warning: false
-#| message: false
-dir.create("data/download_zenodo")
-rec$downloadFiles(path = "data/download_zenodo")
-```
-
-Now we are ready to read the file into R using the readr package.
+The file `alarm.csv` contains the raw data and will be downloaded in the next step using the readr package.
 
 ```{r}
 #| message: false
-alarm_df <- read_csv("data/download_zenodo/alarm.csv")
+alarm_df <- read_csv(files[2,4])
 alarm_df <- alarm_df |> 
   mutate(across(everything(), ~ case_when(
     .x == "FALSE" ~ 0, .x == "TRUE" ~ 1,
@@ -63,18 +54,14 @@ The second file in the Zenodo record describes the "true" graph proposed for the
 
 ```{r}
 true_graph <- read.bif("data/download_zenodo/alarm.bif")
-#names(true_graph)[1] <- "HIST"
-#true_graph$LVFAILURE$children[1] <- "HIST"
-
 graphviz.plot(true_graph, shape = "circle", fontsize = 20)
 ```
 
 
 
-#### Applying nonparanormal transformation to standardize the data.
+#### Applying a nonparanormal transformation to standardize the data
 
 ```{r}
-library("huge")
 alarm_df <- huge.npn(alarm_df)
 
 ```
@@ -99,7 +86,7 @@ subgraph_nodes <- c("INT","VALV","LVF","LVV","PCWP","HR","CCHL",
                     "CVP","HYP","HRSA","ERCA")
 ```
 
-### Subgraph selection procedures
+## Subgraph selection procedures
 
 The __first procedure__ we consider is a simple subsetting of the edges adjacent to the vertices in the `subgraph_nodes` set. We can accomplish this using the `subgraph()` function from the bnlearn package.
 
@@ -109,22 +96,20 @@ qgraph::qgraph(procedure1, legend.cex = 0.3, asize = 2,
        edge.color = "black", vsize = 5)
 ```
 
-**Second** procedure selects the subgraph based on the following heuristics. Given the ground truth DAG $G=(V,E)$ and subset of vertices $V_{s} \subset V$ the goal is to find the corresponding set of vertices $E_{s}$ such that for $(V_s,E_s)$ the structure of the distribution for \$ P\_{V_s}\$ does not contradict the structure of the distribution $P_{V}$ so that we the task of structure estimation (and then benchmarking) on $(V_s,E_s)$ can be done with a new ground truth.
+**Second** procedure selects the subgraph based on the following heuristics:
+
+We are given the ground truth DAG $G=(V, E)$ with corresponding joint distribution $\mathsf{P}_V$, and a subset of vertices $V_{s} \subset V$. The goal is to find the corresponding set of vertices $E_{s}$ such that the distribution $\mathsf{P}_{V_s}$ corresponding to  $(V_s, E_s)$ does not contradict the structure of the distribution $P_{V}$. 
+
 
 Let $G = (V,E)$ be the original directed acyclic graph, and $P_{V}$ is the joint distribution of random variables from $V$.
 
-We take two and check whether these vertices are $d-$connected given all others in $V_{s}$. If they are not $d$-connected, there is no association (no arrow in any direction). Otherwise, we have correlation (with unknown direction). If one of the directions leads to the cycle in the original graph, we resolve it and keep the other direction, otherwise we keep both directions and then get the CPDAG.
+We select two vertices and verify if these vertices are $d$-connected given all other vertices in $V_{s}$. If they are not $d$-connected, there is no association (no arrow in any direction). Otherwise, we have an association, but with unknown direction. If one of the directions leads to a cycle in the original graph, we resolve it and keep the other direction, otherwise we keep both directions and then get the CPDAG.
 
-**Third** procedure which сreats the PAG for the observable vertices in the subset-graph with respect to the latent variables in the vertices set $V \setminus V^{'}$.
+We need to consider all pairs of nodes contained in `subgraph_nodes`. There exists `r dim(combn(subgraph_nodes,2))` pairs in total.
 
-PAG is the graph which is used to represent causal relationships in situations where the exact underlying causal structure is not fully known or observable. In our case we observe the variables in the set $V^{'}$. Based on the covariance matrix from the observed data in $V^{'}$ we generate.
+The process of checking the $d$-connectivity of all pairs of nodes, is implemented in the following function.
 
 ```{r}
-######### Extract subgraph function
-
-combn(subgraph_nodes, 2)[2,1]
-dim(combn(subgraph_nodes,2))[2]
-
 extract_subgraph <- function(dag, nodes){
   sg <- bnlearn::subgraph(dag,nodes) # procedure 1 (to be discussed)
   combinations <- combn(nodes,2) # all combinations of 2 distinct nodes in "nodes"
@@ -139,118 +124,113 @@ extract_subgraph <- function(dag, nodes){
   return(cpdag(sg)) ### to be discussed: return(cpdag(sg))
 }
 
+```
+
+
+Based on the second procedure we get the following graph.
+
+
+```{r}
 procedure2 <- extract_subgraph(dag_alarm, subgraph_nodes)
 qgraph::qgraph(procedure2, legend.cex = 0.3,
        asize=2,edge.color="black", vsize= 5)
 ```
 
+
+The **third** procedure creates a partial ancestral graph (PAG) for the observable vertices in the subset-graph with respect to the latent variables in the vertices set $V \setminus V^{'}$.
+
+PAGs are graphs which are used to represent causal relationships in situations where the exact underlying causal structure is not fully known or observable. In our case we observe the variables in the set $V^{'}$. Based on the covariance matrix from the observed data in $V^{'}$ we generate.
+
+
 Subsetting the dataset according to "subgraph_nodes" selection
 
 ```{r}
-alarm_dfSubset <-as.data.frame(alarm_df[,subgraph_nodes])
+alarm_df_subset <- as_tibble(alarm_df) |> 
+  select(all_of(subgraph_nodes))
 ```
 
-```{r,echo = FALSE}
-# procedure 3: forming the PAG from the observable and latent variables
+__Step 1:__ Compute the correlation matrix for the observed variables contained in `alarm_df_subset`.
 
-## Step 1: Compute the true covariance matrix of the large graph G=(V,E).
-correlation_matrix = cor(alarm_df)
+```{r}
+cor_matrix <- cor(alarm_df_subset)
+```
 
-#Step 2: subselect the observed variables and compute the  sub selected graph. 
-observed_vars = subgraph_nodes
-covMatrix_obs = correlation_matrix[observed_vars, observed_vars]
+__Step 2:__ Provide necessary information for the algorithm to work on. 
 
-# Step 3: Provide nececssary information for the algorithm to work on. 
-
+```{r}
 indepTest <- pcalg::gaussCItest
-suffStat <- list(C = covMatrix_obs, n = 1000)
+suffStat <- list(C = cor_matrix, n = 1000)
+```
 
-## Step 4: Apply the FCI algorithm to the selected vertices
+__Step 3:__ Apply the FCI algorithm to the selected vertices, using the oracle correlation matrix.
 
-# Use the FCI algorithm with the oracle correlation matrix
-normal.pag <- pcalg:: fci(suffStat, indepTest, alpha = 0.05, labels = observed_vars, verbose=TRUE)
-
-## Step 5: Plot the resulting PAG (Partial Ancestral Graph)
-plot(normal.pag, 
-     main = "Partial Ancestral Graph (PAG) for Subset of Nodes",
-     vertex.label.cex = 0.8)
+```{r}
+normal.pag <- pcalg:: fci(suffStat, indepTest, alpha = 0.05, 
+                          labels = subgraph_nodes)
 
 ```
+
+__Step 4:__ Plot the resulting PAG (Partial Ancestral Graph).
+
+```{r}
+qgraph(normal.pag@amat, asize=4, edge.color="black", vsize= 5)
+```
+
 
 Applying constraint-based algorithms
 
 ```{r}
-Res_stable=pc.stable(alarm_dfSubset)
+Res_stable <-pc.stable(alarm_df_subset)
 
-Res_iamb=iamb(alarm_dfSubset)
+Res_iamb <- iamb(alarm_df_subset)
 
-Res_gs=gs(alarm_dfSubset)
+Res_gs <- gs(alarm_df_subset)
 
-Res_fiamb=fast.iamb(alarm_dfSubset)
+Res_fiamb <- fast.iamb(alarm_df_subset)
 
-Res_mmpc=mmpc(alarm_dfSubset)
+Res_mmpc <- mmpc(alarm_df_subset)
 ```
 
 Applying score-based algorithms
 
 ```{r}
-Res_hc = hc(alarm_dfSubset)
-Res_tabu = tabu(alarm_dfSubset)
+Res_hc <- hc(alarm_df_subset)
+Res_tabu <- tabu(alarm_df_subset)
 ```
 
-Visualize resulting subgraph in the images below:
-
-```{r, fig.show="hold", out.width="120%"}
-par(mfrow=c(2, 4), mar=c(1, 1, 1, 1), oma=c(2, 2, 2, 2))
-
-
-ig_proc1 <- as.igraph(procedure1)
-ig_proc2 <- as.igraph(procedure2)
-ig_pc <- as.igraph(Res_stable)
-ig_iamb <- as.igraph(Res_iamb)
-ig_gs <- as.igraph(Res_gs)
-ig_fiamb <- as.igraph(Res_fiamb)
-ig_mmpc <- as.igraph(Res_mmpc)
-
-ig_hc <- as.igraph(Res_hc)
-ig_tabu <- as.igraph(Res_tabu)
-
-plot(ig_proc1, main = "proc1", frame = T, layout=layout_with_fr, vertex.size=18,
-     vertex.label.dist=4, vertex.color="red", edge.arrow.size=0.4, vertex.label.cex=1)
-plot(ig_proc2, main = "proc2", frame = T, layout=layout_with_fr, vertex.size=18,
-     vertex.label.dist=4, vertex.color="red", edge.arrow.size=0.4, vertex.label.cex=1)
-plot(ig_pc, main = "pc", frame = T, layout=layout_with_fr, vertex.size=18,
-     vertex.label.dist=4, vertex.color="red", edge.arrow.size=0.4, vertex.label.cex=1)
-plot(ig_iamb, main = "iamb", frame = T, layout=layout_with_fr, vertex.size=18,
-     vertex.label.dist=4, vertex.color="red", edge.arrow.size=0.4, vertex.label.cex=1)
-plot(ig_gs, main = "gs", frame = T, layout=layout_with_fr, vertex.size=18,
-     vertex.label.dist=4, vertex.color="red", edge.arrow.size=0.4, vertex.label.cex=1)
-plot(ig_fiamb, main = "fiamb", frame = T, layout=layout_with_fr, vertex.size=18,
-     vertex.label.dist=4, vertex.color="red", edge.arrow.size=0.4, vertex.label.cex=1)
-plot(ig_mmpc, main = "mmpc", frame = T, layout=layout_with_fr, vertex.size=18,
-     vertex.label.dist=4, vertex.color="red", edge.arrow.size=0.4, vertex.label.cex=1)
-plot(ig_hc, main = "hc", frame = T, layout=layout_with_fr, vertex.size=18,
-     vertex.label.dist=4, vertex.color="red", edge.arrow.size=0.4, vertex.label.cex=1)
-plot(ig_tabu, main = "tabu", frame = T, layout=layout_with_fr, vertex.size=18,
-     vertex.label.dist=4, vertex.color="red", edge.arrow.size=0.4, vertex.label.cex=1)
-
-```
-
-Selfdefined function for different measures
+The resulting subgraphs are shown below.
 
 ```{r}
-measure = function(estim, true){
+#| layout-ncol: 3
+
+qgraph(procedure1, title = "Procedure 1")
+qgraph(procedure2, title = "Procedure 2")
+qgraph(Res_stable, title = "PC")
+qgraph(Res_iamb, title = "IAMB")
+qgraph(Res_gs, title = "GS")
+qgraph(Res_fiamb, title = "FIAMB")
+qgraph(Res_mmpc, title = "MMPC")
+qgraph(Res_hc, title = "HC")
+qgraph(Res_tabu, title = "tabu")
+```
+
+Evaluate the performance by computing the number of true positives, false positives, and false negatives, as well as the structural hamming distance.
+
+```{r}
+
+measure  <-  function(estim, true){
   result <- matrix(1,4)
   com <- bnlearn::compare(estim, true)
   shd <- bnlearn::shd(estim,true)
-  result[1,] <- com$tp
-  result[2,] <- com$fp
-  result[3,] <- com$fn
-  result[4,] <- shd
-  rownames(result) <- c("true positives","false positives","false negatives","structural hamming distance")
-  colnames(result) <- deparse(substitute(estim))
+  result <- data.frame(
+    metric = c("true positives","false positives","false negatives","structural hamming distance"),
+    value = c(com$tp, com$fp, com$fn, shd)
+  )
   return(result)
 }
+
+
+
 ```
 
 Metric evaluation for procedure 1
@@ -278,5 +258,5 @@ measure(Res_tabu, procedure2)
 ```
 
 
-# References
+
 
