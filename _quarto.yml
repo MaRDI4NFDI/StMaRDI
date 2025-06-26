@@ -14,7 +14,6 @@ book:
     - index.qmd
     - part: notebooks.qmd
       chapters: 
-        - gallery/notebook1.qmd
         - gallery/notebook2.qmd
         - gallery/notebook3.qmd
     - contribute.qmd
@@ -27,6 +26,7 @@ format:
     theme: cosmo
     documentclass: scrreprt
     cover-image: cover.png
+    number-depth: 3
     grid: 
       margin-width: 0px
       gutter-width: 2rem
