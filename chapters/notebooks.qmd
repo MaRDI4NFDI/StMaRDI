@@ -124,7 +124,7 @@ p {
         </div> -->
         <!-- Second Item -->
         <div class="gallery-item">
-            <strong>PC Algorithm for Causal Discovery</strong>
+            <strong>PC Algorithm for </br> Causal Discovery</strong>
             <a href="notebook_gallery/notebook2.qmd">
                 <img src="/images/PC_Alg_Notebook.png" alt="Zenodo Screenshot">
             </a>
@@ -142,7 +142,7 @@ p {
         </div>
         <!-- Third Item -->
         <div class="gallery-item">
-            <strong>ALARM <br> Notebook</strong>
+            <strong>ALARM <br> Subgraph Analysis</strong>
             <a href="notebook_gallery/notebook3.qmd">
                 <img src="/images/ALARM_Subgraph_Notebook.png" alt="Mardi Screenshot">
             </a>

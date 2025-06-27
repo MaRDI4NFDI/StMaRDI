@@ -3,7 +3,7 @@
 Technische Universitaet Muenchen (TUM)
 
 Die Technische Universitaet Muenchen ist eine Koerperschaft des
-Öffentlichen Rechts und staatliche Einrichtung (Art 4 Abs 1 BayHIG).
+Oeffentlichen Rechts und staatliche Einrichtung (Art 4 Abs 1 BayHIG).
 
 School of Computation, Information and Technology Department of
 Mathematics Chair of Mathematical Statistics 
@@ -13,12 +13,12 @@ Website: https://st-mardi.quarto.pub/gmci/
 Anschrift:
 Parkring 13 85748 Garching bei Muenchen Deutschland
 
-Vertreten durch:
+Verantwortlich für den Inhalt:
 TBD
 
 Kontakt:
-Telefon: *'Vorwahl Muenchen'* 289 17434 
-E-Mail: mardi-ta3 *'at'* listserv.dfn.de
+Telefon: *Vorwahl Muenchen* 289 17434 
+E-Mail: mardi-ta3 *at* listserv.dfn.de
 
 Aufsichtsbehoerde:
 Bayerisches Staatsministerium für Wissenschaft und Kunst

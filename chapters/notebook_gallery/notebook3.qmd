@@ -1,4 +1,4 @@
-## ALARM Subgraph Notebook
+## ALARM Subgraph Analysis
 
 ***Setup of the problem***
 
