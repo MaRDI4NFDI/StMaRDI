@@ -1,4 +1,4 @@
-# About {.unnumbered}
+# Getting Started {.unnumbered}
 
 -   **MaRDI**, the [Mathematical Research Data Initiative](https://www.mardi4nfdi.de/about/mission), is a group of German scientists funded by NFDI working on creating and establishing data culture standards and public services to foster mathematical research. This comprises the development of good research practices, providing tools for establishing interconnections of research via unique digital tokens, and creating databases for immediate access to key resources of the mathematical research community. Mathematical objects range from theorems over algorithms to data analyses affected by uncertainty. Our experts have a background in computer algebra, scientific computing, statistics, and machine learning. Specifically, the [MaRDI Portal](https://portal.mardi4nfdi.de/wiki/Portal) combines and structures the information of the mathematical landscape in a relational data base. Multiple subprojects organized via task areas assist with interfaces and extend relevant subdomains. More information can be found on the [NFDI Website](https://www.nfdi.de/mardi/?lang=en).
 

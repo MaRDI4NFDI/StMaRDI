@@ -4,11 +4,19 @@ project:
 book:
   title: "Graphical Modelling and Causal Inference"
   author: "MaRDI@TUM"
-  date: "6/20/2025"
+  date: "6/27/2025"
   favicon: "images/logo.png"
   page-footer:
     left: |
-      All content licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) <br> &copy; [MaRDI@TUM](https://portal.mardi4nfdi.de/wiki/Portal/TA3)
+      All content licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) </br>
+    center: | 
+      <div style="height: 20px;"></div>
+      &copy; [MaRDI@TUM](https://portal.mardi4nfdi.de/wiki/Portal/TA3) </br>
+    right: |
+      <div style = "overflow: hidden; display: inline-block; vertical-align: center;">
+      <img src="images/MaRDI_Logo.png" alt="MaRDI Logo" style="height: 30px; margin-right: 20px;">
+      <img src="images/TUM_Logo.PNG" alt="TUM Logo" style="height: 30px; margin-right: 30px;">
+      </div>
     background: "#f8f9fa"
   chapters:
     - index.qmd
@@ -25,8 +33,11 @@ format:
   html:
     theme: cosmo
     documentclass: scrreprt
-    cover-image: cover.png
+    cover-image: images/cover.png
     number-depth: 3
     grid: 
       margin-width: 0px
       gutter-width: 2rem
+      
+execute:
+  cache: true

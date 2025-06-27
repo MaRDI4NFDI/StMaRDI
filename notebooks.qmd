@@ -112,7 +112,7 @@ p {
 </head>
 <body>
     <div class="gallery-container">
-        <!-- First Item -->
+        <!-- First Item 
         <div class="gallery-item">
             <strong> Telekom Customer <br> Analysis</strong>
             <a href="gallery/notebook1.qmd">
@@ -121,7 +121,7 @@ p {
             <div class="button-container">
                 <a href="https://github.com" class="button git">Git                 </a>
             </div>
-        </div>
+        </div> -->
         <!-- Second Item -->
         <div class="gallery-item">
             <strong>PC Algorithm for Causal Discovery</strong>
