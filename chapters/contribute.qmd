@@ -91,7 +91,7 @@ Please upload a dataset as a .csv file and a collection of datset as a .zip file
 ::: {.callout-note collapse="true" title="Notebooks" icon="false"}
 For notebooks, create a git repository with (1) the code, and (2) the notebook's rendered .html file. Then, [connected the repository with Zenodo](https://zenodo.org/account/settings/github/) as shown in the picture below.
 
-![Source: <https://zenodo.org/account/settings/github/>](../images/zenodo_git_integration-01.png)
+![Source: <https://zenodo.org/account/settings/github/>](../images/zenodo_git_integration.png)
 
 This will automatically create a record of the zipped repository along with a unique DOI. As the whole repository is zipped, we advise to restrict the repository's content to the necessary files. The associated DOI will forward you to the Zenodo record, which you can submit it to the [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10) community by editing the record's page. Although the record's description is taken from the git release, the records meta-information can be edited manually afterwards, e.g., referencing a publication, linking the associated Zenodo dataset or specifying an R package.
 
