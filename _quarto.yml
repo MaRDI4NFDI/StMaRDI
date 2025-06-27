@@ -11,7 +11,7 @@ book:
       All content licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
     right: | 
       <div style="height: 20px; width = 10px"></div>
-      [Imprint](imprint.txt). 
+      [Imprint](chapters/imprint.txt). 
       &copy; [MaRDI@TUM](https://portal.mardi4nfdi.de/wiki/Portal/TA3) </br>
     center: |
       <div style = "overflow: hidden; display: inline-block; vertical-align: center;">
@@ -21,12 +21,12 @@ book:
     background: "#f8f9fa"
   chapters:
     - index.qmd
-    - part: notebooks.qmd
+    - part: chapters/notebooks.qmd
       chapters: 
-        - gallery/notebook2.qmd
-        - gallery/notebook3.qmd
-    - contribute.qmd
-    - references.qmd
+        - chapters/notebook_gallery/notebook2.qmd
+        - chapters/notebook_gallery/notebook3.qmd
+    - chapters/contribute.qmd
+    - chapters/references.qmd
 
 bibliography: references.bib
 

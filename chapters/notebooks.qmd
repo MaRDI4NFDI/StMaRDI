@@ -115,7 +115,7 @@ p {
         <!-- First Item 
         <div class="gallery-item">
             <strong> Telekom Customer <br> Analysis</strong>
-            <a href="gallery/notebook1.qmd">
+            <a href="notebook_gallery/notebook1.qmd">
                 <img src="/images/Telekom_Notebook.png" alt="Stats Screenshot">
             </a>
             <div class="button-container">
@@ -125,7 +125,7 @@ p {
         <!-- Second Item -->
         <div class="gallery-item">
             <strong>PC Algorithm for Causal Discovery</strong>
-            <a href="gallery/notebook2.qmd">
+            <a href="notebook_gallery/notebook2.qmd">
                 <img src="/images/PC_Alg_Notebook.png" alt="Zenodo Screenshot">
             </a>
             <div class="button-container">
@@ -143,7 +143,7 @@ p {
         <!-- Third Item -->
         <div class="gallery-item">
             <strong>ALARM <br> Notebook</strong>
-            <a href="gallery/notebook3.qmd">
+            <a href="notebook_gallery/notebook3.qmd">
                 <img src="/images/ALARM_Subgraph_Notebook.png" alt="Mardi Screenshot">
             </a>
             <div class="button-container">

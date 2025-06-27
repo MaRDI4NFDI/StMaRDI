@@ -1,17 +1,17 @@
 ########## Impressum ########## 
 
-Technische Universität München (TUM)
+Technische Universitaet Muenchen (TUM)
 
-Die Technische Universität München ist eine Körperschaft des
+Die Technische Universitaet Muenchen ist eine Koerperschaft des
 Öffentlichen Rechts und staatliche Einrichtung (Art 4 Abs 1 BayHIG).
 
 School of Computation, Information and Technology Department of
-Mathematics Chair of Mathematical Statistics Projekt: MaRDI -\>
-Graphical Modelling and Causal Inference Website:
-https://st-mardi.quarto.pub/gmci/
+Mathematics Chair of Mathematical Statistics 
+Projekt: MaRDI Graphical Modelling and Causal Inference 
+Website: https://st-mardi.quarto.pub/gmci/
 
 Anschrift:
-Parkring 13 85748 Garching bei München Deutschland
+Parkring 13 85748 Garching bei Muenchen Deutschland
 
 Vertreten durch:
 TBD
@@ -20,5 +20,5 @@ Kontakt:
 Telefon: *'Vorwahl Muenchen'* 289 17434 
 E-Mail: mardi-ta3 *'at'* listserv.dfn.de
 
-Aufsichtsbehörde:
+Aufsichtsbehoerde:
 Bayerisches Staatsministerium für Wissenschaft und Kunst

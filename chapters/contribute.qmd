@@ -1,6 +1,6 @@
 # Contributing to the Community
 
-There are currently two options to contribute to the Zenodo community [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10). For both options, a dataset (respectively dataset collection) or a notebook, a record on Zenodo has to be created and submitted to the community. The submissions are required to be topically related to the community. The [community moderators](index.qmd) process each submission, create the necessary embedding links, potentially request revisions, and assist with any questions. There are no associated costs.
+There are currently two options to contribute to the Zenodo community [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10). For both options, a dataset (respectively dataset collection) or a notebook, a record on Zenodo has to be created and submitted to the community. The submissions are required to be topically related to the community. The [community moderators](../index.qmd) process each submission, create the necessary embedding links, potentially request revisions, and assist with any questions. There are no associated costs.
 
 ## Advantages of the Community
 
