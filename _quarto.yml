@@ -28,7 +28,7 @@ book:
     - chapters/contribute.qmd
     - chapters/references.qmd
 
-bibliography: references.bib
+bibliography: chapters/references.bib
 
 format:
   html:
