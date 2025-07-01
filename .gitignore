@@ -4,6 +4,9 @@
 .Ruserdata
 StMaRDI.Rproj
 
+renv/library/
+renv/python/
+
 *.tex
 *.pdf
 .DS_Store
