@@ -36,7 +36,9 @@ jobs:
             libraptor2-dev \
             libcurl4-openssl-dev \
             libxml2-dev \
-            libssl-dev
+            libssl-dev \
+            libsecret-1-dev \
+            libglib2.0-dev
 
       - name: Restore R environment
         run: Rscript -e 'install.packages("renv"); renv::restore()'
