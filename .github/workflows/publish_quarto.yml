@@ -29,7 +29,14 @@ jobs:
       - name: Install system dependencies 
         run: |
           sudo apt-get update
-          sudo apt-get install -y libgsl-dev libredland-dev libgraphviz-dev
+          sudo apt-get install -y \
+            libgsl-dev \
+            libgraphviz-dev \
+            librdf0-dev \
+            libraptor2-dev \
+            libcurl4-openssl-dev \
+            libxml2-dev \
+            libssl-dev
 
       - name: Restore R environment
         run: Rscript -e 'install.packages("renv"); renv::restore()'
