@@ -15,8 +15,7 @@ book:
       &copy; [MaRDI@TUM](https://portal.mardi4nfdi.de/wiki/Portal/TA3) </br>
     center: |
       <div style = "overflow: hidden; display: inline-block; vertical-align: center;">
-      <img src="images/MaRDI_Logo.png" alt="MaRDI Logo" style="height: 30px; margin-right: 20px;">
-      <img src="images/TUM_Logo.PNG" alt="TUM Logo" style="height: 30px;">
+      <img src="images/MaRDI_Logo.png" alt="MaRDI Logo" style="height: 30px;">
       </div>
     background: "#f8f9fa"
   chapters:
