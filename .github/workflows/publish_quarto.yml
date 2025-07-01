@@ -1,0 +1,35 @@
+name: Publish Quarto Book
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 'latest'
+
+      - name: Install dependencies (if needed)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+
+      - name: Set up Quarto Pub credentials
+        run: |
+          mkdir -p ~/.quarto
+          echo "${{ secrets.QUARTO_PUB_TOKEN }}" > ~/.quarto/quarto-pub-accounts.yml
+
+      - name: Render the book
+        run: quarto render
+
+      - name: Publish to Quarto Pub
+        run: quarto publish quarto-pub
