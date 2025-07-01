@@ -39,7 +39,8 @@ jobs:
             libssl-dev \
             libsecret-1-dev \
             libglib2.0-dev \
-            libjpeg-dev
+            libjpeg-dev \
+            libpng-dev
 
       - name: Restore R environment
         run: Rscript -e 'install.packages("renv"); renv::restore()'
