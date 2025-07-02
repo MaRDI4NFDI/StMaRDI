@@ -42,7 +42,9 @@ jobs:
             libjpeg-dev \
             libpng-dev \
             libfreetype6-dev \
-            libfontconfig1-dev
+            libfontconfig1-dev \
+            libharfbuzz-dev \
+            libfribidi-dev
 
       - name: Restore R environment
         run: Rscript -e 'install.packages("renv"); renv::restore()'
