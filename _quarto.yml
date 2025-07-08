@@ -4,7 +4,7 @@ project:
 book:
   title: "Graphical Modelling and Causal Inference"
   author: "MaRDI@TUM"
-  date: "6/27/2025"
+  date: "07/08/2025"
   favicon: "images/arrow_round.png"
   page-footer:
     left: |
@@ -22,7 +22,8 @@ book:
     - index.qmd
     - part: chapters/notebooks.qmd
       chapters: 
-        - chapters/notebook_gallery/notebook2.qmd
+        - text: "PC Algorithm for Causal Discovery"
+          file: chapters/notebook_gallery/notebook2.qmd
         - chapters/notebook_gallery/notebook3.qmd
     - chapters/contribute.qmd
     - chapters/references.qmd
@@ -32,6 +33,7 @@ bibliography: chapters/references.bib
 format:
   html:
     theme: cosmo
+    #page-layout: full
     documentclass: scrreprt
     cover-image: images/cover.png
     number-depth: 3
@@ -39,5 +41,5 @@ format:
       margin-width: 0px
       gutter-width: 2rem
       
-execute:
-  cache: true
+#execute:
+#  cache: true
