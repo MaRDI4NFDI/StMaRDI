@@ -1,0 +1,3 @@
+[submodule "chapters/notebook_gallery/PC_Algorithm_ALARM/notebooks/PC_Alg"]
+	path = chapters/notebook_gallery/PC_Algorithm_ALARM/notebooks/PC_Alg
+	url = https://github.com/lmareis/PC-Algorithm-An-Application-on-the-Alarm-Dataset
