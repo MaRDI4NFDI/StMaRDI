@@ -72,46 +72,47 @@ p {
   border-radius: 4px;
   text-decoration: none;
 }
-        .button.zenodo {
-            background-color: #2f6fa7; /* Zenodo button color */
-            font-family: Arial, sans-serif;
-            font-size: 12px;
-            font-weight: bold;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            text-decoration: none;
-        }
-        .doi-badge {
-        display: inline-flex;
-        align-items: center;
-        font-family: Arial, sans-serif;
-        font-size: 12px;
-        font-weight: bold;
-        text-decoration: none;
-        border-radius: 4px;
-        overflow: hidden;
-        max-width: 100%; /* Prevents it from overflowing */
-        white-space: nowrap; /* Ensures it stays in one line */
-    }
-    .doi-label {
-        background-color: #5b5b5b;
-        color: white;
-        padding: 4px 6px;
-    }
-    .doi-link {
-        background-color: #1F81C2;
-        color: white;
-        padding: 4px 8px;
-    }
+.button.zenodo {
+  background-color: #2f6fa7; /* Zenodo button color */
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.doi-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 100%; /* Prevents it from overflowing */
+  white-space: nowrap; /* Ensures it stays in one line */
+}
+.doi-label {
+  background-color: #5b5b5b;
+  color: white;
+  padding: 4px 6px;
+}
+.doi-link {
+  background-color: #1F81C2;
+  color: white;
+  padding: 4px 8px;
+}
 
-        .button:hover {
-            opacity: 0.9;
-        }
-    </style>
+.button:hover {
+    opacity: 0.9;
+}
+</style>
 </head>
 <body>
     <div class="gallery-container">
+    
         <!-- First Item 
         <div class="gallery-item">
             <strong> Telekom Customer <br> Analysis</strong>
@@ -119,9 +120,10 @@ p {
                 <img src="/images/Telekom_Notebook.png" alt="Stats Screenshot">
             </a>
             <div class="button-container">
-                <a href="https://github.com" class="button git">Git                 </a>
+                <a href="https://github.com" class="button git">Git</a>
             </div>
         </div> -->
+        
         <!-- Second Item -->
         <div class="gallery-item">
             <strong>PC Algorithm for </br> Causal Discovery</strong>
@@ -140,6 +142,7 @@ p {
               <span class="doi-link">10.5281/zenodo.7676615</span>
             </a>
         </div>
+        
         <!-- Third Item -->
         <div class="gallery-item">
             <strong>ALARM <br> Subgraph Analysis</strong>
@@ -154,6 +157,7 @@ p {
               <span class="doi-link">10.5281/zenodo.7676615</span>
             </a>
         </div>
+        
         <!-- Fourth Item 
         <div class="gallery-item">
             <strong>Cause-Effect Pairs MPI Tuebingen</strong>
@@ -168,6 +172,7 @@ p {
               <span class="doi-link">10.5281/zenodo.10625451</span>
             </a>
         </div> -->
+        
         <!-- Fifth Item 
         <div class="gallery-item">
             <strong><br>online html</strong>
@@ -178,6 +183,7 @@ p {
                 <a href="https://github.com/MaRDI4NFDI/StMaRDI/blob/main/website/GMCI_MaRDI/gallery/remote_notebook2.html" class="button git">Git</a>
             </div>
         </div> -->
+        
     </div> 
 </body>
 ```
