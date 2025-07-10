@@ -14,7 +14,6 @@
     @article{Mareis_Haug_Drton_2025,
     title={MaRDI's Zenodo Community for Graphical Modeling and Causal Inference},
     volume={2},
-    abstractNote={The Graphical Modeling and Causal Inference (GMCI) community, hosted on Zenodo, supports researchers developing statistical methodology via a curated collection of datasets and notebooks. It addresses statisticians working on methods for structure learning and causal effect estimation in the context of probabilistic and causal graphical models. Adopting the FAIR principles, it seeks to host and moderate topical contributions of datasets, metadata, data analyses, and methodological implementations in an enriched repository. As a Zenodo community, GMCI provides a free long-term storage solution with unique digital object identifiers (DOI) that ensure and build a stable network of digital research data.},
     journal={Proceedings of the Conference on Research Data Infrastructure},
     author={Mareis, Leopold and Haug, Stephan and Drton, Mathias},
     year={2025},

@@ -4,42 +4,51 @@ project:
 book:
   title: "Graphical Modelling and Causal Inference"
   author: "MaRDI@TUM"
-  date: "07/08/2025"
+  date: today
   favicon: "images/arrow_round.png"
+  repo-url: https://github.com/MaRDI4NFDI/StMaRDI
+  
   page-footer:
     left: |
       All content licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
     right: | 
       <div style="height: 20px; width = 10px"></div>
-      [Imprint](chapters/imprint.txt). 
+      [Imprint](/chapters/imprint.txt). 
       &copy; [MaRDI@TUM](https://portal.mardi4nfdi.de/wiki/Portal/TA3) </br>
     center: |
       <div style = "overflow: hidden; display: inline-block; vertical-align: center;">
       <img src="images/MaRDI_Logo.png" alt="MaRDI Logo" style="height: 30px;">
       </div>
     background: "#f8f9fa"
+  
   chapters:
     - index.qmd
     - part: chapters/notebooks.qmd
       chapters: 
         - text: "PC Algorithm for Causal Discovery"
-          file: chapters/notebook_gallery/notebook2.qmd
+          file: chapters/notebook_gallery/notebooks/PC_Alg/PC_Alg.qmd
         - chapters/notebook_gallery/notebook3.qmd
     - chapters/contribute.qmd
-    - chapters/references.qmd
+    #- chapters/references.qmd # optional reference chapter
+    
 
 bibliography: chapters/references.bib
 
+
 format:
   html:
-    theme: cosmo
-    #page-layout: full
+    theme:
+      light: cosmo
+      dark: darkly
     documentclass: scrreprt
+    code-overflow: wrap # wrap long code
     cover-image: images/cover.png
-    number-depth: 3
-    grid: 
-      margin-width: 0px
-      gutter-width: 2rem
+    number-depth: 3 # number headings until level 3 (###)
+    toc: true # table of content
+    toc-location: right
+    toc-expand: true
+    reference-location: margin # references in notebook margin
+    citation-location: margin
       
 #execute:
 #  cache: true
