@@ -126,7 +126,7 @@ p {
         <div class="gallery-item">
             <strong>PC Algorithm for </br> Causal Discovery</strong>
             <a href="notebook_gallery/notebooks/PC_Alg/PC_Alg.qmd">
-                <img src="/images/PC_Alg_Notebook.png" alt="Zenodo Screenshot">
+                <img src="notebook_gallery/notebooks/PC_Alg/gallery_picture.png" alt="PC_Alg_image">
             </a>
             <div class="button-container">
                 <a href="https://github.com/lmareis/PC-Algorithm-An-Application-on-the-Alarm-Dataset/blob/Inital_Release/PC_Alg.Rmd" class="button git">Git</a>
