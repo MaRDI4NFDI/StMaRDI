@@ -50,5 +50,5 @@ format:
     reference-location: margin # references in notebook margin
     citation-location: margin
       
-#execute:
-#  cache: true
+execute:
+  cache: true
