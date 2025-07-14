@@ -1,6 +1,6 @@
-# Accompanying Statistical Notebooks
+# Library
 
-Each project in the **gallery** is represented by a clickable notebook that provides insights into methodologies applied to datasets from our Zenodo community on [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10). These notebooks present the data, the analysis process, and the derived results. In addition to the notebooks, links to the Zenodo datasets and the underlying GitHub repositories are provided for code transparency and reproducibility.
+These notebooks present [GMCI](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10) datasets, provide insights into methodologies, showcase the analysis process, and summarize the derived results. In addition, links to the datasets and the underlying GitHub repositories are provided for code transparency and reproducibility.
 
 ```{=html}
 <head>
