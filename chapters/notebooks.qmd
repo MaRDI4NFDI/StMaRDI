@@ -88,7 +88,7 @@ p {
         <!-- PC Algorithm -->
         <div class="gallery-item">
             <strong>PC Algorithm for </br> Causal Discovery</strong>
-            <a href="notebook_gallery/notebooks/PC_Alg/PC_Alg.qmd">
+            <a href="notebook_gallery/notebooks/PC_Alg/notebook.qmd">
                 <img src="notebook_gallery/notebooks/PC_Alg/gallery_picture.png" alt="PC_Alg_image">
             </a>
             <div class="button-container">
@@ -111,6 +111,20 @@ p {
             </div>
             <div class="button-container">
                 <a href="https://zenodo.org/communities/mardigmci/records?q=&f=subject%3AHealth%20Data&l=list&p=1&s=10&sort=newest" class="button color yellow"> Health Data </a>
+            </div>
+        </div>
+        
+        <!-- Submission Instructions -->
+        <div class="gallery-item">
+            <strong> Analysis <br> Notebook Template </strong>
+            <a href="notebook_gallery/notebooks/GMCI_notebook_template/notebook.qmd">
+                <img src="notebook_gallery/notebooks/GMCI_notebook_template/gallery_picture.png" alt="Notebook Screenshot">
+            </a>
+            <div class="button-container">
+                <a href="https://www.r-project.org/" class="button color R"> R </a>
+            </div>
+            <div class="button-container">
+                <a href="https://zenodo.org/communities/mardigmci/records?q=&f=subject%3AHealth%20Data&l=list&p=1&s=10&sort=newest" class="button color yellow"> Template </a>
             </div>
         </div>
         

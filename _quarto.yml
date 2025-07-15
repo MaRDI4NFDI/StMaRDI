@@ -1,5 +1,7 @@
 project:
   type: book
+  resources:
+    - chapters/notebook_gallery/notebooks/GMCI_notebook_template/notebook.qmd
 
 book:
   title: "Graphical Modelling and Causal Inference"
@@ -26,8 +28,10 @@ book:
     - part: chapters/notebooks.qmd
       chapters: 
         - text: "PC Algorithm for Causal Discovery"
-          file: chapters/notebook_gallery/notebooks/PC_Alg/PC_Alg.qmd
+          file: chapters/notebook_gallery/notebooks/PC_Alg/notebook.qmd
         - chapters/notebook_gallery/notebook3.qmd
+        - text: "Analysis Notebook Template"
+          file: chapters/notebook_gallery/notebooks/GMCI_notebook_template/notebook.qmd
     - chapters/contribute.qmd
     #- chapters/references.qmd # optional reference chapter
     
