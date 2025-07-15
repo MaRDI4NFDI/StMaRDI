@@ -1,3 +1,6 @@
 [submodule "chapters/notebook_gallery/notebooks/PC_Alg"]
 	path = chapters/notebook_gallery/notebooks/PC_Alg
 	url = https://github.com/lmareis/PC-Algorithm-An-Application-on-the-Alarm-Dataset
+[submodule "chapters/notebook_gallery/notebooks/GMCI_notebook_template"]
+	path = chapters/notebook_gallery/notebooks/GMCI_notebook_template
+	url = git@github.com:MaRDI4NFDI/GMCI_notebook_template.git

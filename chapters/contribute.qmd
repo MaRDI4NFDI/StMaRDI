@@ -9,7 +9,7 @@ To upload a dataset or dataset collection, \[Step 1\] click on the '+' to create
 
 ![GMCI Logo](../images/zenodo_upload.png)
 
-Please upload a dataset as a .csv file and a collection of datset as a .zip file. If applicable, auxiliary files (graph, ground truth, license, extended description) should be up uploaded as separate files. We require the 'description' of the Zenodo to have the following format:
+Please upload a dataset as a .csv file, or a collection of datasets as a .zip file. If applicable, auxiliary files (graph, ground truth, license, extended description) should be uploaded as separate files. We require the description of the Zenodo record to have the following format:
 
 ::: {style="color: gray; margin-left: 1cm;"}
 *A description of the dataset/dataset collection.*
@@ -68,20 +68,24 @@ Please upload a dataset as a .csv file and a collection of datset as a .zip file
 
 -   ***File2:** License2*
 :::
+
+For good reference, see the [ALARM (A Logical Alarm Reduction Mechanism)](https://zenodo.org/records/14793281) dataset and the [Sachs: Protein and Phospholipids Expressions](https://zenodo.org/records/7681811) dataset collection.
 ::::
 
 ::: {.callout-note collapse="true" title="Analysis Notebook" icon="false"}
 Log into [Zenodo](https://zenodo.org/) via GitHub, ORCID, OpenAIRE, or create a new account.
 
-Create a git repository with (1) the code, and (2) the notebook's rendered .html file. Then, [connected the repository with Zenodo](https://zenodo.org/account/settings/github/) as shown in the picture below.
+Prepare a git repository with the following structure:
+
+Create a git repository with (1) the code, and (2) the notebook's .qmd file. Then, [connected the repository with Zenodo](https://zenodo.org/account/settings/github/) as shown in the picture below.
 
 ![Source: <https://zenodo.org/account/settings/github/>](../images/zenodo_git_integration.png)
 
 This will automatically create a record of the zipped repository along with a unique DOI. As the whole repository is zipped, we advise to restrict the repository's content to the necessary files. The associated DOI will forward you to the Zenodo record, which you can submit it to the [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10) community by editing the record's page. Although the record's description is taken from the git release, the records meta-information can be edited manually afterwards, e.g., referencing a publication, linking the associated Zenodo dataset or specifying an R package.
 
-We showcase the rendered notebooks on this website's gallery of [Accompanying Statistical Notebooks](notebooks.qmd). For this, please specify the path toward the .html in the submission text.
+We render and showcase the accepted notebook on this website's [library](/chapters/notebooks.qmd).
 
-Please contact us when publishing a new release of the git repository. This will automatically trigger a new Zenodo version of the record. This website, however, will not be rendered automatically but manually by the MaRDI TA3 team. Note that the record on Zenodo, as a copy of the git, is permanent and previous record versions, respectively git releases, can still be accessed.
+Please contact us when publishing a new release of the git repository. A new release will automatically trigger a new version of the Zenodo record. This website, however, has to be rendered manually. Note that the record on Zenodo, as a copy of the git, is permanent and previous record versions, respectively git releases, can still be accessed.
 :::
 
 For both options, a [Zenodo](https://zenodo.org/) record has to be created according to the structure above and submitted to the [GMCI Zenodo community](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10). The [community moderators](/index.qmd) process each submission, create the necessary embedding links, potentially request revisions, and assist with any questions. While accepted datasets appear in the GMCI Zenodo community, notebook submissions' git repositories will be backed on Zenodo with the analysis rendered and featured on this website's [library](/chapters/notebooks.qmd).
