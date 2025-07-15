@@ -7,7 +7,7 @@ Log into [Zenodo](https://zenodo.org/) via GitHub, ORCID, OpenAIRE, or create a 
 
 To upload a dataset or dataset collection, \[Step 1\] click on the '+' to create a new record and \[Step 2\] select the [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci) community. \[Step 3\] Upload the desired files and give as much additional information as possible in the cells below.
 
-![GMCI Logo](../images/zenodo_upload.png)
+![Source: <https://zenodo.org/>](../images/zenodo_upload.png)
 
 Please upload a dataset as a .csv file, or a collection of datasets as a .zip file. If applicable, auxiliary files (graph, ground truth, license, extended description) should be uploaded as separate files. We require the description of the Zenodo record to have the following format:
 
