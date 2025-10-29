@@ -118,6 +118,18 @@ p {
             </div>
         </div>
         
+        <!-- SEMID -->
+        <div class="gallery-item">
+            <strong>SEMID </br> R Package </strong>
+            <a href="notebook_gallery/notebooks/GMCI-notebook-SEMID/notebook.qmd">
+                <img src="notebook_gallery/notebooks/GMCI-notebook-SEMID/gallery_picture.png" alt="SEMID Logo">
+            </a>
+            <div class="button-container">
+                <a href="https://www.r-project.org/" class="button color R"> R </a>
+                <a href="https://cran.r-project.org/web/packages/SEMID/index.html" class="button color pink"> SEMID </a>
+            </div>
+        </div>
+        
         <!-- Submission Instructions -->
         <div class="gallery-item">
             <strong> Analysis <br> Notebook Template </strong>
