@@ -4,3 +4,6 @@
 [submodule "chapters/notebook_gallery/notebooks/GMCI_notebook_template"]
 	path = chapters/notebook_gallery/notebooks/GMCI_notebook_template
 	url = https://github.com/MaRDI4NFDI/GMCI_notebook_template
+[submodule "chapters/notebook_gallery/notebooks/GMCI_Julia_notebook"]
+	path = chapters/notebook_gallery/notebooks/GMCI_Julia_notebook
+	url = https://github.com/MaRDI4NFDI/GMCI_Julia_notebook.git
