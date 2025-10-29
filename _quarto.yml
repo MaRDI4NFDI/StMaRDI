@@ -30,6 +30,8 @@ book:
         - text: "PC Algorithm for Causal Discovery"
           file: chapters/notebook_gallery/notebooks/PC_Alg/notebook.qmd
         - chapters/notebook_gallery/notebook3.qmd
+        - text: "SEMID Notebook"
+          file: chapters/notebook_gallery/notebooks/GMCI-notebook-SEMID/notebook.qmd
         - text: "Analysis Notebook Template"
           file: chapters/notebook_gallery/notebooks/GMCI_notebook_template/notebook.qmd
         - text: "Julia Notebook Template"
