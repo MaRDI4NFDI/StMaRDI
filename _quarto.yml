@@ -32,6 +32,8 @@ book:
         - chapters/notebook_gallery/notebook3.qmd
         - text: "Analysis Notebook Template"
           file: chapters/notebook_gallery/notebooks/GMCI_notebook_template/notebook.qmd
+        - text: "Julia Notebook Template"
+          file: chapters/notebook_gallery/notebooks/GMCI_Julia_notebook/notebook.qmd
     - chapters/contribute.qmd
     #- chapters/references.qmd # optional reference chapter
     

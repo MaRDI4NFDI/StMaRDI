@@ -71,12 +71,16 @@ p {
 .button.color.R {
   background-color: #276CBF; /* R button color */
 }
+.button.color.Julia {
+  background-color: #a47cbeff; /* Julia button color */
+}
 .button.color.yellow {
   background-color: #ebd91c; /* yellow button color */
 }
 .button.color.pink {
   background-color: #d61371; /* pink button color */
 }
+
 .button:hover {
     opacity: 0.9;
 }
@@ -125,6 +129,20 @@ p {
             </div>
             <div class="button-container">
                 <a href="https://zenodo.org/communities/mardigmci/records?q=&f=subject%3AHealth%20Data&l=list&p=1&s=10&sort=newest" class="button color yellow"> Template </a>
+            </div>
+        </div>
+        
+        <!-- Julia Instructions -->
+        <div class="gallery-item">
+            <strong> Julia <br> Notebook Example </strong>
+            <a href="notebook_gallery/notebooks/GMCI_Julia_notebook/notebook.qmd">
+                <img src="notebook_gallery/notebooks/GMCI_Julia_notebook/gallery_picture.png" alt="Notebook Screenshot">
+            </a>
+            <div class="button-container">
+                <a href="https://julialang.org/" class="button color Julia"> Julia </a>
+            </div>
+            <div class="button-container">
+                <a href="https://zenodo.org/communities/mardigmci" class="button color yellow"> Template </a>
             </div>
         </div>
         
