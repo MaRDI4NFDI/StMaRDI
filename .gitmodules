@@ -10,3 +10,6 @@
 [submodule "chapters/notebook_gallery/notebooks/GMCI-notebook-SEMID"]
 	path = chapters/notebook_gallery/notebooks/GMCI-notebook-SEMID
 	url = https://github.com/NilsSturma/GMCI-notebook-SEMID.git
+[submodule "chapters/notebook_gallery/notebooks/OscarID"]
+	path = chapters/notebook_gallery/notebooks/OscarID
+	url = https://github.com/lmareis/OscarID.git
