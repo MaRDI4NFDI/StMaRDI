@@ -1,0 +1,82 @@
+# Datasets in the GMCI Collection
+
+All datasets of the GMCI collection are listed in the table below. By clicking on the column headers it is possible to filter for the desired specifications. 
+
+```{r}
+#| echo: false
+library(DT)
+
+column_names <- c("Name", "Size of Collection", "Sample Size", "Dimension", "Task", "Data Type", "Dataset Scope", "Ground Truth", "Temporal Structure", "License", "Missing Values")
+
+# https://doi.org/10.5281/zenodo.17854235
+d <- c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.17854235", "DREAM5 - Gene Network Inference - E. coli"), 
+        NA, NA, 4155,
+        "Causal Discovery", 
+        "Mixed Data", 
+        "Collection of Datasets", 
+        "Unknown Graph", 
+        "Static Data", 
+        "CC BY-ND 4.0", 
+        "No Missing Values")
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.17854235", "DREAM5 - Gene Network Inference - S. aureus"), 
+        NA, NA, 2810,
+        "Causal Discovery", 
+        "Mixed Data", 
+        "Collection of Datasets", 
+        "Unknown Graph", 
+        "Static Data", 
+        "CC BY-ND 4.0", 
+        "No Missing Values"))
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.17854235", "DREAM5 - Gene Network Inference - S. cerevisiae"), 
+        NA, NA, 5950,
+        "Causal Discovery", 
+        "Mixed Data", 
+        "Collection of Datasets", 
+        "Unknown Graph", 
+        "Static Data", 
+        "CC BY-ND 4.0", 
+        "No Missing Values"))
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.17854235", "DREAM5 - Gene Network Inference - in silico"), 
+        NA, NA, 1643,
+        "Causal Discovery", 
+        "Mixed Data", 
+        "Collection of Datasets", 
+        "Unknown Graph", 
+        "Static Data", 
+        "CC BY-ND 4.0", 
+        "No Missing Values"))
+
+
+# https://doi.org/10.5281/zenodo.17672001
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.17672001", "Causal Chamber™"),
+        59, 1000, 46,
+        "Causal Discovery", 
+        "Mixed Data", 
+        "Collection of Datasets", 
+        "Known Graph", 
+        "Static Data", 
+        "CC BY 4.0", 
+        "No Missing Values"))
+
+colnames(d) <- column_names
+datasets <- as.data.frame(d)
+datasets$`Size of Collection` <- as.numeric(datasets$`Size of Collection`)
+for (i in 1:9) {
+  if (i %in% 2:4) {
+    datasets[, i] <- as.numeric(datasets[, i])
+  }
+  else {
+    datasets[, i] <- as.factor(datasets[, i])
+  }
+}
+row.names(datasets) <- NULL
+
+datatable(
+  datasets,
+  filter = "top",
+  escape = FALSE,   # allow HTML in cells
+  options = list(pageLength = 10)
+)
+
+```
+
