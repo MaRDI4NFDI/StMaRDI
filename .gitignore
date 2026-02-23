@@ -10,8 +10,10 @@ renv/python/
 renv/.gitignore
 renv/settings.json
 
-chapters/notebook_gallery/data
-chapters/notebook_gallery/bnlearn_data
+chapters/notebook_gallery/data/
+chapters/notebook_gallery/bnlearn_data/
+chapters/notebook_gallery/notebooks/.cache/
+chapters/contribute_cache/html/
 
 *.tex
 *.pdf
