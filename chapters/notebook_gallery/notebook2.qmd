@@ -1,3 +1,0 @@
-```{r, echo = FALSE, warning=FALSE}
-htmltools::includeHTML("notebooks/PC_Alg/PC_Alg.html")
-```

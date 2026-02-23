@@ -7,6 +7,9 @@ StMaRDI.Rproj
 renv/library/
 renv/python/
 
+chapters/notebook_gallery/data
+chapters/notebook_gallery/bnlearn_data
+
 *.tex
 *.pdf
 .DS_Store
