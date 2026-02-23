@@ -32,12 +32,12 @@ book:
         - chapters/notebook_gallery/notebook3.qmd
         - text: "SEMID Notebook"
           file: chapters/notebook_gallery/notebooks/GMCI-notebook-SEMID/notebook.qmd
+        - text: "Oscar Linear ID Notebook"
+          file: chapters/notebook_gallery/notebooks/OscarID/notebook.qmd
         - text: "Analysis Notebook Template"
           file: chapters/notebook_gallery/notebooks/GMCI_notebook_template/notebook.qmd
         - text: "Julia Notebook Template"
           file: chapters/notebook_gallery/notebooks/GMCI_Julia_notebook/notebook.qmd
-        - text: "Oscar Graphical Model ID Notebook"
-          file: chapters/notebook_gallery/notebooks/Oscar_ID.qmd
     - chapters/contribute.qmd
     #- chapters/references.qmd # optional reference chapter
     

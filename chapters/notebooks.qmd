@@ -125,8 +125,22 @@ p {
                 <img src="notebook_gallery/notebooks/GMCI-notebook-SEMID/gallery_picture.png" alt="SEMID Logo">
             </a>
             <div class="button-container">
-                <a href="https://www.r-project.org/" class="button color R"> R </a>
+                <a href="https://www.r-project.org/" class="button color R"> R </a> </div>
+            <div class="button-container">
                 <a href="https://cran.r-project.org/web/packages/SEMID/index.html" class="button color pink"> SEMID </a>
+            </div>
+        </div>
+
+        <!-- OSCARid -->
+        <div class="gallery-item">
+            <strong>Linear Identifiaction</br> In OSCAR </strong>
+            <a href="notebook_gallery/notebooks/OscarID/notebook.qmd">
+                <img src="notebook_gallery/notebooks/OscarID/gallery_picture.png" alt="SEMID Logo">
+            </a>
+            <div class="button-container">
+                <a href="https://julialang.org/" class="button color Julia"> Julia </a> </div>
+            <div class="button-container">
+                <a href="https://docs.oscar-system.org/stable/" class="button color pink"> OSCAR </a>
             </div>
         </div>
         
