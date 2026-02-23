@@ -2,10 +2,13 @@
 .Rhistory
 .RData
 .Ruserdata
+.CondaPkg
 StMaRDI.Rproj
 
 renv/library/
 renv/python/
+renv/.gitignore
+renv/settings.json
 
 chapters/notebook_gallery/data
 chapters/notebook_gallery/bnlearn_data
