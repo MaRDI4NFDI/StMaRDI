@@ -13,3 +13,6 @@
 [submodule "chapters/notebook_gallery/notebooks/OscarID"]
 	path = chapters/notebook_gallery/notebooks/OscarID
 	url = https://github.com/lmareis/OscarID.git
+[submodule "chapters/notebook_gallery/notebooks/alarm_subgraph_analysis"]
+	path = chapters/notebook_gallery/notebooks/alarm_subgraph_analysis
+	url = git@github.com:hgstp/alarm_subgraph_analysis.git
