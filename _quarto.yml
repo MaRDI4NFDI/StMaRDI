@@ -29,7 +29,8 @@ book:
       chapters: 
         - text: "PC Algorithm for Causal Discovery"
           file: chapters/notebook_gallery/notebooks/PC_Alg/notebook.qmd
-        - chapters/notebook_gallery/notebook3.qmd
+        - text: "ALARM Subgraph Analysis"
+          file: chapters/notebook_gallery/notebooks/alarm_subgraph_analysis/notebook.qmd
         - text: "SEMID Notebook"
           file: chapters/notebook_gallery/notebooks/GMCI-notebook-SEMID/notebook.qmd
         - text: "Oscar Linear ID Notebook"

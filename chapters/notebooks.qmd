@@ -107,8 +107,8 @@ p {
         <!-- Subgraph Analysis -->
         <div class="gallery-item">
             <strong>ALARM <br> Subgraph Analysis</strong>
-            <a href="notebook_gallery/notebook3.qmd">
-                <img src="/images/ALARM_Subgraph_Notebook.png" alt="Mardi Screenshot">
+            <a href="notebook_gallery/notebooks/alarm_subgraph_analysis/notebook.qmd">
+                <img src="notebook_gallery/notebooks/alarm_subgraph_analysis/gallery_picture.png" alt="Mardi Screenshot">
             </a>
             <div class="button-container">
                 <a href="https://www.r-project.org/" class="button color R"> R </a>
