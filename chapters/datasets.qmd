@@ -1,6 +1,6 @@
-# Datasets in the GMCI Collection
+# Datasets in the GMCI Collection {.unnumbered}
 
-All datasets of the GMCI collection are listed in the table below. By clicking on the column headers it is possible to filter for the desired specifications. 
+The table below provides an overview of all datasets currently included in the [GMCI collection](https://zenodo.org/communities/mardigmci). The entries may be interactively filtered by selecting the desired attributes in the column headers. For detailed documentation of an individual dataset, the corresponding name links directly to its record on Zenodo.
 
 ```{r}
 #| echo: false
@@ -8,9 +8,12 @@ library(DT)
 
 column_names <- c("Name", "Size of Collection", "Sample Size", "Dimension", "Task", "Data Type", "Dataset Scope", "Ground Truth", "Temporal Structure", "License", "Missing Values")
 
-# https://doi.org/10.5281/zenodo.17854235
+
+############################################################################
+# DREAM5 - Gene Network Inference
+
 d <- c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.17854235", "DREAM5 - Gene Network Inference - E. coli"), 
-        NA, NA, 4155,
+        1, NA, 4155,
         "Causal Discovery", 
         "Mixed Data", 
         "Collection of Datasets", 
@@ -19,16 +22,16 @@ d <- c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/z
         "CC BY-ND 4.0", 
         "No Missing Values")
 d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.17854235", "DREAM5 - Gene Network Inference - S. aureus"), 
-        NA, NA, 2810,
+        1, NA, 2810,
         "Causal Discovery", 
         "Mixed Data", 
-        "Collection of Datasets", 
+        "Collection of Datasets",
         "Unknown Graph", 
         "Static Data", 
         "CC BY-ND 4.0", 
         "No Missing Values"))
 d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.17854235", "DREAM5 - Gene Network Inference - S. cerevisiae"), 
-        NA, NA, 5950,
+        1, NA, 5950,
         "Causal Discovery", 
         "Mixed Data", 
         "Collection of Datasets", 
@@ -37,7 +40,7 @@ d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/
         "CC BY-ND 4.0", 
         "No Missing Values"))
 d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.17854235", "DREAM5 - Gene Network Inference - in silico"), 
-        NA, NA, 1643,
+        1, NA, 1643,
         "Causal Discovery", 
         "Mixed Data", 
         "Collection of Datasets", 
@@ -47,8 +50,10 @@ d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/
         "No Missing Values"))
 
 
-# https://doi.org/10.5281/zenodo.17672001
-d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.17672001", "Causal Chamber™"),
+############################################################################
+# Causal Chamber™
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.17672001", "Causal Chamber™: Light Tunnel Interventions v1"),
         59, 1000, 46,
         "Causal Discovery", 
         "Mixed Data", 
@@ -58,10 +63,210 @@ d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/
         "CC BY 4.0", 
         "No Missing Values"))
 
+
+############################################################################
+# Cause-Effect Pairs from MPI Tübingen
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.7709406", "Tübingen Cause-Effect Pairs"),
+        108, NA, 2,
+        "Causal Discovery", 
+        "Mixed Data", 
+        "Collection of Datasets", 
+        "Known Graph", 
+        "Static Data", 
+        "CC BY 4.0",
+        "No Missing Values"))
+
+
+############################################################################
+# US Census
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.8063511", "US Census"),
+        1, 2458285, 68,
+        "Causal Discovery", 
+        "Discrete Data", 
+        "Standalone Dataset", 
+        "Unknown Graph", 
+        "Static Data", 
+        "CC0",
+        "No Missing Values"))
+
+
+############################################################################
+# Air Quality
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.14793602", "Air Quality"),
+        1, 9357, 15,
+        "Causal Discovery", 
+        "Mixed Data", 
+        "Standalone Dataset", 
+        "Unknown Graph", 
+        "Time Series Data", 
+        "CC BY 4.0",
+        "No Missing Values"))
+
+
+############################################################################
+# ALARM
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.7676615", "ALARM"),
+        1, 20000, 37,
+        "Causal Discovery", 
+        "Categorical Data", 
+        "Standalone Dataset", 
+        "Known Graph", 
+        "Static Data", 
+        "CC0",
+        "No Missing Values"))
+
+
+############################################################################
+# Hailfinder
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.14772849", "Hailfinder"),
+        1, 20000, 56,
+        "Causal Discovery", 
+        "Categorical Data", 
+        "Standalone Dataset", 
+        "Known Graph", 
+        "Static Data", 
+        "CC0",
+        "No Missing Values"))
+
+
+############################################################################
+# Asia Lung Diseases
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.14779794", "Asia Lung Diseases"),
+        1, 5000, 6,
+        "Causal Discovery", 
+        "Binary Data", 
+        "Standalone Dataset", 
+        "Known Graph", 
+        "Static Data", 
+        "CC0",
+        "No Missing Values"))
+
+
+############################################################################
+# Coronary Heart Disease
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.14779794", "Coronary Heart Disease"),
+        1, 1841, 6,
+        "Causal Discovery", 
+        "Categorical Data", 
+        "Standalone Dataset", 
+        "Unknown Graph", 
+        "Static Data", 
+        "TBD",
+        "No Missing Values"))
+
+
+############################################################################
+# Isoprenoid Gene Network
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.7682902", "Isoprenoid Gene Network"),
+        1, 118, 41,
+        "Causal Discovery", 
+        "Continuous Data", 
+        "Standalone Dataset", 
+        "Known Graph", 
+        "Static Data", 
+        "CC BY 2.0",
+        "No Missing Values"))
+
+
+############################################################################
+# Precipitation
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.7676478", "Precipitation"),
+        1, 371, 93,
+        "Causal Discovery", 
+        "Binary Data", 
+        "Standalone Dataset", 
+        "Known Graph", 
+        "Time Series Data", 
+        "CC BY 4.0",
+        "No Missing Values"))
+
+
+############################################################################
+# Psychological Pertubation
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.7674302", "Psychological Pertubation"),
+        1, 360, 11,
+        "Causal Discovery", 
+        "Discrete Data", 
+        "Standalone Dataset", 
+        "Unknown Graph", 
+        "Static Data", 
+        "CC BY 4.0",
+        "No Missing Values"))
+
+
+############################################################################
+# Empathy
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.7683906", "Empathy"),
+        1, 1973, 18,
+        "Causal Discovery", 
+        "Categorical Data", 
+        "Standalone Dataset", 
+        "Unknown Graph", 
+        "Static Data", 
+        "CC BY 4.0",
+        "Existing Missing Values"))
+
+
+############################################################################
+# Drug-Induced TdP Risk Assessment
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.8058963", "Drug-Induced TdP Risk Assessment"),
+        1, 109, 16,
+        "Causal Discovery", 
+        "Mixed Data", 
+        "Standalone Dataset", 
+        "Unknown Graph", 
+        "Static Data", 
+        "CC BY-NC 4.0",
+        "Existing Missing Values"))
+
+
+############################################################################
+# BEELINE
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.7682712", "BEELINE"),
+        400, NA, 6,
+        "Causal Inference", 
+        "Mixed Data", 
+        "Collection of Datasets", 
+        "Known Graph", 
+        "Static Data", 
+        "CC BY-NC 4.0",
+        "No Missing Values"))
+
+
+############################################################################
+# Sachs: Protein and Phospholipids Expressions
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.7679091", "Sachs: Protein and Phospholipids Expressions"),
+        14, 707, 11,
+        "Causal Discovery", 
+        "Continuous Data", 
+        "Collection of Datasets", 
+        "Known Graph", 
+        "Static Data", 
+        "CC BY 4.0",
+        "No Missing Values"))
+
+
+############################################################################
+# format datasets
+
 colnames(d) <- column_names
 datasets <- as.data.frame(d)
 datasets$`Size of Collection` <- as.numeric(datasets$`Size of Collection`)
-for (i in 1:9) {
+for (i in 1:ncol(datasets)) {
   if (i %in% 2:4) {
     datasets[, i] <- as.numeric(datasets[, i])
   }
@@ -71,12 +276,160 @@ for (i in 1:9) {
 }
 row.names(datasets) <- NULL
 
+
+############################################################################
+# provide datasets as clickable table
+
 datatable(
   datasets,
   filter = "top",
   escape = FALSE,   # allow HTML in cells
-  options = list(pageLength = 10)
+  options = list(pageLength = 25)
 )
 
 ```
+
+
+# Custom Online Data Extraction {.unnumbered}
+
+Many application domains present problems in which graphical modeling provides a statistical framework for addressing fundamental questions about underlying relationships. To support researchers engaged in custom data extraction, we provide below a selection of representative areas together with links to relevant resources. Researchers who derive new datasets through such extraction or post‑processing are encouraged to contribute their finalized materials to our [Zenodo community](https://zenodo.org/communities/mardigmci).
+
+------------------------------------------------------------------------
+
+::: {.callout-note collapse="false" title="Health Data" icon="false"}
+**Examples for causal relationships:**
+
+-   Sugar consumption on diabetes risk
+
+-   Genetic predisposition to obesity on cardiovascular disease
+
+-   Early administration of vasopressors might improve survival rates in ICU patients with septic shock
+
+| Source | License | Data Provided |
+|----|----|----|
+| [MIMIC-IV](https://physionet.org/content/mimiciv/2.2/) (see also [PhysionNet](https://physionet.org/)) | Credential Health Data License 1.5.0 (training required; [License](https://physionet.org/content/mimiciv/view-license/2.2/)) | Critical care data for over 40,000 patients admitted to intensive care units at the Beth Israel Deaconess Medical Center. |
+| [National Health and Nutrition Examination Survey](https://wwwn.cdc.gov/nchs/nhanes/default.aspx) | Statistical reporting and analysis only ([License](https://www.cdc.gov/nchs/policy/data-user-agreement.html)) | Health of 5,000 adults and children in the US: food, drinks, supplements, nutrients, blood tests. |
+| [UK Biobank](https://www.ukbiobank.ac.uk/) | Need application and ethics approval ([License](https://www.ukbiobank.ac.uk/media/hbonv55a/code-of-conduct-ukbb-nov-2020.pdf)) | [Genetic and health information from half a million UK participants](https://www.ukbiobank.ac.uk/enable-your-research/about-our-data): Imaging, Genetics, Health linkages, Biomarkers, Activity monitor, Questionnaires, Blood samples |
+| Cardiology: [MIT-BIH Arrhythmia Database](https://www.physionet.org/content/mitdb/1.0.0/) (see also [PhysionNet](https://physionet.org/)) | ODC-By ([License](https://www.physionet.org/content/mitdb/view-license/1.0.0/)) | 48 half-hour excerpts of two-channel ambulatory ECG recordings, obtained from 47 subjects. |
+| Neurology: [OpenNEURO](https://openneuro.org/) | CCO ([License](https://docs.openneuro.org/faq)) | MRI, PET, EEG, iEEG, MEG [datasets](https://openneuro.org/search) |
+| Epidemiology: JH [Coronavirus Resource Center](https://coronavirus.jhu.edu/) | CC BY 4.0 ([License](https://github.com/CSSEGISandData/COVID-19)) | Global COVID-19 case counts, deaths, and recoveries at the country and state/province level, updated throughout the pandemic |
+:::
+
+::: {.callout-tip collapse="true" title="Economic & Financial Data" icon="false"}
+**Examples for causal relationships:**
+
+-   inflation affects employment
+
+-   policies impact market behavior
+
++----------------------------------------------------------------------+----------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Source                                                               | License                                                                    | Data Provided                                                                                                                                                                |
++======================================================================+============================================================================+==============================================================================================================================================================================+
+| [World Bank Open Data](https://data.worldbank.org/)                  | CC BY 4.0 ([License](https://datacatalog.worldbank.org/public-licenses))   | Time Series Data, Performance Indicators                                                                                                                                     |
++----------------------------------------------------------------------+----------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [OECD Data](https://www.oecd.org/en/data.html)                       | CC BY 4.0 ([License](https://www.oecd.org/en/about/terms-conditions.html)) | Consumer Price Indices, Institutional Investors' Indicators                                                                                                                  |
++----------------------------------------------------------------------+----------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/) | Non-commercial ([License](https://fred.stlouisfed.org/legal/))             | Economic data series on banking, business, consumer and producer price indices, employment, population, exchange rates, GDP, interest rates, trade, and U.S. financial data. |
++----------------------------------------------------------------------+----------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+:::
+
+::: {.callout-note collapse="true" title="Social & Behavioral Data" icon="false"}
+**Examples for causal relationships:**
+
+-   Work conditions influence family stability
+
+-   Political climate affects public trust in media
+
+-   Immigration policies shape public attitudes
+
++----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
+| Source                                                                           | License                                                                                                                                                    | Data Provided                               |
++==================================================================================+============================================================================================================================================================+=============================================+
+| [General Social Survey (GSS)](https://gss.norc.org/)                             | Purchase required ([License](https://gss.norc.org/content/dam/gss/get-documentation/pdf/other/ObtainingGSSSensitiveDataFiles.pdf))                         | Health, marriage, family, work conditions   |
++----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
+| [Pew Research Data](https://www.pewresearch.org/tools-and-resources/)            | Nonexclusive, non-sublicensable, non-transferable, revocable, worldwide, royalty-free ([License](https://www.pewresearch.org/about/terms-and-conditions/)) | Politics, immigration, religion, technology |
++----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
+| [European Social Survey (ESS)](https://www.europeansocialsurvey.org/data-portal) | CC BY-NC-SA 4.0 ([License](https://www.europeansocialsurvey.org/contact/disclaimer))                                                                       | Public attitudes, beliefs and behavior      |
++----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
+:::
+
+::: {.callout-tip collapse="true" title="Environmental & Ecological Data" icon="false"}
+**Examples for causal relationships:**
+
+-   Atmospheric composition affects temperature
+
+-   Deforestation changes regional climate
+
+-   Extreme weather events result in biodiversity loss
+
+| Source | License | Data Provided |
+|----|----|----|
+| [NASA Earth Data](https://earthdata.nasa.gov/) | CC0 ([License](https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance)) | Climate indicators, human dimensions, atmosphere, biosphere |
+| [Copernicus Climate Data](https://cds.climate.copernicus.eu/) | Public Domain ([License](https://www.copernicus.eu/en/terms-use/how-access-data)) | Satellite earth observation and in-situ (non-space) data |
+| [Global Biodiversity Information Facility (GBIF)](https://www.gbif.org/) | CC0, CC BY, or CC BY-NC ([License](https://www.gbif.org/terms)) | Species occurrence, taxonomic information, habitat data |
+:::
+
+::: {.callout-note collapse="true" title="Political Data" icon="false"}
+**Examples for causal relationships:**
+
+-   Government spending or government duration on policy impact
+
+-   Corruption scandals weakening trust in government
+
+-   Socioeconomic indicators affecting election results
+
++-----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Source                                                                      | License                                                                                                | Data Provided                                                                                                                                                                                                                           |
++=============================================================================+========================================================================================================+=========================================================================================================================================================================================================================================+
+| [Comparative Political Data Set (CPDS)](https://www.cpds-data.org/)         | Information is requested                                                                               | annual political and institutional data, party composition, reshuffles, duration, reason for termination and the type of government for 36 countries                                                                                    |
++-----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [World Justice Project Rule of Law Index](https://worldjusticeproject.org/) | CC BY-ND 4.0 ([License](https://catalog.data.gov/dataset/world-justice-project-wjp-rule-of-law-index)) | Perception of law in the general public in 136 countries: Constraints on Government Powers, Absence of Corruption, Open Government, Fundamental Rights, Order and Security, Regulatory Enforcement, Civil Justice, and Criminal Justice |
++-----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+**Further directory of datasets in the US:** [Congressional Voting Records](https://www.govtrack.us/)
+:::
+
+::: {.callout-tip collapse="true" title="Energy & Sustainability Data" icon="false"}
+**Examples for causal relationships:**
+
+-   Rising oil prices slowing the industrial growth
+
+-   Government subsidies for renewables increase solar and wind energy production
+
+-   Higher natural gas storage reduce the vulnerability to supply shocks
+
+-   Expansion of hydrogen production reduces the industrial carbon emissions
+
+| Source | License | Data Provided |
+|----|----|----|
+| [International Energy Agency (IEA)](https://www.iea.org/data-and-statistics) | CC BY, Non-Commercial ([Individual licenses](https://www.iea.org/data-and-statistics/data-sets)) | Electricity access and demand, energy and emissions, hydrogen production, gas statistics, oil prices |
+| [Our World in Data – Energy](https://ourworldindata.org/energy) | CC BY ([License](https://ourworldindata.org/energy)) | International energy data, fossil fuels, electricity data, energy mix, energy consumption |
+| [U.S. Energy Information Administration (EIA)](https://www.eia.gov/) | CC0, CC BY, custom ([Individual licenses](https://atlas.eia.gov/search?tags=energy)) | Power plants, biofuels, natural gas storage, HGL pipelines, geothermal potential |
+:::
+
+::: {.callout-note collapse="true" title="Further Categories" icon="false"}
+Also consider the following categories:
+
+-   Gene expression data
+
+-   Health data
+
+-   Meterological data
+
+-   Psychological data
+
+-   Population data
+
+-   Biological data
+
+-   Pharmaceutical data
+
+-   Sensor-based datasets
+
+-   Transportation and mobility: ([U.S. Department of Transportation Open Data](https://data.transportation.gov/), [NYC Open Data (Taxi & Traffic Data)](https://data.cityofnewyork.us/Transportation/Taxi/mch6-rqy4), [OpenStreetMap Traffic Data](https://www.openstreetmap.org/))
+
+-   Education data: ([National Center for Education Statistics (NCES)](https://nces.ed.gov/), [OECD Education at a Glance](https://www.oecd.org/en/publications/education-at-a-glance-2024_c00cad36-en.html))
+
+-   Crime data: ([FBI Crime Data Explorer](https://cde.ucr.cjis.gov/), [Bureau of Justice Statistics (BJS)](https://bjs.ojp.gov/), [UK Crime Data](https://data.police.uk/))
+:::
 

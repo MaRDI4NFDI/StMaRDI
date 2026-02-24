@@ -1,4 +1,6 @@
-# Library
+--- 
+title: "Notebook Library"
+---
 
 These notebooks present [GMCI Zenodo](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10) datasets, provide insights into methodologies, showcase the analysis process, and summarize the derived results. In addition, links to the datasets and the underlying GitHub repositories are provided for code transparency and reproducibility.
 
