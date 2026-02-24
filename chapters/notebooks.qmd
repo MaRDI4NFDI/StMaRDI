@@ -10,15 +10,6 @@ These notebooks present [GMCI Zenodo](https://zenodo.org/communities/mardigmci/r
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gallery with Links</title>
 <style>
-body {
-  font-family: Arial, sans-serif;
-  text-align: left;
-}
-p {
-  text-align: left; /* Change text alignment to left */
-  max-width: 800px; /* Restrict paragraph width for readability */
-  margin: 0 auto; /* Center the paragraph block */
-}
 .gallery-container {
   display: flex;
   flex-wrap: wrap;
@@ -65,7 +56,6 @@ p {
   text-decoration: none; /* Remove underline */
 }
 .button.color {
-  font-family: Arial, sans-serif;
   font-size: 12px;
   padding: 4px 8px;
   border-radius: 4px;
