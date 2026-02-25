@@ -8,11 +8,27 @@ library(DT)
 
 column_names <- c("Name", "Size of Collection", "Sample Size", "Dimension", "Task", "Data Type", "Dataset Scope", "Ground Truth", "Temporal Structure", "License", "Missing Values")
 
+d <- c()
+
+
+############################################################################
+# Building Energy Consumption
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.18772307", "Building Energy Consumption"),
+        1, 918, 31,
+        "Causal Discovery", 
+        "Mixed Data", 
+        "Standalone Datasets", 
+        "Unknown Graph", 
+        "Static Data", 
+        "MIT",
+        "No Missing Values"))
+
 
 ############################################################################
 # DREAM5 - Gene Network Inference
 
-d <- c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.17854235", "DREAM5 - Gene Network Inference - E. coli"), 
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.17854235", "DREAM5 - Gene Network Inference - E. coli"), 
         1, NA, 4155,
         "Causal Discovery", 
         "Mixed Data", 
@@ -20,7 +36,7 @@ d <- c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/z
         "Unknown Graph", 
         "Static Data", 
         "CC BY-ND 4.0", 
-        "No Missing Values")
+        "No Missing Values"))
 d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.17854235", "DREAM5 - Gene Network Inference - S. aureus"), 
         1, NA, 2810,
         "Causal Discovery", 
