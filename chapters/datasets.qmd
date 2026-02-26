@@ -12,6 +12,20 @@ d <- c()
 
 
 ############################################################################
+# Walleye Pollock
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.18787802", "Walleye Pollock"),
+        2, 40, 5,
+        "Causal Discovery", 
+        "Continuous Data", 
+        "Standalone Dataset", 
+        "Unknown Graph", 
+        "Time Series Data", 
+        "CC BY-NC-SA 4.0",
+        "Existing Missing Values"))
+
+
+############################################################################
 # Building Energy Consumption
 
 d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.18772307", "Building Energy Consumption"),
@@ -20,6 +34,20 @@ d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/
         "Mixed Data", 
         "Standalone Datasets", 
         "Unknown Graph", 
+        "Static Data", 
+        "MIT",
+        "No Missing Values"))
+
+
+############################################################################
+# Building Energy Consumption 2
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.18773273", "Building Energy Consumption 2"),
+        6, 1000, 41,
+        "Causal Inference", 
+        "Mixed Data", 
+        "Collection of Datasets", 
+        "Known Graph", 
         "Static Data", 
         "MIT",
         "No Missing Values"))
