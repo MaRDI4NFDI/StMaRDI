@@ -15,7 +15,7 @@ d <- c()
 # FIP1 - Winter Wheat Field Phenotyping
 
 d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.18803835", "FIP1 - Winter Wheat Field Phenotyping"),
-        1, 4000, 9,
+        1, 4058, 9,
         "Causal Discovery", 
         "Continuous Data", 
         "Standalone Dataset", 
