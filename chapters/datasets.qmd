@@ -12,6 +12,20 @@ d <- c()
 
 
 ############################################################################
+# FIP1 - Winter Wheat Field Phenotyping
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.18803835", "FIP1 - Winter Wheat Field Phenotyping"),
+        1, 4000, 9,
+        "Causal Discovery", 
+        "Continuous Data", 
+        "Standalone Dataset", 
+        "Known Graph", 
+        "Time Series Data", 
+        "CC BY 4.0",
+        "No Missing Values"))
+
+
+############################################################################
 # Walleye Pollock
 
 d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.18787802", "Walleye Pollock"),
