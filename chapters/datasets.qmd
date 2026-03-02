@@ -12,6 +12,20 @@ d <- c()
 
 
 ############################################################################
+# Job Training Partnership Act
+
+d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.18836197", "Job Training Partnership Act"),
+        1, 9224, 11,
+        "Causal Inference", 
+        "Mixed Data", 
+        "Standalone Dataset", 
+        "Known Graph", 
+        "Static Data", 
+        "CC BY-NC 4.0",
+        "No Missing Values"))
+
+
+############################################################################
 # FIP1 - Winter Wheat Field Phenotyping
 
 d <- rbind(d, c(sprintf('<a href="%s" target="_blank">%s</a>', "https://doi.org/10.5281/zenodo.18803835", "FIP1 - Winter Wheat Field Phenotyping"),
