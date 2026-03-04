@@ -1,0 +1,49 @@
+# The Mathematical Research Data Initiative {.unnumbered}
+
+<div style="text-align: justify">
+The [Mathematical Research Data Initiative](https://www.mardi4nfdi.de/about/mission), is a group of German scientists funded by NFDI working on creating and establishing data culture standards and public services to foster mathematical research. This comprises the development of good research practices, providing tools for establishing interconnections of research via unique digital tokens, and creating databases for immediate access to key resources of the mathematical research community. Mathematical objects range from theorems over algorithms to data analyses affected by uncertainty. The research scientists have a background in computer algebra, scientific computing, statistics, and machine learning. Specifically, the [MaRDI Portal](https://portal.mardi4nfdi.de/wiki/Portal) combines and structures the information of the mathematical landscape in a relational data base. Multiple subprojects organized via task areas assist with interfaces and extend relevant subdomains. More information can be found on the [NFDI Website](https://www.nfdi.de/mardi/?lang=en).
+
+Within MaRDI, this website was initiated by a group of statisticians from [LMU](https://www.slds.stat.uni-muenchen.de/people/bischl/), [TUM](https://www.math.cit.tum.de/math/personen/professuren/drton-mathias/), and [WIAS](https://www.wias-berlin.de/research/rgs/fg6/). With their background in algebraic statistics and graphical modeling, the research group at TUM is managing the Zenodo community (see below) and has established this website as a supporting tool.
+</div>
+
+
+
+# Contributors {.unnumbered}
+
+-   [Mathias Drton](https://www.professoren.tum.de/en/drton-mathias)
+
+-   [Leopold Mareis](https://campus.tum.de/tumonline/visitenkarte.show_vcard?pPersonenGruppe=3&pPersonenId=D14CB5E0B6D1A375)
+
+-   [Stephan Haug](https://www.math.cit.tum.de/math/personen/wissenschaftliches-personal/stephan-haug/)
+
+-   [Nils Sturma](https://nilssturma.github.io/)
+
+-   [Benjamin Hollering](https://sites.google.com/view/benhollering)
+
+-   [Oleksandr Zadorozhnyi](https://www.math.uni-potsdam.de/professuren/mathematische-statistik/personen)
+
+-   [Antony Della Vecchia](https://antonydellavecchia.github.io/)
+
+
+# Citation {.unnumbered}
+
+<div style="text-align: justify">
+When using the GMCI Communities' content, please cite the creators of the original content and our community with the following bib item.
+</div>
+
+``` bibtex
+@article{Mareis_Haug_Drton_2025,
+title={MaRDI's Zenodo Community for Graphical Modeling and Causal Inference},
+volume={2},
+journal={Proceedings of the Conference on Research Data Infrastructure},
+author={Mareis, Leopold and Haug, Stephan and Drton, Mathias},
+year={2025},
+month={Sep.}
+}
+```
+
+# Meet us {.unnumbered}
+
+-   <span style="color:gray">26 - 28 August 2025: [CoRDI](https://www.nfdi.de/cordi-2025/) in Aachen, Germany.</span>
+
+-   <span style="color:gray">27 - 30 July 2025: [Statistical Computing 2025](https://sysbio.uni-ulm.de/ocs/index.php/statcomp/statcomp2025/schedConf/accommodation) in Günzburg, Germany.</span>

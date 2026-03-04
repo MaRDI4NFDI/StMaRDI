@@ -16,3 +16,6 @@
 [submodule "chapters/notebook_gallery/notebooks/alarm_subgraph_analysis"]
 	path = chapters/notebook_gallery/notebooks/alarm_subgraph_analysis
 	url = git@github.com:hgstp/alarm_subgraph_analysis.git
+[submodule "chapters/notebook_gallery/notebooks/CausalDynamics"]
+	path = chapters/notebook_gallery/notebooks/CausalDynamics
+	url = git@github.com:MaRDI4NFDI/CausalDynamics.git

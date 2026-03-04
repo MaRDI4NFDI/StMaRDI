@@ -5,7 +5,7 @@ The GMCI initiative is backed by topically related community submissions. We all
 :::: {.callout-tip collapse="true" title="Dataset (Dataset Collection)" icon="false"}
 Log into [Zenodo](https://zenodo.org/) via GitHub, ORCID, OpenAIRE, or create a new account.
 
-To upload a dataset or dataset collection, \[Step 1\] click on the '+' to create a new record and \[Step 2\] select the [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci) community. \[Step 3\] Upload the desired files and give as much additional information as possible in the cells below.
+To upload a dataset or dataset collection, \[Step 1\] click on the '+' to create a new record and \[Step 2\] select the [Graphical Modeling and Causal Inference](https://zenodo.org/communities/mardigmci) community. \[Step 3\] Upload the desired files and give as much additional information as possible in the cells below.
 
 ![Source: <https://zenodo.org/>](../images/zenodo_upload.png)
 
@@ -79,7 +79,7 @@ Log into [Zenodo](https://zenodo.org/) via GitHub, ORCID, OpenAIRE, or create a 
 
 ![Source: <https://zenodo.org/account/settings/github/>](../images/zenodo_git_integration.png)
 
-This will automatically create a record of the zipped repository along with a unique DOI. As the whole repository is zipped, we advise to restrict the repository's content to the necessary files. The associated DOI will forward you to the Zenodo record, which you can submit it to the [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10) community by editing the record's page. Although the record's description is taken from the git release, the records meta-information can be edited manually afterwards, e.g., referencing a publication, linking the associated Zenodo dataset or specifying an R package.
+This will automatically create a record of the zipped repository along with a unique DOI. As the whole repository is zipped, we advise to restrict the repository's content to the necessary files. The associated DOI will forward you to the Zenodo record, which you can submit it to the [Graphical Modeling and Causal Inference](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10) community by editing the record's page. Although the record's description is taken from the git release, the records meta-information can be edited manually afterwards, e.g., referencing a publication, linking the associated Zenodo dataset or specifying an R package.
 
 We connect the accepted repository with `git submodule add`, render `notebook.qmd` and showcase the analysis on this website's [library](/chapters/notebooks.qmd).
 
