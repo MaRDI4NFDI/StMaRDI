@@ -1,11 +1,103 @@
 # Welcome {.unnumbered}
+:::: {.columns}
 
+::: {.column width="65%"}
 <div style="text-align: justify">
-Welcome to the Graphical Modeling and Causal Inference (GMCI) website. Our goal is to provide a place for FAIR (= Findable, Accessible, Interoperable, and Reusable) GMCI research and analyses. For this, we moderate [GMCI Zenodo community](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10) where curated topical datasets as well as analysis repositories are stored. The [GMCI analysis library](chapters/notebooks.qmd) is hosted on this website. It features exemplary statistical notebooks that showcase advances in methodology and presents new applications.
+
+**Graphical Modelling and Causal Inference (GMCI)** is an open, 
+community-driven resource for researchers working at the intersection 
+of graphical models, causal discovery, and statistical methodology. 
+
+We curate FAIR — Findable, Accessible, Interoperable, and Reusable — 
+datasets and executable analysis notebooks, and make them available 
+to the broader research community through a moderated 
+[Zenodo community](https://zenodo.org/communities/mardigmci).
+
 </div>
-We encourage and solicit submissions of datasets and notebooks by researchers from the broader academic community.
+:::
 
-![](images/CoRDI_Poster_2025.pdf){width="700" height="1000"}
+::: {.column width="10%"}
+:::
 
-**Contact:** Feel free to reach out via *mardi 'at' statistics.cit.tum.de*.
+::: {.column width="25%"}
+![](images/GMCI.png){fig-align="right" width="100%"}
+:::
 
+::::
+
+Whether you are looking to benchmark a new algorithm, explore curated datasets, or share your own reproducible analysis, GMCI offers the infrastructure to do so.
+
+
+## What You Will Find Here {.unnumbered}
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+### 📦 Datasets {.unnumbered}
+A curated collection of datasets for causal discovery and graphical modelling, with standardised metadata. Each entry links directly to its Zenodo record.
+
+→ [Browse the dataset collection](chapters/datasets.qmd)
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### 📓 Notebook Library {.unnumbered}
+GMCI-reviewed, executable analysis notebooks showcasing methodology and applications in graphical modelling and causal inference.
+
+→ [Explore the notebook library](chapters/notebooks.qmd)
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### 🤝 Contribute {.unnumbered}
+We welcome dataset and notebook submissions from the research community. All contributions are reviewed and archived with a persistent DOI.
+
+→ [Learn how to contribute](chapters/contribute.qmd)
+:::
+
+:::
+
+## Our Principles {.unnumbered}
+
+GMCI is built on the [FAIR principles](https://fairsharing.org/) for scientific data management [@Wilkinson2016]:
+
+- **Findable** — All resources are indexed with persistent identifiers (DOIs) via Zenodo.
+- **Accessible** — Resources are openly available and licensed for reuse where possible.
+- **Interoperable** — Datasets follow standardised metadata schemas; notebooks use open, reproducible formats.
+- **Reusable** — Clear licensing and provenance information accompany every submission.
+
+## Getting Started {.unnumbered}
+
+New to GMCI? Here is how to get the most out of this resource:
+
+1. **Explore** existing datasets and notebooks to find resources relevant to your research.
+2. **Run** a notebook directly — all submissions are archived with reproducible environments on Zenodo.
+3. **Contribute** your own dataset or analysis notebook using our [submission guidelines](chapters/contribute.qmd).
+4. **Cite** resources you use — each Zenodo record provides a ready-made citation.
+
+## Citation {.unnumbered}
+
+If you use GMCI resources in your work, please cite the curated content's original creators as well as the GMCI community itself:
+
+```bibtex
+@article{Mareis_Haug_Drton_2025,
+  title   = {MaRDI's Zenodo Community for Graphical Modeling and Causal Inference},
+  volume  = {2},
+  journal = {Proceedings of the Conference on Research Data Infrastructure},
+  author  = {Mareis, Leopold and Haug, Stephan and Drton, Mathias},
+  year    = {2025},
+  month   = {Sep.}
+}
+```
+
+→ [Full citation guidance and BibTeX](chapters/about.qmd#citation)
+
+## Upcoming Events {.unnumbered}
+
+Meet the GMCI team at the following conferences:
+
+| Event | Date | Location |
+|---|---|---|
+| [CoRDI 2025](https://www.nfdi.de/cordi-2025/) | 26–28 August 2025 | Aachen, Germany |
+| [Statistical Computing 2025](https://sysbio.uni-ulm.de/ocs/index.php/statcomp/statcomp2025/index) | 27–30 July 2025 | Günzburg, Germany |
+
+
+*GMCI is part of the [Mathematical Research Data Initiative (MaRDI)](https://www.mardi4nfdi.de/about/mission), funded by the German National Research Data Infrastructure (NFDI). The initiative is led by statisticians from [TUM](https://www.math.cit.tum.de/math/personen/professuren/drton-mathias/), [LMU](https://www.slds.stat.uni-muenchen.de/people/bischl/), and [WIAS](https://www.wias-berlin.de/research/rgs/fg6/).*

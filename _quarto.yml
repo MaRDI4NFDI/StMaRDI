@@ -5,7 +5,9 @@ project:
 
 book:
   title: "Graphical Modeling and Causal Inference"
-  author: "MaRDI@TUM"
+  author: 
+    name: "MaRDI@TUM"
+    url: https://portal.mardi4nfdi.de/wiki/Portal/TA3
   date: today
   favicon: "images/arrow_orange.png"
   repo-url: https://github.com/MaRDI4NFDI/StMaRDI
@@ -16,7 +18,7 @@ book:
     search: true
   page-footer:
     left: |
-      All content is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) unless otherwise stated. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="/images/by-nc-sa.png" alt="CC BY-NC-SA 4.0 " style="height:20px; vertical-align:baseline;"></a> .
+      All content is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) unless otherwise stated. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="/images/by-nc-sa.png" alt="CC BY-NC-SA 4.0" style="height:20px; vertical-align:baseline;"></a> 
     right: | 
       <div style="height: 20px; width = 10px"></div>
       [Imprint](/chapters/imprint.txt). 
@@ -59,7 +61,6 @@ format:
       dark: darkly
     documentclass: scrreprt
     code-overflow: wrap # wrap long code
-    cover-image: images/GMCI.png
     number-depth: 3 # number headings until level 3 (###)
     toc: true # table of content
     toc-location: right
