@@ -1,104 +1,123 @@
 # Contributing to GMCI {.unnumbered}
 
-The GMCI initiative is backed by topically related community submissions. We allow two types of submissions:
+## Overview {.unnumbered}
 
-:::: {.callout-tip collapse="true" title="Dataset (Dataset Collection)" icon="false"}
-Log into [Zenodo](https://zenodo.org/) via GitHub, ORCID, OpenAIRE, or create a new account.
+The GMCI initiative relies on submissions from the research community to grow and remain current. Two types of contributions are accepted: datasets and analysis notebooks. Both are archived on [Zenodo](https://zenodo.org/) with a persistent digital object identifier and become part of the moderated [GMCI Zenodo community](https://zenodo.org/communities/mardigmci). All submissions are reviewed by the GMCI moderators, who may request revisions and are available to assist contributors throughout the process. There are no costs associated with submission or archiving.
 
-To upload a dataset or dataset collection, \[Step 1\] click on the '+' to create a new record and \[Step 2\] select the [Graphical Modeling and Causal Inference](https://zenodo.org/communities/mardigmci) community. \[Step 3\] Upload the desired files and give as much additional information as possible in the cells below.
+Intellectual ownership of submitted content remains with the authors following acceptance. Git repositories hosting analysis notebooks are integrated as submodules of the [GMCI repository](https://github.com/MaRDI4NFDI/StMaRDI), and Zenodo records become part of the GMCI community; neither is transferred in ownership.
+
+## Submitting a Dataset {.unnumbered}
+
+### Account creation {.unnumbered}
+
+A [Zenodo](https://zenodo.org/) account is required to submit. Accounts can be created directly or linked via GitHub, ORCID, or OpenAIRE.
+
+### Creating a record {.unnumbered}
+
+To create a new record, click the **+** button in the Zenodo interface and select the [Graphical Modelling and Causal Inference](https://zenodo.org/communities/mardigmci) community at the time of upload.
 
 ![Source: <https://zenodo.org/>](../images/zenodo_upload.png)
 
-Please upload a dataset as a .csv file, or a collection of datasets as a .zip file. If applicable, auxiliary files (graph, ground truth, license, extended description) should be uploaded as separate files. We require the description of the Zenodo record to have the following format:
+### File formats {.unnumbered}
+
+A single dataset should be uploaded as a `.csv` file. A collection of datasets should be compressed as a `.zip` archive. Auxiliary files, including graph structure specifications, ground truth files, licences, and extended documentation, should be uploaded as separate files within the same record.
+
+### Required record description {.unnumbered}
+
+The description field of the Zenodo record must follow the structured format given below. Thorough completion of this metadata is essential for making the submission findable and reusable by the community.
 
 ::: {style="border: 1px solid black; padding: 5px; line-height: 0.5;"}
-*A description of the dataset/dataset collection.*
+*A description of the dataset or dataset collection.*
 
-*\# always two blank rows between information blocks*
 
-**Task:** *A description of the Task.*
+**Task:** *A description of the causal or statistical task the dataset is intended to address.*
 
 **Summary:**
 
 -   **Size of dataset:** *Nr. of samples* x *Nr. of dimensions*
 
--   **Task:** Causal *Discovery Problem / Causal Inference Problem*
+-   **Task:** *Causal Discovery Problem / Causal Inference Problem*
 
--   **Data Type:** *Continuous Data / Mixed Data / Discrete Data / Binary Data / Categorical Data*
+-   **Data Type:** *Continuous Data / Mixed Data / Discrete Data / Binary Data / Categorical Data*
 
 -   **Dataset Scope:** *Collection of Datasets / Standalone Dataset*
 
 -   **Ground Truth:** *Known Graph / Partial Graph / Unknown Graph*
 
--   **Temporal Structure:** Static Data / Time Series Data
+-   **Temporal Structure:** *Static Data / Time Series Data*
 
--   **License:** CC0 / CC BY / CC BY-NC / ...
+-   **License:** *CC0 / CC BY / CC BY-NC / ...*
 
--   **Missing Values:** Existing Missing Values / No Missing Values
+-   **Missing Values:** *Existing Missing Values / No Missing Values*
 
-**Missingness Statement:** *Missingness Statement, if applicable.*
+**Missingness Statement:** *(if applicable)*
 
 **Collection:** *\# If applicable.*
 
--   **Dataset1:** Description Dataset1
+-   **Dataset1:** *Description*
 
--   **Dataset2:** Description Dataset2
+-   **Dataset2:** *Description* 
 
--   ...
 
 **Features:**
 
--   ***Feature1:** Description Feature1*
+-   **Feature1:** *Description*
 
--   ***Feature2:** Description Feature2*
-
--   ...
+-   **Feature2:** *Description*
 
 **Files:**
 
--   ***File1**: Description File1*
+-   **File1:** *Description*
 
--   ***File2:** Description File2*
+-   **File2:** *Description*
 
--   ...
 
-**License:** *\# If applicable. Please indicate the main license (dataset, not of supporting material) above*
+**License:**
 
--   ***File1:** License1*
+-   **File1:** *License*
 
--   ***File2:** License2*
+-   **File2:** *License*
 :::
 
-For good reference, see the [ALARM (A Logical Alarm Reduction Mechanism)](https://zenodo.org/records/14793281) dataset and the [Sachs: Protein and Phospholipids Expressions](https://zenodo.org/records/7681811) dataset collection.
-::::
+Well-documented reference submissions that may serve as models are the [ALARM (A Logical Alarm Reduction Mechanism)](https://zenodo.org/records/14793281) dataset and the [Sachs: Protein and Phospholipid Expressions](https://zenodo.org/records/7681811) dataset collection.
 
-::: {.callout-note collapse="true" title="Analysis Notebook" icon="false"}
-Prepare a git repository from the [GMCI notebook template](https://github.com/MaRDI4NFDI/GMCI_notebook_template). Follow the [Analysis Notebook Template](notebook_gallery/notebooks/GMCI_notebook_template/notebook.qmd) (`notebook.qmd`) and set the picture for the library as `gallery_picture.png`.
+## Submitting an Analysis Notebook {.unnumbered}
 
-Log into [Zenodo](https://zenodo.org/) via GitHub, ORCID, OpenAIRE, or create a new account. Then, [connected your repository with Zenodo](https://zenodo.org/account/settings/github/) as shown in the picture below.
+### Preparing the repository {.unnumbered}
+
+Notebook submissions must be prepared from the [GMCI notebook template](https://github.com/MaRDI4NFDI/GMCI_notebook_template). The primary analysis file is `notebook.qmd`, which should be completed in accordance with the template's structure. A preview image named `gallery_picture.png` must be included in the repository root for display in the notebook library.
+
+### Connecting the repository to Zenodo {.unnumbered}
+
+After preparing the repository, [connect it to Zenodo](https://zenodo.org/account/settings/github/) via the GitHub integration. Once connected, creating a release in GitHub will automatically generate a Zenodo record containing a zipped copy of the repository and a unique DOI. Because the entire repository is archived, its contents should be kept to the files necessary for the analysis.
 
 ![Source: <https://zenodo.org/account/settings/github/>](../images/zenodo_git_integration.png)
 
-This will automatically create a record of the zipped repository along with a unique DOI. As the whole repository is zipped, we advise to restrict the repository's content to the necessary files. The associated DOI will forward you to the Zenodo record, which you can submit it to the [Graphical Modeling and Causal Inference](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10) community by editing the record's page. Although the record's description is taken from the git release, the records meta-information can be edited manually afterwards, e.g., referencing a publication, linking the associated Zenodo dataset or specifying an R package.
+### Submitting to the GMCI community {.unnumbered}
 
-We connect the accepted repository with `git submodule add`, render `notebook.qmd` and showcase the analysis on this website's [library](/chapters/notebooks.qmd).
+The Zenodo record created by the first release should be submitted to the [GMCI community](https://zenodo.org/communities/mardigmci) by editing the record page. Although the record description is populated from the GitHub release notes, all metadata fields can be edited manually after creation. Authors are encouraged to add supplementary information such as associated publication references, linked dataset records, or R or Python package identifiers.
 
-Please contact us when publishing a new release of the git repository. A new release will automatically trigger a new version of the Zenodo record. This website, however, has to be rendered manually. Note that the record on Zenodo, as a copy of the git, is permanent and previous record versions, respectively git releases, can still be accessed.
+### Notifying the GMCI team {.unnumbered}
 
-For good reference, see the [PC Algorithm for Causal Discovery](https://github.com/lmareis/PC-Algorithm-An-Application-on-the-Alarm-Dataset).
-:::
+The GMCI moderators must be notified when a new release is published, as new releases automatically generate a new version of the Zenodo record but do not trigger re-rendering of the notebook on this website. The website must be updated manually by the moderators.
 
-For both options, a [Zenodo](https://zenodo.org/) record has to be created according to the structure above and submitted to the [GMCI Zenodo community](https://zenodo.org/communities/mardigmci/records?q=&l=list&p=1&s=10). The [community moderators](/index.qmd#the-initiative) process each submission, create the necessary embedding links, potentially request revisions, and assist with any questions. While accepted datasets appear in the GMCI Zenodo community, notebook submissions' git repositories will be backed on Zenodo with the analysis rendered and featured on this website's [library](/chapters/notebooks.qmd).
+A well-documented reference implementation is the [PC Algorithm for Causal Discovery](https://github.com/lmareis/PC-Algorithm-An-Application-on-the-Alarm-Dataset).
 
-Central instruments of [FAIR](https://fairsharing.org/) [@Wilkinson2016] research are providing open data access to researchers and transparently communicating design decisions via metadata in a findable and well-structured place. Therefore, please provide as much additional information as possible in the submission procedure.
 
-The ownership after acceptance will stay with the authors. Git repositories hosting the notebook will become a submodule of the [GMCI git repository](https://github.com/MaRDI4NFDI/StMaRDI), and Zenodo records will become part of the GMCI community.
+## Review Process {.unnumbered}
 
-There are no associated costs.
+Upon submission, the GMCI moderators will assess whether the contribution meets the requirements described above, and may request revisions before acceptance. Moderators will assist with questions that arise during the process. Once a submission is accepted, datasets appear in the GMCI Zenodo community and are listed in the dataset collection on this website; accepted notebook repositories are added as git submodules, and the rendered analysis is featured in the [Notebook Library](notebooks.qmd).
 
-## About Zenodo
 
-The [Zenodo](https://zenodo.org/) platform hosted by CERN provides a long-term storage solution with unique digital object identifiers (DOIs), which can be referred to in publications. Uploading datasets and notebooks after publication is possible, and metadata (e.g., descriptions, licenses, references, etc.) can also be changed after the initial record creation. Note that the created record and data cannot be deleted except under special circumstances. If uncertainties arise, it is possible to test the mechanics of Zenodo without creating permanent digital objects in [Zenodo's Sandbox Instance](https://sandbox.zenodo.org/).
+## On the FAIR Principles {.unnumbered}
+
+A central objective of the GMCI initiative is to ensure that submitted resources conform to the FAIR principles for scientific data management [@Wilkinson2016]. Findability is achieved through persistent DOIs and structured, searchable metadata on Zenodo. Accessibility requires that resources be openly available under clearly stated licences. Interoperability is promoted by the use of standardised formats and metadata schemas. Reusability demands that design decisions, provenance, and licensing be communicated transparently. Contributors are asked to provide as complete metadata as the nature of their submission allows. The value of the GMCI collection depends directly on the quality and completeness of this information.
+
+
+## About Zenodo {.unnumbered}
+
+[Zenodo](https://zenodo.org/) is an open-access digital repository hosted by CERN, providing long-term storage with persistent DOIs suitable for citation in academic publications. Several properties of the platform are particularly relevant for GMCI contributors. Records and their associated data files are permanent and cannot be deleted except in exceptional circumstances. Metadata fields, including descriptions, licences, and linked references, can be modified after the initial record creation. Publishing a new release of a connected GitHub repository automatically creates a new version of the Zenodo record, while all prior versions remain accessible with their original DOIs. Authors who wish to explore the submission process before committing to a permanent record may do so using [Zenodo Sandbox](https://sandbox.zenodo.org/), which replicates the full functionality of the platform without creating permanent digital objects.
+
 
 ```{=html}
 <!--

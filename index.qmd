@@ -4,14 +4,7 @@
 ::: {.column width="65%"}
 <div style="text-align: justify">
 
-**Graphical Modelling and Causal Inference (GMCI)** is an open, 
-community-driven resource for researchers working at the intersection 
-of graphical models, causal discovery, and statistical methodology. 
-
-We curate FAIR — Findable, Accessible, Interoperable, and Reusable — 
-datasets and executable analysis notebooks, and make them available 
-to the broader research community through a moderated 
-[Zenodo community](https://zenodo.org/communities/mardigmci).
+The Graphical Modelling and Causal Inference (GMCI) initiative provides an open repository of curated research resources for the statistical study of graphical models and causal inference. Its primary outputs are a moderated collection of datasets and a library of peer-reviewed, executable analysis notebooks, both archived through a dedicated [Zenodo community](https://zenodo.org/communities/mardigmci) with persistent digital object identifiers.
 
 </div>
 :::
@@ -25,57 +18,31 @@ to the broader research community through a moderated
 
 ::::
 
-Whether you are looking to benchmark a new algorithm, explore curated datasets, or share your own reproducible analysis, GMCI offers the infrastructure to do so.
+The initiative is part of the [Mathematical Research Data Initiative (MaRDI)](https://www.mardi4nfdi.de/about/mission), funded by the German National Research Data Infrastructure (NFDI), and is led by researchers from [TU Munich](https://www.math.cit.tum.de/math/personen/professuren/drton-mathias/), [LMU Munich](https://www.slds.stat.uni-muenchen.de/people/bischl/), and [WIAS Berlin](https://www.wias-berlin.de/research/rgs/fg6/).
 
+## Scope and Purpose {.unnumbered}
 
-## What You Will Find Here {.unnumbered}
+Graphical models provide a principled framework for representing and reasoning about conditional independence structure and causal relationships among random variables. Causal inference addresses the identification and estimation of causal effects from observational and interventional data. Together, these fields underpin a growing body of methodology with applications across the natural sciences, medicine, economics, and the social sciences. Despite this breadth, the field has lacked a centralised, quality-controlled resource for sharing the datasets and reproducible analyses on which methodological progress depends.
 
-::: {.grid}
+GMCI was established to address this gap. The initiative moderates submissions of datasets and analysis notebooks from the wider research community, ensuring that each contribution meets documented standards for metadata completeness, reproducibility, and licensing transparency. Accepted submissions are indexed and made permanently accessible via Zenodo, enabling them to be cited in publications, integrated into benchmarking studies, and reused in downstream analyses.
 
-::: {.g-col-12 .g-col-md-4}
-### 📦 Datasets {.unnumbered}
-A curated collection of datasets for causal discovery and graphical modelling, with standardised metadata. Each entry links directly to its Zenodo record.
+## Resources {.unnumbered}
 
-→ [Browse the dataset collection](chapters/datasets.qmd)
-:::
+The [dataset collection](chapters/datasets.qmd) contains curated datasets drawn from a range of application domains. Each entry is documented according to a standardised metadata schema that specifies, among other attributes, the data type, the causal or statistical task it supports, the ground truth availability, and the applicable licence. A supplementary overview of external data sources suitable for custom extraction is also provided, organised by domain.
 
-::: {.g-col-12 .g-col-md-4}
-### 📓 Notebook Library {.unnumbered}
-GMCI-reviewed, executable analysis notebooks showcasing methodology and applications in graphical modelling and causal inference.
+The [notebook library](chapters/notebooks.html) contains executable analyses that demonstrate methodology or present novel applications in graphical modelling and causal inference. Each notebook is developed from a common template, archived as a versioned Zenodo record with a citable DOI, and rendered for direct reading on this website. Contributions are accepted from authors across the academic community following a review process conducted by the GMCI moderators.
 
-→ [Explore the notebook library](chapters/notebooks.qmd)
-:::
+## FAIR Principles {.unnumbered}
 
-::: {.g-col-12 .g-col-md-4}
-### 🤝 Contribute {.unnumbered}
-We welcome dataset and notebook submissions from the research community. All contributions are reviewed and archived with a persistent DOI.
+All resources in the GMCI collection adhere to the FAIR principles for scientific data management [@Wilkinson2016]. Resources are Findable through consistent use of persistent identifiers and standardised metadata. They are Accessible through open archiving on Zenodo under clearly specified licences. Interoperability is supported through the use of common data formats and documented schemas. Reusability is ensured through explicit provenance records and licensing information accompanying every submission. Researchers who use GMCI resources are asked to cite both the original creators and the community itself; citation details are provided on the [About](chapters/about.qmd) page.
 
-→ [Learn how to contribute](chapters/contribute.qmd)
-:::
+## Contributing {.unnumbered}
 
-:::
-
-## Our Principles {.unnumbered}
-
-GMCI is built on the [FAIR principles](https://fairsharing.org/) for scientific data management [@Wilkinson2016]:
-
-- **Findable** — All resources are indexed with persistent identifiers (DOIs) via Zenodo.
-- **Accessible** — Resources are openly available and licensed for reuse where possible.
-- **Interoperable** — Datasets follow standardised metadata schemas; notebooks use open, reproducible formats.
-- **Reusable** — Clear licensing and provenance information accompany every submission.
-
-## Getting Started {.unnumbered}
-
-New to GMCI? Here is how to get the most out of this resource:
-
-1. **Explore** existing datasets and notebooks to find resources relevant to your research.
-2. **Run** a notebook directly — all submissions are archived with reproducible environments on Zenodo.
-3. **Contribute** your own dataset or analysis notebook using our [submission guidelines](chapters/contribute.qmd).
-4. **Cite** resources you use — each Zenodo record provides a ready-made citation.
+The initiative actively solicits submissions of datasets and analysis notebooks from the research community. Detailed instructions for preparing and submitting each type of contribution are provided on the [Contributing](chapters/contribute.qmd) page. The GMCI moderators review all submissions, may request revisions, and assist contributors throughout the process. Submission and archiving are free of charge.
 
 ## Citation {.unnumbered}
 
-If you use GMCI resources in your work, please cite the curated content's original creators as well as the GMCI community itself:
+When using resources from the GMCI community, please cite the original creators of the content and the community with the following reference.
 
 ```bibtex
 @article{Mareis_Haug_Drton_2025,
@@ -88,16 +55,13 @@ If you use GMCI resources in your work, please cite the curated content's origin
 }
 ```
 
-→ [Full citation guidance and BibTeX](chapters/about.qmd#citation)
-
 ## Upcoming Events {.unnumbered}
 
-Meet the GMCI team at the following conferences:
+Members of the GMCI team will present at the following conferences.
 
-| Event | Date | Location |
+| Event | Dates | Location |
 |---|---|---|
-| [CoRDI 2025](https://www.nfdi.de/cordi-2025/) | 26–28 August 2025 | Aachen, Germany |
-| [Statistical Computing 2025](https://sysbio.uni-ulm.de/ocs/index.php/statcomp/statcomp2025/index) | 27–30 July 2025 | Günzburg, Germany |
+| [Announced soon]() | April 2026 |  |
+| [Announced soon]() | July 2026 | |
+| [Announced soon]() | August 2026 | |
 
-
-*GMCI is part of the [Mathematical Research Data Initiative (MaRDI)](https://www.mardi4nfdi.de/about/mission), funded by the German National Research Data Infrastructure (NFDI). The initiative is led by statisticians from [TUM](https://www.math.cit.tum.de/math/personen/professuren/drton-mathias/), [LMU](https://www.slds.stat.uni-muenchen.de/people/bischl/), and [WIAS](https://www.wias-berlin.de/research/rgs/fg6/).*

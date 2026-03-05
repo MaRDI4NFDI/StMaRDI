@@ -1,6 +1,8 @@
-# Datasets in the GMCI Collection {.unnumbered}
+# Datasets {.unnumbered}
 
-The table below provides an overview of all datasets currently included in the [GMCI collection](https://zenodo.org/communities/mardigmci). The entries may be interactively filtered by selecting the desired attributes in the column headers. For detailed documentation of an individual dataset, the corresponding name links directly to its record on Zenodo.
+## GMCI Dataset Collection {.unnumbered}
+
+The table below provides an overview of all datasets currently held in the [GMCI Zenodo community](https://zenodo.org/communities/mardigmci). Each entry links directly to the corresponding Zenodo record, where full documentation, provenance information, associated files, and a citable DOI are available. The table may be filtered interactively by selecting the desired attributes in the column headers.
 
 ```{r}
 #| echo: false
@@ -361,21 +363,18 @@ datatable(
 
 ```
 
+Researchers who have produced datasets suitable for graphical modelling or causal inference research are encouraged to submit them to the collection. Submission instructions and the required metadata schema are described on the [Contributing](contribute.qmd) page.
 
-# Custom Online Data Extraction {.unnumbered}
 
-Many application domains present problems in which graphical modeling provides a statistical framework for addressing fundamental questions about underlying relationships. To support researchers engaged in custom data extraction, we provide below a selection of representative areas together with links to relevant resources. Researchers who derive new datasets through such extraction or post‑processing are encouraged to contribute their finalized materials to our [Zenodo community](https://zenodo.org/communities/mardigmci).
+## External Data Sources for Custom Extraction {.unnumbered}
+
+A substantial number of research problems in graphical modelling and causal inference require working with data that must be extracted or derived from existing repositories, rather than obtained as a ready-made tabular file. The following sections provide a structured overview of well-established data sources organised by application domain, together with illustrative examples of causal questions they are suited to address. Researchers who derive new datasets through such extraction or post-processing are encouraged to document and submit their finalized materials to the [GMCI Zenodo community](https://zenodo.org/communities/mardigmci), in accordance with the applicable licences of the source data.
 
 ------------------------------------------------------------------------
 
 ::: {.callout-note collapse="false" title="Health Data" icon="false"}
-**Examples for causal relationships:**
 
--   Sugar consumption on diabetes risk
-
--   Genetic predisposition to obesity on cardiovascular disease
-
--   Early administration of vasopressors might improve survival rates in ICU patients with septic shock
+Health data sources provide rich opportunities for studying causal relationships among clinical variables, genetic factors, and patient outcomes. Questions of interest include, for example, whether early administration of vasopressors improves survival rates in ICU patients with septic shock, how genetic predisposition to obesity mediates cardiovascular risk, and what effect sugar consumption has on diabetes incidence across population strata.
 
 | Source | License | Data Provided |
 |----|----|----|
@@ -388,11 +387,7 @@ Many application domains present problems in which graphical modeling provides a
 :::
 
 ::: {.callout-tip collapse="true" title="Economic & Financial Data" icon="false"}
-**Examples for causal relationships:**
-
--   inflation affects employment
-
--   policies impact market behavior
+Economic time series are frequently used to study causal relationships among macroeconomic variables, including the effect of monetary policy on inflation, the relationship between government expenditure and labour market outcomes, and the transmission mechanisms of financial shocks.
 
 +----------------------------------------------------------------------+----------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Source                                                               | License                                                                    | Data Provided                                                                                                                                                                |
@@ -406,13 +401,7 @@ Many application domains present problems in which graphical modeling provides a
 :::
 
 ::: {.callout-note collapse="true" title="Social & Behavioral Data" icon="false"}
-**Examples for causal relationships:**
-
--   Work conditions influence family stability
-
--   Political climate affects public trust in media
-
--   Immigration policies shape public attitudes
+Survey-based social data are used to study causal and associational relationships in areas such as the effect of working conditions on family stability, the influence of political climate on institutional trust, and the role of socioeconomic background in educational attainment.
 
 +----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
 | Source                                                                           | License                                                                                                                                                    | Data Provided                               |
@@ -426,13 +415,7 @@ Many application domains present problems in which graphical modeling provides a
 :::
 
 ::: {.callout-tip collapse="true" title="Environmental & Ecological Data" icon="false"}
-**Examples for causal relationships:**
-
--   Atmospheric composition affects temperature
-
--   Deforestation changes regional climate
-
--   Extreme weather events result in biodiversity loss
+Environmental datasets support causal analyses of atmospheric dynamics, land-use change, biodiversity, and climate variability. Representative questions include the effect of atmospheric composition on surface temperature, the causal role of deforestation in regional precipitation patterns, and the relationship between extreme weather events and biodiversity loss.
 
 | Source | License | Data Provided |
 |----|----|----|
@@ -442,13 +425,7 @@ Many application domains present problems in which graphical modeling provides a
 :::
 
 ::: {.callout-note collapse="true" title="Political Data" icon="false"}
-**Examples for causal relationships:**
-
--   Government spending or government duration on policy impact
-
--   Corruption scandals weakening trust in government
-
--   Socioeconomic indicators affecting election results
+Political science datasets make it possible to study the causal determinants of policy outcomes, electoral behaviour, and institutional performance. Examples include the effect of government duration on policy impact, the relationship between corruption scandals and public trust, and the role of socioeconomic inequality in election results.
 
 +-----------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Source                                                                      | License                                                                                                | Data Provided                                                                                                                                                                                                                           |
@@ -462,15 +439,7 @@ Many application domains present problems in which graphical modeling provides a
 :::
 
 ::: {.callout-tip collapse="true" title="Energy & Sustainability Data" icon="false"}
-**Examples for causal relationships:**
-
--   Rising oil prices slowing the industrial growth
-
--   Government subsidies for renewables increase solar and wind energy production
-
--   Higher natural gas storage reduce the vulnerability to supply shocks
-
--   Expansion of hydrogen production reduces the industrial carbon emissions
+Energy datasets are suited to causal analyses of the relationship between policy instruments and energy transition outcomes, including the effect of subsidy programmes on renewable energy capacity, the causal link between fossil fuel prices and industrial investment, and the role of hydrogen expansion in reducing carbon emissions.
 
 | Source | License | Data Provided |
 |----|----|----|
@@ -480,28 +449,6 @@ Many application domains present problems in which graphical modeling provides a
 :::
 
 ::: {.callout-note collapse="true" title="Further Categories" icon="false"}
-Also consider the following categories:
-
--   Gene expression data
-
--   Health data
-
--   Meterological data
-
--   Psychological data
-
--   Population data
-
--   Biological data
-
--   Pharmaceutical data
-
--   Sensor-based datasets
-
--   Transportation and mobility: ([U.S. Department of Transportation Open Data](https://data.transportation.gov/), [NYC Open Data (Taxi & Traffic Data)](https://data.cityofnewyork.us/Transportation/Taxi/mch6-rqy4), [OpenStreetMap Traffic Data](https://www.openstreetmap.org/))
-
--   Education data: ([National Center for Education Statistics (NCES)](https://nces.ed.gov/), [OECD Education at a Glance](https://www.oecd.org/en/publications/education-at-a-glance-2024_c00cad36-en.html))
-
--   Crime data: ([FBI Crime Data Explorer](https://cde.ucr.cjis.gov/), [Bureau of Justice Statistics (BJS)](https://bjs.ojp.gov/), [UK Crime Data](https://data.police.uk/))
+Additional domains that have generated datasets well-suited to graphical modelling and causal inference research include gene expression data, meteorological records, psychological experimental data, population registers, pharmaceutical trial data, sensor-based time series, transportation and mobility data (see, for example, the [U.S. Department of Transportation Open Data](https://data.transportation.gov/) and [NYC Open Data](https://data.cityofnewyork.us/Transportation/Taxi/mch6-rqy4)), education data (see [NCES](https://nces.ed.gov/) and [OECD Education at a Glance](https://www.oecd.org/en/publications/education-at-a-glance-2024_c00cad36-en.html)), and crime data (see [FBI Crime Data Explorer](https://cde.ucr.cjis.gov/) and [UK Police Data](https://data.police.uk/)).
 :::
 
