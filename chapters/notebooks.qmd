@@ -149,6 +149,22 @@ These notebooks present [GMCI Zenodo](https://zenodo.org/communities/mardigmci/r
             </div>
         </div>
         
+        <!-- Cost-Aware Experimental Design -->
+        <div class="gallery-item">
+            <strong>Cost-Aware</br> Experimental Design </strong>
+            <a href="notebook_gallery/notebooks/Cost-Aware-Experimental-Design/notebook.qmd">
+                <img src="notebook_gallery/notebooks/Cost-Aware-Experimental-Design/gallery_picture.png" alt="Cost-Aware-Experimental-Design Logo">
+            </a>
+            <div class="button-container">
+                <a href="https://www.r-project.org/" class="button color one"> R </a> </div>
+            <div class="button-container">
+                <a href="https://zenodo.org/records/7681811" class="button color two"> Gene Data </a>
+            </div>
+            <div class="button-container">
+                <a href="https://arxiv.org/abs/2603.22024" class="button color three"> arXiv </a>
+            </div>
+        </div>
+        
         <!-- Submission Instructions -->
         <div class="gallery-item">
             <strong> Analysis <br> Notebook Template </strong>

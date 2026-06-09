@@ -61,7 +61,6 @@ Members of the GMCI team will present at the following conferences.
 
 | Event | Dates | Location |
 |---|---|---|
-| [CLeaR 2026](https://www.cclear.cc/2026) | 03-06 April 2026 | Boston, United States of America |
-| [IMS Annual Meeting 2026](https://ims2026.github.io/IMS2026/) | 06-09 July 2026 | Salzburg, Austria|
-| [Announced soon]() | August 2026 | |
+| [IMS Annual Meeting 2026](https://ims2026.github.io/IMS2026/) | 06 - 09 July 2026 | Salzburg, Austria|
+| [JuliaCon Global 2026](https://juliacon.org/2026/) | 10 - 14 August 2026 | Mainz, Germany|
 

@@ -49,3 +49,4 @@ Members of the GMCI team will be present at the following conferences.
 |---|---|---|
 | [CoRDI 2025](https://www.nfdi.de/cordi-2025/) | 26--28 August 2025 | Aachen, Germany |
 | [Statistical Computing 2025](https://sysbio.uni-ulm.de/ocs/index.php/statcomp/statcomp2025) | 27--30 July 2025 | Günzburg, Germany |
+| [CLeaR 2026](https://www.cclear.cc/2026) | 06 - 08 April 2026| Cambridge, MA, United States |
