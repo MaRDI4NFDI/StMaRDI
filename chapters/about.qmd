@@ -26,7 +26,7 @@ The following researchers have contributed to GMCI in the roles of community mod
 
 Submissions of datasets and analysis notebooks from the wider research community are actively solicited. The review and submission process is described on the [Contributing](contribute.qmd) page.
 
-## Citation {#citation}{.unnumbered}
+## Citation {.unnumbered}
 
 When using any resource from the GMCI community, authors are asked to cite both the original creators of the dataset or notebook and the GMCI community itself. Each record in the [GMCI Zenodo community](https://zenodo.org/communities/mardigmci) carries its own DOI and citation metadata, which can be exported directly from the record page in a range of reference formats. The community as a whole should be cited using the following reference.
 

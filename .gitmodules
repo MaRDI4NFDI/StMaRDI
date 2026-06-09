@@ -19,3 +19,6 @@
 [submodule "chapters/notebook_gallery/notebooks/CausalDynamics"]
 	path = chapters/notebook_gallery/notebooks/CausalDynamics
 	url = git@github.com:MaRDI4NFDI/CausalDynamics.git
+[submodule "chapters/notebook_gallery/notebooks/Cost-Aware-Experimental-Design"]
+	path = chapters/notebook_gallery/notebooks/Cost-Aware-Experimental-Design
+	url = https://github.com/lmareis/Cost-Aware-Experimental-Design
