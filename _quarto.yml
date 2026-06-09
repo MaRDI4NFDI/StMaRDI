@@ -69,6 +69,7 @@ format:
     toc-expand: true
     reference-location: margin # references in notebook margin
     citation-location: margin
+    css: custom.css
       
 execute:
   cache: true
