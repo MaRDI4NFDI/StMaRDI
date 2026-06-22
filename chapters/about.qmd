@@ -43,7 +43,7 @@ When using any resource from the GMCI community, authors are asked to cite both 
 
 ## Past Events {.unnumbered}
 
-Members of the GMCI team will be present at the following conferences.
+Members of the GMCI team presented at the following conferences.
 
 | Event | Dates | Location |
 |---|---|---|
