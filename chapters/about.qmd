@@ -17,7 +17,7 @@ The following researchers have contributed to GMCI in the roles of community mod
 | Name | Affiliation |
 |---|---|
 | [Mathias Drton](https://www.professoren.tum.de/en/drton-mathias) | TU Munich |
-| [Leopold Mareis](https://campus.tum.de/tumonline/visitenkarte.show_vcard?pPersonenGruppe=3&pPersonenId=D14CB5E0B6D1A375) | TU Munich |
+| [Leopold Mareis](https://lmareis.github.io/) | TU Munich |
 | [Stephan Haug](https://www.math.cit.tum.de/math/personen/wissenschaftliches-personal/stephan-haug/) | TU Munich |
 | [Nils Sturma](https://nilssturma.github.io/) | École Polytechnique Fédérale de Lausanne |
 | [Benjamin Hollering](https://sites.google.com/view/benhollering) | MPI Leipzig |
